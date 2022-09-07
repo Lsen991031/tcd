@@ -1,0 +1,44 @@
+ucf101: 101 classes
+Method : OURS
+----AGE 5----
+current_task  [89, 0, 61, 1, 92, 94, 64, 71, 87, 51]
+current_head  101
+Phase 2 : Train RGB Model in an Incremental Manner
+=> base model: resnet34
+----------------------resnet34 pretraining----------------------
+------------------------------success---------------------------
+Load the Previous Model
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/optim/sgd.py:101: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super(SGD, self).__init__(params, defaults)
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torchvision/transforms/transforms.py:333: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  "Argument interpolation should be of type InterpolationMode instead of int. "
+Copy the old Model
+lambda_0  : [1.0, 0.030166206257996712]
+Increment the Model
+SplitCosineLinear(
+  input_features=512, output_features=303, sigma=tensor([3.9528]), eta=tensor([3.2879])
+  (fc1): CosineLinear(input_features=512, output_features=273, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=512, output_features=30, sigma=1.0, eta=1.0)
+)
+video number : 944
+video number + exemplar : 1399
+DataLoader Constructed : Train 43
+Optimizer Constructed
+video number : 944
+video number + exemplar : 944
+Initialize Cosine Classifier
+Computing the class mean vectors...
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/modules/module.py:1033: UserWarning: Using a non-full backward hook when the forward contains multiple autograd Nodes is deprecated and will be removed in future versions. This hook will be missing some grad_input. Please use register_full_backward_hook to get the documented behavior.
+  warnings.warn("Using a non-full backward hook when the forward contains multiple autograd Nodes "
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+Traceback (most recent call last):
+  File "main.py", line 101, in <module>
+    main()
+  File "main.py", line 71, in main
+    train_i_cl.train_task(args, i, current_task, current_head, class_indexer, model_flow=model_flow, prefix=prefix)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 500, in train_task
+    _train(args, train_loader, model, criterion, optimizer, epoch, age, regularizer=regularizer, lambda_0=lambda_0, model_old=model_old, importance_list=importance_list)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 167, in _train
+    criterion = nn.CrossEntropyLoss().to(device)
+NameError: name 'device' is not defined

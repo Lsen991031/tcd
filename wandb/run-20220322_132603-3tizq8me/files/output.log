@@ -1,0 +1,122 @@
+ucf101: 101 classes
+Method : OURS
+----AGE 0----
+current_task  [37, 97, 56, 55, 33, 84, 3, 4, 72, 59, 66, 48, 65, 91, 99, 39, 34, 22, 67, 74, 19, 35, 9, 86, 88, 63, 85, 38, 54, 25, 57, 62, 83, 76, 6, 13, 2, 53, 8, 24, 44, 12, 100, 29, 5, 17, 15, 73, 47, 27, 46]
+current_head  51
+Phase 2 : Train RGB Model in an Incremental Manner
+=> base model: resnet34
+CosineLinear(input_features=512, output_features=153, sigma=tensor([1.]), eta=tensor([1.]))
+video number : 4793
+video number + exemplar : 4793
+DataLoader Constructed : Train 149
+Optimizer Constructed
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+Traceback (most recent call last):
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+Traceback (most recent call last):
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "main.py", line 101, in <module>
+    main()
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+BrokenPipeError: [Errno 32] Broken pipe
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "main.py", line 71, in main
+    train_i_cl.train_task(args, i, current_task, current_head, class_indexer, model_flow=model_flow, prefix=prefix)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 469, in train_task
+    _train(args, train_loader, model, criterion, optimizer, epoch, age, regularizer=regularizer, lambda_0=lambda_0, model_old=model_old, importance_list=importance_list)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 71, in _train
+    outputs = model(input=input,t_div=args.t_div)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/modules/module.py", line 493, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/data_parallel.py", line 148, in forward
+    inputs, kwargs = self.scatter(inputs, kwargs, self.device_ids)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/data_parallel.py", line 159, in scatter
+    return scatter_kwargs(inputs, kwargs, device_ids, dim=self.dim)
+BrokenPipeError: [Errno 32] Broken pipe
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/scatter_gather.py", line 36, in scatter_kwargs
+    kwargs = scatter(kwargs, target_gpus, dim) if kwargs else []
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/scatter_gather.py", line 28, in scatter
+    return scatter_map(inputs)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/scatter_gather.py", line 19, in scatter_map
+    return list(map(type(obj), zip(*map(scatter_map, obj.items()))))
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/scatter_gather.py", line 15, in scatter_map
+    return list(zip(*map(scatter_map, obj)))
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/scatter_gather.py", line 13, in scatter_map
+    return Scatter.apply(target_gpus, None, dim, obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/_functions.py", line 89, in forward
+    outputs = comm.scatter(input, target_gpus, chunk_sizes, ctx.dim, streams)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/cuda/comm.py", line 147, in scatter
+    return tuple(torch._C._scatter(tensor, devices, chunk_sizes, dim, streams))
+KeyboardInterrupt

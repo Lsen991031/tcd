@@ -1,0 +1,61 @@
+ucf101: 101 classes
+Method : OURS
+----AGE 1----
+current_task  [98, 96, 18, 90, 75, 31, 95, 49, 43, 78]
+current_head  61
+Phase 2 : Train RGB Model in an Incremental Manner
+=> base model: resnet50
+Load the Previous Model
+Traceback (most recent call last):
+  File "main.py", line 102, in <module>
+    main()
+  File "main.py", line 72, in main
+    train_i_cl.train_task(args, i, current_task, current_head, class_indexer, model_flow=model_flow, prefix=prefix)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 413, in train_task
+    model.load_state_dict(state_dict)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1498, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for TSN:
+	Missing key(s) in state_dict: "base_model.layer1.0.conv3.weight", "base_model.layer1.0.bn3.weight", "base_model.layer1.0.bn3.bias", "base_model.layer1.0.bn3.running_mean", "base_model.layer1.0.bn3.running_var", "base_model.layer1.0.downsample.0.weight", "base_model.layer1.0.downsample.1.weight", "base_model.layer1.0.downsample.1.bias", "base_model.layer1.0.downsample.1.running_mean", "base_model.layer1.0.downsample.1.running_var", "base_model.layer1.1.conv3.weight", "base_model.layer1.1.bn3.weight", "base_model.layer1.1.bn3.bias", "base_model.layer1.1.bn3.running_mean", "base_model.layer1.1.bn3.running_var", "base_model.layer1.2.conv3.weight", "base_model.layer1.2.bn3.weight", "base_model.layer1.2.bn3.bias", "base_model.layer1.2.bn3.running_mean", "base_model.layer1.2.bn3.running_var", "base_model.layer2.0.conv3.weight", "base_model.layer2.0.bn3.weight", "base_model.layer2.0.bn3.bias", "base_model.layer2.0.bn3.running_mean", "base_model.layer2.0.bn3.running_var", "base_model.layer2.1.conv3.weight", "base_model.layer2.1.bn3.weight", "base_model.layer2.1.bn3.bias", "base_model.layer2.1.bn3.running_mean", "base_model.layer2.1.bn3.running_var", "base_model.layer2.2.conv3.weight", "base_model.layer2.2.bn3.weight", "base_model.layer2.2.bn3.bias", "base_model.layer2.2.bn3.running_mean", "base_model.layer2.2.bn3.running_var", "base_model.layer2.3.conv3.weight", "base_model.layer2.3.bn3.weight", "base_model.layer2.3.bn3.bias", "base_model.layer2.3.bn3.running_mean", "base_model.layer2.3.bn3.running_var", "base_model.layer3.0.conv3.weight", "base_model.layer3.0.bn3.weight", "base_model.layer3.0.bn3.bias", "base_model.layer3.0.bn3.running_mean", "base_model.layer3.0.bn3.running_var", "base_model.layer3.1.conv3.weight", "base_model.layer3.1.bn3.weight", "base_model.layer3.1.bn3.bias", "base_model.layer3.1.bn3.running_mean", "base_model.layer3.1.bn3.running_var", "base_model.layer3.2.conv3.weight", "base_model.layer3.2.bn3.weight", "base_model.layer3.2.bn3.bias", "base_model.layer3.2.bn3.running_mean", "base_model.layer3.2.bn3.running_var", "base_model.layer3.3.conv3.weight", "base_model.layer3.3.bn3.weight", "base_model.layer3.3.bn3.bias", "base_model.layer3.3.bn3.running_mean", "base_model.layer3.3.bn3.running_var", "base_model.layer3.4.conv3.weight", "base_model.layer3.4.bn3.weight", "base_model.layer3.4.bn3.bias", "base_model.layer3.4.bn3.running_mean", "base_model.layer3.4.bn3.running_var", "base_model.layer3.5.conv3.weight", "base_model.layer3.5.bn3.weight", "base_model.layer3.5.bn3.bias", "base_model.layer3.5.bn3.running_mean", "base_model.layer3.5.bn3.running_var", "base_model.layer4.0.conv3.weight", "base_model.layer4.0.bn3.weight", "base_model.layer4.0.bn3.bias", "base_model.layer4.0.bn3.running_mean", "base_model.layer4.0.bn3.running_var", "base_model.layer4.1.conv3.weight", "base_model.layer4.1.bn3.weight", "base_model.layer4.1.bn3.bias", "base_model.layer4.1.bn3.running_mean", "base_model.layer4.1.bn3.running_var", "base_model.layer4.2.conv3.weight", "base_model.layer4.2.bn3.weight", "base_model.layer4.2.bn3.bias", "base_model.layer4.2.bn3.running_mean", "base_model.layer4.2.bn3.running_var", "base_model.importance1.importance", "base_model.importance2.importance", "base_model.importance3.importance", "base_model.importance4.importance", "base_model.importance_raw.importance".
+	size mismatch for base_model.layer1.0.conv1.net.weight: copying a param with shape torch.Size([64, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 1, 1]).
+	size mismatch for base_model.layer1.1.conv1.net.weight: copying a param with shape torch.Size([64, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 256, 1, 1]).
+	size mismatch for base_model.layer1.2.conv1.net.weight: copying a param with shape torch.Size([64, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([64, 256, 1, 1]).
+	size mismatch for base_model.layer2.0.conv1.net.weight: copying a param with shape torch.Size([128, 64, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 256, 1, 1]).
+	size mismatch for base_model.layer2.0.downsample.0.weight: copying a param with shape torch.Size([128, 64, 1, 1]) from checkpoint, the shape in current model is torch.Size([512, 256, 1, 1]).
+	size mismatch for base_model.layer2.0.downsample.1.weight: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for base_model.layer2.0.downsample.1.bias: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for base_model.layer2.0.downsample.1.running_mean: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for base_model.layer2.0.downsample.1.running_var: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for base_model.layer2.1.conv1.net.weight: copying a param with shape torch.Size([128, 128, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 512, 1, 1]).
+	size mismatch for base_model.layer2.2.conv1.net.weight: copying a param with shape torch.Size([128, 128, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 512, 1, 1]).
+	size mismatch for base_model.layer2.3.conv1.net.weight: copying a param with shape torch.Size([128, 128, 3, 3]) from checkpoint, the shape in current model is torch.Size([128, 512, 1, 1]).
+	size mismatch for base_model.layer3.0.conv1.net.weight: copying a param with shape torch.Size([256, 128, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 512, 1, 1]).
+	size mismatch for base_model.layer3.0.downsample.0.weight: copying a param with shape torch.Size([256, 128, 1, 1]) from checkpoint, the shape in current model is torch.Size([1024, 512, 1, 1]).
+	size mismatch for base_model.layer3.0.downsample.1.weight: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for base_model.layer3.0.downsample.1.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for base_model.layer3.0.downsample.1.running_mean: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for base_model.layer3.0.downsample.1.running_var: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for base_model.layer3.1.conv1.net.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 1024, 1, 1]).
+	size mismatch for base_model.layer3.2.conv1.net.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 1024, 1, 1]).
+	size mismatch for base_model.layer3.3.conv1.net.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 1024, 1, 1]).
+	size mismatch for base_model.layer3.4.conv1.net.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 1024, 1, 1]).
+	size mismatch for base_model.layer3.5.conv1.net.weight: copying a param with shape torch.Size([256, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([256, 1024, 1, 1]).
+	size mismatch for base_model.layer4.0.conv1.net.weight: copying a param with shape torch.Size([512, 256, 3, 3]) from checkpoint, the shape in current model is torch.Size([512, 1024, 1, 1]).
+	size mismatch for base_model.layer4.0.downsample.0.weight: copying a param with shape torch.Size([512, 256, 1, 1]) from checkpoint, the shape in current model is torch.Size([2048, 1024, 1, 1]).
+	size mismatch for base_model.layer4.0.downsample.1.weight: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for base_model.layer4.0.downsample.1.bias: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for base_model.layer4.0.downsample.1.running_mean: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for base_model.layer4.0.downsample.1.running_var: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for base_model.layer4.1.conv1.net.weight: copying a param with shape torch.Size([512, 512, 3, 3]) from checkpoint, the shape in current model is torch.Size([512, 2048, 1, 1]).
+	size mismatch for base_model.layer4.2.conv1.net.weight: copying a param with shape torch.Size([512, 512, 3, 3]) from checkpoint, the shape in current model is torch.Size([512, 2048, 1, 1]).
+	size mismatch for base_model.layer1_importance.scale: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for base_model.layer1_importance.importance: copying a param with shape torch.Size([8, 64]) from checkpoint, the shape in current model is torch.Size([8, 256]).
+	size mismatch for base_model.layer2_importance.scale: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for base_model.layer2_importance.importance: copying a param with shape torch.Size([8, 128]) from checkpoint, the shape in current model is torch.Size([8, 512]).
+	size mismatch for base_model.layer3_importance.scale: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for base_model.layer3_importance.importance: copying a param with shape torch.Size([8, 256]) from checkpoint, the shape in current model is torch.Size([8, 1024]).
+	size mismatch for base_model.layer4_importance.scale: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for base_model.layer4_importance.importance: copying a param with shape torch.Size([8, 512]) from checkpoint, the shape in current model is torch.Size([8, 2048]).
+	size mismatch for base_model.raw_features_importance.scale: copying a param with shape torch.Size([512]) from checkpoint, the shape in current model is torch.Size([2048]).
+	size mismatch for base_model.raw_features_importance.importance: copying a param with shape torch.Size([8, 512]) from checkpoint, the shape in current model is torch.Size([8, 2048]).
+	size mismatch for new_fc.weight: copying a param with shape torch.Size([153, 512]) from checkpoint, the shape in current model is torch.Size([153, 2048]).

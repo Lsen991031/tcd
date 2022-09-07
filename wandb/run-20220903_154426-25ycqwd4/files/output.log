@@ -1,0 +1,25 @@
+ucf101: 101 classes
+Method : OURS
+----AGE 0----
+current_task  [37, 97, 56, 55, 33, 84, 3, 4, 72, 59, 66, 48, 65, 91, 99, 39, 34, 22, 67, 74, 19, 35, 9, 86, 88, 63, 85, 38, 54, 25, 57, 62, 83, 76, 6, 13, 2, 53, 8, 24, 44, 12, 100, 29, 5, 17, 15, 73, 47, 27, 46]
+current_head  51
+Phase 2 : Train RGB Model in an Incremental Manner
+=> base model: resnet50
+Traceback (most recent call last):
+  File "main.py", line 102, in <module>
+    main()
+  File "main.py", line 72, in main
+    train_i_cl.train_task(args, i, current_task, current_head, class_indexer, model_flow=model_flow, prefix=prefix)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 361, in train_task
+    cur_task_size=len(current_task),exemplar_segments=args.exemplar_segments)
+  File "/home/ustc/ls/tcd_code/ops/models.py", line 83, in __init__
+    self._prepare_base_model(self.base_model_name)
+  File "/home/ustc/ls/tcd_code/ops/models.py", line 165, in _prepare_base_model
+    self.remove_last_relu, self.importance, self.num_segments)
+  File "/home/ustc/ls/tcd_code/ops/resnet_models.py", line 337, in resnet50
+    model = ResNet(Bottleneck, [3, 4, 6, 3], remove_last_relu, importance, num_segments, **kwargs)
+  File "/home/ustc/ls/tcd_code/ops/resnet_models.py", line 175, in __init__
+    self.layer1 = self._make_layer(block, 64, layers[0])
+  File "/home/ustc/ls/tcd_code/ops/resnet_models.py", line 217, in _make_layer
+    num1 = num1 + 1
+UnboundLocalError: local variable 'num1' referenced before assignment

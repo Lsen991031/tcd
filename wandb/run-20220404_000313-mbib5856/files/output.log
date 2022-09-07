@@ -1,0 +1,1041 @@
+ucf101: 101 classes
+Method : OURS
+----AGE 5----
+current_task  [89, 0, 61, 1, 92, 94, 64, 71, 87, 51]
+current_head  101
+Phase 2 : Train RGB Model in an Incremental Manner
+=> base model: resnet34
+----------------------resnet34 pretraining----------------------
+------------------------------success---------------------------
+Load the Previous Model
+Copy the old Model
+lambda_0  : [1.0, 0.030166206257996712]
+Increment the Model
+SplitCosineLinear(
+  input_features=512, output_features=303, sigma=tensor([3.9528]), eta=tensor([3.2879])
+  (fc1): CosineLinear(input_features=512, output_features=273, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=512, output_features=30, sigma=1.0, eta=1.0)
+)
+video number : 944
+video number + exemplar : 1399
+DataLoader Constructed : Train 43
+Optimizer Constructed
+video number : 944
+video number + exemplar : 944
+Initialize Cosine Classifier
+Computing the class mean vectors...
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/_functions.py:61: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+2022-04-04 00:03:40.534823
+Epoch: [0][0/43], lr: 0.00100	Time 3.790 (3.790)	Data 2.613 (2.613)	Loss 0.1323 (0.1323)	Loss CE 0.0216 (0.0216)	Loss KD (Logit) 1.0835 (1.0835)	Loss KD (GCAM) 0.0433 (0.0433)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6499 (0.6499)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.8736], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2402], device='cuda:0', requires_grad=True)
+2022-04-04 00:04:18.833877
+Epoch: [1][0/43], lr: 0.00100	Time 3.144 (3.144)	Data 2.058 (2.058)	Loss 0.2447 (0.2447)	Loss CE 0.1059 (0.1059)	Loss KD (Logit) 1.1927 (1.1927)	Loss KD (GCAM) 0.1102 (0.1102)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6969 (0.6969)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+Sigma : Parameter containing:
+tensor([3.8039], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2023], device='cuda:0', requires_grad=True)
+2022-04-04 00:04:57.244294
+Epoch: [2][0/43], lr: 0.00100	Time 3.105 (3.105)	Data 1.820 (1.820)	Loss 0.2878 (0.2878)	Loss CE 0.1469 (0.1469)	Loss KD (Logit) 1.1965 (1.1965)	Loss KD (GCAM) 0.1182 (0.1182)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6935 (0.6935)	Loss REG 0.0000 (0.0000)	Prec@1 93.750 (93.750)
+Sigma : Parameter containing:
+tensor([3.7800], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1912], device='cuda:0', requires_grad=True)
+2022-04-04 00:05:35.552965
+Epoch: [3][0/43], lr: 0.00100	Time 2.989 (2.989)	Data 1.933 (1.933)	Loss 0.6277 (0.6277)	Loss CE 0.4930 (0.4930)	Loss KD (Logit) 1.1972 (1.1972)	Loss KD (GCAM) 0.1120 (0.1120)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6503 (0.6503)	Loss REG 0.0000 (0.0000)	Prec@1 84.375 (84.375)
+Sigma : Parameter containing:
+tensor([3.7576], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1801], device='cuda:0', requires_grad=True)
+2022-04-04 00:06:13.863563
+Epoch: [4][0/43], lr: 0.00100	Time 3.084 (3.084)	Data 2.255 (2.255)	Loss 0.1948 (0.1948)	Loss CE 0.0523 (0.0523)	Loss KD (Logit) 1.2447 (1.2447)	Loss KD (GCAM) 0.1298 (0.1298)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6600 (0.6600)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.7698], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1911], device='cuda:0', requires_grad=True)
+2022-04-04 00:06:52.559582
+Epoch: [5][0/43], lr: 0.00100	Time 3.141 (3.141)	Data 2.045 (2.045)	Loss 0.1876 (0.1876)	Loss CE 0.0516 (0.0516)	Loss KD (Logit) 1.1968 (1.1968)	Loss KD (GCAM) 0.1080 (0.1080)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6744 (0.6744)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.7929], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2051], device='cuda:0', requires_grad=True)
+2022-04-04 00:07:30.954373
+Epoch: [6][0/43], lr: 0.00100	Time 2.785 (2.785)	Data 1.578 (1.578)	Loss 0.1418 (0.1418)	Loss CE 0.0054 (0.0054)	Loss KD (Logit) 1.1753 (1.1753)	Loss KD (GCAM) 0.1121 (0.1121)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6734 (0.6734)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.8001], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2103], device='cuda:0', requires_grad=True)
+2022-04-04 00:08:09.534447
+Epoch: [7][0/43], lr: 0.00100	Time 3.215 (3.215)	Data 2.284 (2.284)	Loss 0.1859 (0.1859)	Loss CE 0.0457 (0.0457)	Loss KD (Logit) 1.2267 (1.2267)	Loss KD (GCAM) 0.1221 (0.1221)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6654 (0.6654)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.8227], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2234], device='cuda:0', requires_grad=True)
+2022-04-04 00:08:48.010660
+Epoch: [8][0/43], lr: 0.00100	Time 3.006 (3.006)	Data 1.795 (1.795)	Loss 0.2088 (0.2088)	Loss CE 0.0712 (0.0712)	Loss KD (Logit) 1.2046 (1.2046)	Loss KD (GCAM) 0.1132 (0.1132)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6726 (0.6726)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+Sigma : Parameter containing:
+tensor([3.8309], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2294], device='cuda:0', requires_grad=True)
+2022-04-04 00:09:26.723408
+Epoch: [9][0/43], lr: 0.00100	Time 3.048 (3.048)	Data 1.776 (1.776)	Loss 0.1388 (0.1388)	Loss CE 0.0029 (0.0029)	Loss KD (Logit) 1.1904 (1.1904)	Loss KD (GCAM) 0.1098 (0.1098)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6701 (0.6701)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.8403], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2353], device='cuda:0', requires_grad=True)
+2022-04-04 00:10:05.542151
+Epoch: [10][0/43], lr: 0.00100	Time 3.111 (3.111)	Data 2.025 (2.025)	Loss 0.1366 (0.1366)	Loss CE 0.0018 (0.0018)	Loss KD (Logit) 1.1958 (1.1958)	Loss KD (GCAM) 0.1090 (0.1090)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6595 (0.6595)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.8532], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2426], device='cuda:0', requires_grad=True)
+2022-04-04 00:10:44.602920
+Epoch: [11][0/43], lr: 0.00100	Time 3.295 (3.295)	Data 1.967 (1.967)	Loss 0.1382 (0.1382)	Loss CE 0.0007 (0.0007)	Loss KD (Logit) 1.2039 (1.2039)	Loss KD (GCAM) 0.1098 (0.1098)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6826 (0.6826)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.8676], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2503], device='cuda:0', requires_grad=True)
+2022-04-04 00:11:23.088351
+Epoch: [12][0/43], lr: 0.00100	Time 2.896 (2.896)	Data 1.933 (1.933)	Loss 0.1383 (0.1383)	Loss CE 0.0018 (0.0018)	Loss KD (Logit) 1.2097 (1.2097)	Loss KD (GCAM) 0.1106 (0.1106)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6679 (0.6679)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.8821], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2585], device='cuda:0', requires_grad=True)
+2022-04-04 00:12:02.163817
+Epoch: [13][0/43], lr: 0.00100	Time 3.503 (3.503)	Data 2.547 (2.547)	Loss 0.1437 (0.1437)	Loss CE 0.0111 (0.0111)	Loss KD (Logit) 1.1731 (1.1731)	Loss KD (GCAM) 0.1017 (0.1017)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6677 (0.6677)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.8903], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2633], device='cuda:0', requires_grad=True)
+2022-04-04 00:12:40.786753
+Epoch: [14][0/43], lr: 0.00100	Time 3.101 (3.101)	Data 2.061 (2.061)	Loss 0.1409 (0.1409)	Loss CE 0.0029 (0.0029)	Loss KD (Logit) 1.1777 (1.1777)	Loss KD (GCAM) 0.1083 (0.1083)	Loss MR 0.0000 (0.0000)	Loss DIV 0.7007 (0.7007)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9028], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2702], device='cuda:0', requires_grad=True)
+2022-04-04 00:13:19.520175
+Epoch: [15][0/43], lr: 0.00100	Time 3.178 (3.178)	Data 2.226 (2.226)	Loss 0.1493 (0.1493)	Loss CE 0.0098 (0.0098)	Loss KD (Logit) 1.1922 (1.1922)	Loss KD (GCAM) 0.1054 (0.1054)	Loss MR 0.0000 (0.0000)	Loss DIV 0.7186 (0.7186)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9171], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2777], device='cuda:0', requires_grad=True)
+2022-04-04 00:13:58.049477
+Epoch: [16][0/43], lr: 0.00100	Time 3.157 (3.157)	Data 2.268 (2.268)	Loss 0.1305 (0.1305)	Loss CE 0.0015 (0.0015)	Loss KD (Logit) 1.1644 (1.1644)	Loss KD (GCAM) 0.0960 (0.0960)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6510 (0.6510)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9227], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2808], device='cuda:0', requires_grad=True)
+2022-04-04 00:14:36.882378
+Epoch: [17][0/43], lr: 0.00100	Time 3.272 (3.272)	Data 2.197 (2.197)	Loss 0.1973 (0.1973)	Loss CE 0.0673 (0.0673)	Loss KD (Logit) 1.1699 (1.1699)	Loss KD (GCAM) 0.0994 (0.0994)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6492 (0.6492)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+Sigma : Parameter containing:
+tensor([3.9319], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2858], device='cuda:0', requires_grad=True)
+2022-04-04 00:15:15.457994
+Epoch: [18][0/43], lr: 0.00100	Time 3.072 (3.072)	Data 2.098 (2.098)	Loss 0.1804 (0.1804)	Loss CE 0.0488 (0.0488)	Loss KD (Logit) 1.1650 (1.1650)	Loss KD (GCAM) 0.0946 (0.0946)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6801 (0.6801)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+Sigma : Parameter containing:
+tensor([3.9315], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2844], device='cuda:0', requires_grad=True)
+2022-04-04 00:15:54.469039
+Epoch: [19][0/43], lr: 0.00100	Time 3.138 (3.138)	Data 1.836 (1.836)	Loss 0.2315 (0.2315)	Loss CE 0.0967 (0.0967)	Loss KD (Logit) 1.1793 (1.1793)	Loss KD (GCAM) 0.1003 (0.1003)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6911 (0.6911)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+Sigma : Parameter containing:
+tensor([3.9296], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2826], device='cuda:0', requires_grad=True)
+2022-04-04 00:16:33.096673
+Epoch: [20][0/43], lr: 0.00010	Time 3.219 (3.219)	Data 1.975 (1.975)	Loss 0.1351 (0.1351)	Loss CE 0.0010 (0.0010)	Loss KD (Logit) 1.1914 (1.1914)	Loss KD (GCAM) 0.1024 (0.1024)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6744 (0.6744)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9298], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2828], device='cuda:0', requires_grad=True)
+2022-04-04 00:17:12.164745
+Epoch: [21][0/43], lr: 0.00010	Time 3.488 (3.488)	Data 2.546 (2.546)	Loss 0.1351 (0.1351)	Loss CE 0.0030 (0.0030)	Loss KD (Logit) 1.1774 (1.1774)	Loss KD (GCAM) 0.0966 (0.0966)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6766 (0.6766)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9303], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2830], device='cuda:0', requires_grad=True)
+2022-04-04 00:17:50.569406
+Epoch: [22][0/43], lr: 0.00010	Time 3.064 (3.064)	Data 1.875 (1.875)	Loss 0.1448 (0.1448)	Loss CE 0.0141 (0.0141)	Loss KD (Logit) 1.1934 (1.1934)	Loss KD (GCAM) 0.1014 (0.1014)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6420 (0.6420)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9310], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2833], device='cuda:0', requires_grad=True)
+2022-04-04 00:18:29.253635
+Epoch: [23][0/43], lr: 0.00010	Time 3.255 (3.255)	Data 2.313 (2.313)	Loss 0.1323 (0.1323)	Loss CE 0.0037 (0.0037)	Loss KD (Logit) 1.1691 (1.1691)	Loss KD (GCAM) 0.0951 (0.0951)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6485 (0.6485)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9315], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2836], device='cuda:0', requires_grad=True)
+2022-04-04 00:19:07.828246
+Epoch: [24][0/43], lr: 0.00010	Time 3.212 (3.212)	Data 2.338 (2.338)	Loss 0.1271 (0.1271)	Loss CE 0.0007 (0.0007)	Loss KD (Logit) 1.1812 (1.1812)	Loss KD (GCAM) 0.0968 (0.0968)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6178 (0.6178)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9324], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2840], device='cuda:0', requires_grad=True)
+2022-04-04 00:19:46.405432
+Epoch: [25][0/43], lr: 0.00010	Time 2.903 (2.903)	Data 1.729 (1.729)	Loss 0.1409 (0.1409)	Loss CE 0.0111 (0.0111)	Loss KD (Logit) 1.1789 (1.1789)	Loss KD (GCAM) 0.0940 (0.0940)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6605 (0.6605)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9327], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2842], device='cuda:0', requires_grad=True)
+2022-04-04 00:20:24.880701
+Epoch: [26][0/43], lr: 0.00010	Time 3.057 (3.057)	Data 2.052 (2.052)	Loss 0.1358 (0.1358)	Loss CE 0.0051 (0.0051)	Loss KD (Logit) 1.1679 (1.1679)	Loss KD (GCAM) 0.0955 (0.0955)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6690 (0.6690)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9336], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2846], device='cuda:0', requires_grad=True)
+2022-04-04 00:21:03.629775
+Epoch: [27][0/43], lr: 0.00010	Time 3.268 (3.268)	Data 2.290 (2.290)	Loss 0.1293 (0.1293)	Loss CE 0.0012 (0.0012)	Loss KD (Logit) 1.1686 (1.1686)	Loss KD (GCAM) 0.0942 (0.0942)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6464 (0.6464)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9344], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2850], device='cuda:0', requires_grad=True)
+2022-04-04 00:21:41.846980
+Epoch: [28][0/43], lr: 0.00010	Time 2.721 (2.721)	Data 1.565 (1.565)	Loss 0.1332 (0.1332)	Loss CE 0.0064 (0.0064)	Loss KD (Logit) 1.1518 (1.1518)	Loss KD (GCAM) 0.0855 (0.0855)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6644 (0.6644)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9351], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2853], device='cuda:0', requires_grad=True)
+2022-04-04 00:22:20.567681
+Epoch: [29][0/43], lr: 0.00010	Time 3.176 (3.176)	Data 2.207 (2.207)	Loss 0.1307 (0.1307)	Loss CE 0.0009 (0.0009)	Loss KD (Logit) 1.1859 (1.1859)	Loss KD (GCAM) 0.0868 (0.0868)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6797 (0.6797)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9357], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2855], device='cuda:0', requires_grad=True)
+2022-04-04 00:22:58.996393
+Epoch: [30][0/43], lr: 0.00001	Time 3.010 (3.010)	Data 2.032 (2.032)	Loss 0.1720 (0.1720)	Loss CE 0.0421 (0.0421)	Loss KD (Logit) 1.1639 (1.1639)	Loss KD (GCAM) 0.0886 (0.0886)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6823 (0.6823)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+Sigma : Parameter containing:
+tensor([3.9356], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2855], device='cuda:0', requires_grad=True)
+2022-04-04 00:23:37.564403
+Epoch: [31][0/43], lr: 0.00001	Time 3.089 (3.089)	Data 2.077 (2.077)	Loss 0.1340 (0.1340)	Loss CE 0.0030 (0.0030)	Loss KD (Logit) 1.1829 (1.1829)	Loss KD (GCAM) 0.0895 (0.0895)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6846 (0.6846)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9357], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2855], device='cuda:0', requires_grad=True)
+2022-04-04 00:24:16.134212
+Epoch: [32][0/43], lr: 0.00001	Time 3.120 (3.120)	Data 2.105 (2.105)	Loss 0.1389 (0.1389)	Loss CE 0.0090 (0.0090)	Loss KD (Logit) 1.1599 (1.1599)	Loss KD (GCAM) 0.0896 (0.0896)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6805 (0.6805)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9358], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2856], device='cuda:0', requires_grad=True)
+2022-04-04 00:24:54.659524
+Epoch: [33][0/43], lr: 0.00001	Time 3.102 (3.102)	Data 2.098 (2.098)	Loss 0.1268 (0.1268)	Loss CE 0.0020 (0.0020)	Loss KD (Logit) 1.1701 (1.1701)	Loss KD (GCAM) 0.0900 (0.0900)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6249 (0.6249)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9359], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2856], device='cuda:0', requires_grad=True)
+2022-04-04 00:25:33.101164
+Epoch: [34][0/43], lr: 0.00001	Time 2.890 (2.890)	Data 1.713 (1.713)	Loss 0.1319 (0.1319)	Loss CE 0.0024 (0.0024)	Loss KD (Logit) 1.1609 (1.1609)	Loss KD (GCAM) 0.0945 (0.0945)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6610 (0.6610)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9359], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2856], device='cuda:0', requires_grad=True)
+2022-04-04 00:26:11.663086
+Epoch: [35][0/43], lr: 0.00001	Time 3.124 (3.124)	Data 2.005 (2.005)	Loss 0.1333 (0.1333)	Loss CE 0.0015 (0.0015)	Loss KD (Logit) 1.1816 (1.1816)	Loss KD (GCAM) 0.0922 (0.0922)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6850 (0.6850)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9360], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2857], device='cuda:0', requires_grad=True)
+2022-04-04 00:26:50.043007
+Epoch: [36][0/43], lr: 0.00001	Time 3.084 (3.084)	Data 2.000 (2.000)	Loss 0.1325 (0.1325)	Loss CE 0.0005 (0.0005)	Loss KD (Logit) 1.1714 (1.1714)	Loss KD (GCAM) 0.0943 (0.0943)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6839 (0.6839)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9360], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2857], device='cuda:0', requires_grad=True)
+2022-04-04 00:27:28.819195
+Epoch: [37][0/43], lr: 0.00001	Time 3.266 (3.266)	Data 2.262 (2.262)	Loss 0.1262 (0.1262)	Loss CE 0.0013 (0.0013)	Loss KD (Logit) 1.1616 (1.1616)	Loss KD (GCAM) 0.0840 (0.0840)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6463 (0.6463)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9361], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2857], device='cuda:0', requires_grad=True)
+2022-04-04 00:28:07.647948
+Epoch: [38][0/43], lr: 0.00001	Time 3.204 (3.204)	Data 2.342 (2.342)	Loss 0.1342 (0.1342)	Loss CE 0.0006 (0.0006)	Loss KD (Logit) 1.1659 (1.1659)	Loss KD (GCAM) 0.0913 (0.0913)	Loss MR 0.0000 (0.0000)	Loss DIV 0.7104 (0.7104)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9361], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2857], device='cuda:0', requires_grad=True)
+2022-04-04 00:28:46.173709
+Epoch: [39][0/43], lr: 0.00001	Time 3.115 (3.115)	Data 1.773 (1.773)	Loss 0.1287 (0.1287)	Loss CE 0.0013 (0.0013)	Loss KD (Logit) 1.1572 (1.1572)	Loss KD (GCAM) 0.0848 (0.0848)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6703 (0.6703)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9362], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2858], device='cuda:0', requires_grad=True)
+2022-04-04 00:29:24.342435
+Epoch: [40][0/43], lr: 0.00001	Time 2.855 (2.855)	Data 1.725 (1.725)	Loss 0.1288 (0.1288)	Loss CE 0.0020 (0.0020)	Loss KD (Logit) 1.1515 (1.1515)	Loss KD (GCAM) 0.0896 (0.0896)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6513 (0.6513)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9363], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2858], device='cuda:0', requires_grad=True)
+2022-04-04 00:30:03.016858
+Epoch: [41][0/43], lr: 0.00001	Time 3.176 (3.176)	Data 2.239 (2.239)	Loss 0.1334 (0.1334)	Loss CE 0.0058 (0.0058)	Loss KD (Logit) 1.1631 (1.1631)	Loss KD (GCAM) 0.0863 (0.0863)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6671 (0.6671)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9363], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2858], device='cuda:0', requires_grad=True)
+2022-04-04 00:30:41.044340
+Epoch: [42][0/43], lr: 0.00001	Time 2.781 (2.781)	Data 1.632 (1.632)	Loss 0.1286 (0.1286)	Loss CE 0.0014 (0.0014)	Loss KD (Logit) 1.1634 (1.1634)	Loss KD (GCAM) 0.0877 (0.0877)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6571 (0.6571)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9364], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2858], device='cuda:0', requires_grad=True)
+2022-04-04 00:31:19.685665
+Epoch: [43][0/43], lr: 0.00001	Time 3.226 (3.226)	Data 2.202 (2.202)	Loss 0.1340 (0.1340)	Loss CE 0.0023 (0.0023)	Loss KD (Logit) 1.1766 (1.1766)	Loss KD (GCAM) 0.0924 (0.0924)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6844 (0.6844)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9364], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2859], device='cuda:0', requires_grad=True)
+2022-04-04 00:31:58.286210
+Epoch: [44][0/43], lr: 0.00001	Time 3.042 (3.042)	Data 1.851 (1.851)	Loss 0.1294 (0.1294)	Loss CE 0.0003 (0.0003)	Loss KD (Logit) 1.1617 (1.1617)	Loss KD (GCAM) 0.0904 (0.0904)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6694 (0.6694)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9365], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2859], device='cuda:0', requires_grad=True)
+2022-04-04 00:32:36.813672
+Epoch: [45][0/43], lr: 0.00001	Time 3.076 (3.076)	Data 1.968 (1.968)	Loss 0.1282 (0.1282)	Loss CE 0.0023 (0.0023)	Loss KD (Logit) 1.1612 (1.1612)	Loss KD (GCAM) 0.0875 (0.0875)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6463 (0.6463)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9365], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2859], device='cuda:0', requires_grad=True)
+2022-04-04 00:33:15.776058
+Epoch: [46][0/43], lr: 0.00001	Time 3.424 (3.424)	Data 2.574 (2.574)	Loss 0.1240 (0.1240)	Loss CE 0.0032 (0.0032)	Loss KD (Logit) 1.1549 (1.1549)	Loss KD (GCAM) 0.0905 (0.0905)	Loss MR 0.0000 (0.0000)	Loss DIV 0.5881 (0.5881)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9366], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2859], device='cuda:0', requires_grad=True)
+2022-04-04 00:33:54.382436
+Epoch: [47][0/43], lr: 0.00001	Time 3.249 (3.249)	Data 2.359 (2.359)	Loss 0.1428 (0.1428)	Loss CE 0.0172 (0.0172)	Loss KD (Logit) 1.1606 (1.1606)	Loss KD (GCAM) 0.0866 (0.0866)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6462 (0.6462)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9366], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2859], device='cuda:0', requires_grad=True)
+2022-04-04 00:34:33.124524
+Epoch: [48][0/43], lr: 0.00001	Time 3.046 (3.046)	Data 2.001 (2.001)	Loss 0.1342 (0.1342)	Loss CE 0.0027 (0.0027)	Loss KD (Logit) 1.1788 (1.1788)	Loss KD (GCAM) 0.0973 (0.0973)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6675 (0.6675)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9366], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2860], device='cuda:0', requires_grad=True)
+2022-04-04 00:35:11.156395
+Epoch: [49][0/43], lr: 0.00001	Time 2.788 (2.788)	Data 1.611 (1.611)	Loss 0.1708 (0.1708)	Loss CE 0.0440 (0.0440)	Loss KD (Logit) 1.1624 (1.1624)	Loss KD (GCAM) 0.0906 (0.0906)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6457 (0.6457)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+Sigma : Parameter containing:
+tensor([3.9367], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2860], device='cuda:0', requires_grad=True)
+Update Importance Mask...
+Phase 3 : Manage Exemplar Sets
+=> base model: resnet34
+----------------------resnet34 pretraining----------------------
+------------------------------success---------------------------
+Construct Exemplar Set
+Load the Model
+SplitCosineLinear(
+  input_features=512, output_features=303, sigma=tensor([3.9367]), eta=tensor([3.2860])
+  (fc1): CosineLinear(input_features=512, output_features=273, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=512, output_features=30, sigma=1.0, eta=1.0)
+)
+Exemplar per class : 5
+video number : 944
+video number + exemplar : 944
+Phase 4 : Class-balanced Fine-Tuning
+=> base model: resnet34
+----------------------resnet34 pretraining----------------------
+------------------------------success---------------------------
+Load the Model
+SplitCosineLinear(
+  input_features=512, output_features=303, sigma=tensor([3.9367]), eta=tensor([3.2860])
+  (fc1): CosineLinear(input_features=512, output_features=273, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=512, output_features=30, sigma=1.0, eta=1.0)
+)
+exemplar : 505
+DataLoader CBF Constructed : Train 15
+Optimizer Constructed
+2022-04-04 00:36:26.227672
+Epoch: [0][0/15], lr: 0.00050	Time 2.908 (2.908)	Data 2.248 (2.248)	Loss 0.0031 (0.0031)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9381], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2867], device='cuda:0', requires_grad=True)
+2022-04-04 00:36:37.276095
+Epoch: [1][0/15], lr: 0.00050	Time 2.597 (2.597)	Data 1.697 (1.697)	Loss 0.0032 (0.0032)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9389], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2867], device='cuda:0', requires_grad=True)
+2022-04-04 00:36:48.490727
+Epoch: [2][0/15], lr: 0.00050	Time 2.883 (2.883)	Data 2.227 (2.227)	Loss 0.0060 (0.0060)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9397], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2869], device='cuda:0', requires_grad=True)
+2022-04-04 00:36:59.241267
+Epoch: [3][0/15], lr: 0.00050	Time 2.531 (2.531)	Data 1.700 (1.700)	Loss 0.0001 (0.0001)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9407], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2873], device='cuda:0', requires_grad=True)
+2022-04-04 00:37:10.413948
+Epoch: [4][0/15], lr: 0.00050	Time 2.913 (2.913)	Data 2.318 (2.318)	Loss 0.0012 (0.0012)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9415], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2876], device='cuda:0', requires_grad=True)
+2022-04-04 00:37:21.780907
+Epoch: [5][0/15], lr: 0.00050	Time 2.847 (2.847)	Data 1.889 (1.889)	Loss 0.0029 (0.0029)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9419], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2876], device='cuda:0', requires_grad=True)
+2022-04-04 00:37:33.209542
+Epoch: [6][0/15], lr: 0.00050	Time 2.967 (2.967)	Data 2.237 (2.237)	Loss 0.0004 (0.0004)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9430], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2881], device='cuda:0', requires_grad=True)
+2022-04-04 00:37:44.729870
+Epoch: [7][0/15], lr: 0.00050	Time 3.103 (3.103)	Data 2.472 (2.472)	Loss 0.0004 (0.0004)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9443], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2886], device='cuda:0', requires_grad=True)
+2022-04-04 00:37:55.962527
+Epoch: [8][0/15], lr: 0.00050	Time 2.928 (2.928)	Data 2.283 (2.283)	Loss 0.0023 (0.0023)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9455], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2890], device='cuda:0', requires_grad=True)
+2022-04-04 00:38:07.187474
+Epoch: [9][0/15], lr: 0.00050	Time 3.009 (3.009)	Data 2.261 (2.261)	Loss 0.0083 (0.0083)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9478], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2901], device='cuda:0', requires_grad=True)
+2022-04-04 00:38:18.232259
+Epoch: [10][0/15], lr: 0.00050	Time 2.656 (2.656)	Data 1.799 (1.799)	Loss 0.0008 (0.0008)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9488], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2905], device='cuda:0', requires_grad=True)
+2022-04-04 00:38:29.501679
+Epoch: [11][0/15], lr: 0.00050	Time 2.980 (2.980)	Data 1.869 (1.869)	Loss 0.0003 (0.0003)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9496], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2907], device='cuda:0', requires_grad=True)
+2022-04-04 00:38:40.916588
+Epoch: [12][0/15], lr: 0.00050	Time 2.904 (2.904)	Data 2.331 (2.331)	Loss 0.0090 (0.0090)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9514], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2914], device='cuda:0', requires_grad=True)
+2022-04-04 00:38:52.243429
+Epoch: [13][0/15], lr: 0.00050	Time 3.046 (3.046)	Data 2.186 (2.186)	Loss 0.0004 (0.0004)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9522], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2916], device='cuda:0', requires_grad=True)
+2022-04-04 00:39:03.295241
+Epoch: [14][0/15], lr: 0.00050	Time 2.792 (2.792)	Data 1.936 (1.936)	Loss 0.0009 (0.0009)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9522], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2912], device='cuda:0', requires_grad=True)
+2022-04-04 00:39:14.336573
+Epoch: [15][0/15], lr: 0.00050	Time 2.706 (2.706)	Data 1.989 (1.989)	Loss 0.0005 (0.0005)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9527], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2911], device='cuda:0', requires_grad=True)
+2022-04-04 00:39:25.286731
+Epoch: [16][0/15], lr: 0.00050	Time 2.789 (2.789)	Data 1.913 (1.913)	Loss 0.0004 (0.0004)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9533], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2912], device='cuda:0', requires_grad=True)
+2022-04-04 00:39:36.482759
+Epoch: [17][0/15], lr: 0.00050	Time 2.921 (2.921)	Data 2.205 (2.205)	Loss 0.0043 (0.0043)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9539], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2913], device='cuda:0', requires_grad=True)
+2022-04-04 00:39:47.784140
+Epoch: [18][0/15], lr: 0.00050	Time 3.001 (3.001)	Data 2.114 (2.114)	Loss 0.0008 (0.0008)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9544], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2913], device='cuda:0', requires_grad=True)
+2022-04-04 00:39:58.794716
+Epoch: [19][0/15], lr: 0.00050	Time 2.828 (2.828)	Data 2.100 (2.100)	Loss 0.0038 (0.0038)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9551], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2914], device='cuda:0', requires_grad=True)
+Phase 5 : Eval RGB Model for the Tasks Trained so far
+=> base model: resnet34
+----------------------resnet34 pretraining----------------------
+------------------------------success---------------------------
+Load the Trained Model from checkpoint/ucf101/51/10/005/task_005.pth.tar
+exemplar : 505
+Computing the class mean vectors...
+Eval Task 0 for Age 5
+Current Task : [37, 97, 56, 55, 33, 84, 3, 4, 72, 59, 66, 48, 65, 91, 99, 39, 34, 22, 67, 74, 19, 35, 9, 86, 88, 63, 85, 38, 54, 25, 57, 62, 83, 76, 6, 13, 2, 53, 8, 24, 44, 12, 100, 29, 5, 17, 15, 73, 47, 27, 46]
+video number : 1909
+video number + exemplar : 1909
+DataLoader Constructed
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+Test: [0/120]	Time 7.705 (7.705)	Prec@1 56.250 (56.250)
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+Test: [100/120]	Time 0.778 (0.534)	Prec@1 68.750 (56.498)
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([25, 101])
+************************outputsoftmax************************ torch.Size([5, 101])
+Testing Results: Prec@1 57.465
+Classify using the NME Classifier...
+Test (NME): [0/120]	Time 0.000 (0.000)	Prec@1 75.000 (75.000)
+Test (NME): [100/120]	Time 0.000 (0.000)	Prec@1 75.000 (65.285)
+Testing Results (NME): Prec@1 66.160
+Eval Task 1 for Age 5
+Current Task : [98, 96, 18, 90, 75, 31, 95, 49, 43, 78]
+video number : 353
+video number + exemplar : 353
+DataLoader Constructed
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+Test: [0/23]	Time 4.760 (4.760)	Prec@1 50.000 (50.000)
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([5, 101])
+************************outputsoftmax************************ torch.Size([1, 101])
+Testing Results: Prec@1 58.640
+Classify using the NME Classifier...
+Test (NME): [0/23]	Time 0.000 (0.000)	Prec@1 62.500 (62.500)
+Testing Results (NME): Prec@1 65.722
+Eval Task 2 for Age 5
+Current Task : [23, 68, 16, 7, 26, 21, 50, 70, 32, 52]
+video number : 402
+video number + exemplar : 402
+DataLoader Constructed
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+Test: [0/26]	Time 3.951 (3.951)	Prec@1 56.250 (56.250)
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([10, 101])
+************************outputsoftmax************************ torch.Size([2, 101])
+Testing Results: Prec@1 52.985
+Classify using the NME Classifier...
+Test (NME): [0/26]	Time 0.000 (0.000)	Prec@1 68.750 (68.750)
+Testing Results (NME): Prec@1 58.706
+Eval Task 3 for Age 5
+Current Task : [11, 69, 93, 14, 79, 10, 80, 77, 81, 28]
+video number : 351
+video number + exemplar : 351
+DataLoader Constructed
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+Test: [0/22]	Time 4.078 (4.078)	Prec@1 50.000 (50.000)
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([75, 101])
+************************outputsoftmax************************ torch.Size([15, 101])
+Testing Results: Prec@1 64.387
+Classify using the NME Classifier...
+Test (NME): [0/22]	Time 0.000 (0.000)	Prec@1 56.250 (56.250)
+Testing Results (NME): Prec@1 69.801
+Eval Task 4 for Age 5
+Current Task : [82, 30, 20, 41, 58, 42, 60, 36, 40, 45]
+video number : 380
+video number + exemplar : 380
+DataLoader Constructed
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+Test: [0/24]	Time 4.645 (4.645)	Prec@1 81.250 (81.250)
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([60, 101])
+************************outputsoftmax************************ torch.Size([12, 101])
+Testing Results: Prec@1 84.211
+Classify using the NME Classifier...
+Test (NME): [0/24]	Time 0.000 (0.000)	Prec@1 62.500 (62.500)
+Testing Results (NME): Prec@1 77.632
+Eval Task 5 for Age 5
+Current Task : [89, 0, 61, 1, 92, 94, 64, 71, 87, 51]
+video number : 388
+video number + exemplar : 388
+DataLoader Constructed
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+Test: [0/25]	Time 4.908 (4.908)	Prec@1 81.250 (81.250)
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([80, 101])
+************************outputsoftmax************************ torch.Size([16, 101])
+************************output************************ torch.Size([20, 101])
+************************outputsoftmax************************ torch.Size([4, 101])
+Testing Results: Prec@1 88.918
+Classify using the NME Classifier...
+Test (NME): [0/25]	Time 0.000 (0.000)	Prec@1 75.000 (75.000)
+Testing Results (NME): Prec@1 81.443
+num_test_videos [1909, 353, 402, 351, 380, 388]
+n_vids [1909  353  402  351  380  388]
+n_vids_pad [[1909.]
+ [ 353.]
+ [ 402.]
+ [ 351.]
+ [ 380.]
+ [ 388.]]
+tmp [[162500.         141400.         126100.         116100.
+  121300.         109700.        ]
+ [-70600.          31700.          26500.          23000.
+   22900.          20700.        ]
+ [-80400.         -80400.          36400.          26600.
+   22800.          21300.        ]
+ [-70200.         -70200.         -70200.          31399.99996185
+   26999.99996185  22599.99998093]
+ [-76000.         -76000.         -76000.         -76000.
+   35699.99993896  31999.99993896]
+ [-77600.         -77600.         -77600.         -77600.
+  -77600.          34500.        ]]
+tmp [[ 2.11000000e+04  1.53000000e+04  1.00000000e+04 -5.20000000e+03
+   1.16000000e+04]
+ [-1.02300000e+05  5.20000000e+03  3.50000000e+03  1.00000000e+02
+   2.20000000e+03]
+ [-0.00000000e+00 -1.16800000e+05  9.80000000e+03  3.80000000e+03
+   1.50000000e+03]
+ [-0.00000000e+00 -0.00000000e+00 -1.01600000e+05  4.40000000e+03
+   4.39999998e+03]
+ [-0.00000000e+00 -0.00000000e+00 -0.00000000e+00 -1.11700000e+05
+   3.70000000e+03]]
+tmp [[21100.         15300.         10000.         -5200.
+  11600.        ]
+ [    0.          5200.          3500.           100.
+   2200.        ]
+ [    0.             0.          9800.          3800.
+   1500.        ]
+ [    0.             0.             0.          4400.
+   4399.99998093]
+ [    0.             0.             0.             0.
+   3700.        ]]
+tmp [21100.         20500.         23300.          3100.
+ 23399.99998093]
+cumsum_n_vids [1909 2262 2664 3015 3395]
+fgt [11.05290728  9.0627763   8.74624625  1.02819237  6.89248895]
+fgt 7.356522230380688
+fgt [7.35652223]
+n_vids [1909  353  402  351  380  388]
+n_vids_pad [[1909.]
+ [ 353.]
+ [ 402.]
+ [ 351.]
+ [ 380.]
+ [ 388.]]
+tmp [[158400.         151700.         144400.         135300.
+  130700.         126300.        ]
+ [-70600.          27700.          26000.          23500.
+   23800.          23200.        ]
+ [-80400.         -80400.          28800.          24800.
+   23500.          23600.        ]
+ [-70200.         -70200.         -70200.          27000.
+   25700.          24499.99992371]
+ [-76000.         -76000.         -76000.         -76000.
+   30099.99996948  29499.99993896]
+ [-77600.         -77600.         -77600.         -77600.
+  -77600.          31600.        ]]
+tmp [[ 6.70000000e+03  7.30000000e+03  9.10000000e+03  4.60000000e+03
+   4.40000000e+03]
+ [-9.83000000e+04  1.70000000e+03  2.50000000e+03 -3.00000000e+02
+   6.00000000e+02]
+ [-0.00000000e+00 -1.09200000e+05  4.00000000e+03  1.30000000e+03
+  -1.00000000e+02]
+ [-0.00000000e+00 -0.00000000e+00 -9.72000000e+04  1.30000000e+03
+   1.20000008e+03]
+ [-0.00000000e+00 -0.00000000e+00 -0.00000000e+00 -1.06100000e+05
+   6.00000031e+02]]
+tmp [[6700.         7300.         9100.         4600.         4400.        ]
+ [   0.         1700.         2500.         -300.          600.        ]
+ [   0.            0.         4000.         1300.         -100.        ]
+ [   0.            0.            0.         1300.         1200.00007629]
+ [   0.            0.            0.            0.          600.00003052]]
+tmp [ 6700.          9000.         15600.          6900.
+  6700.00010681]
+cumsum_n_vids [1909 2262 2664 3015 3395]
+fgt [3.50969094 3.97877984 5.85585586 2.28855721 1.97349046]
+fgt 3.5212748613717593
+fgt [3.52127486]

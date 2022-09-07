@@ -1,0 +1,22 @@
+ucf101: 101 classes
+Method : OURS
+----AGE 1----
+current_task  [98, 96, 18, 90, 75, 31, 95, 49, 43, 78]
+current_head  61
+Phase 2 : Train RGB Model in an Incremental Manner
+Traceback (most recent call last):
+  File "main.py", line 102, in <module>
+    main()
+  File "main.py", line 72, in main
+    train_i_cl.train_task(args, i, current_task, current_head, class_indexer, model_flow=model_flow, prefix=prefix)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 364, in train_task
+    exemplar_dict = load_exemplars(args)#, current_head-len(current_task), age-1)
+  File "/home/ustc/ls/tcd_code/ops/utils.py", line 96, in load_exemplars
+    exemplar_dict = torch.load(filename)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/serialization.py", line 699, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/serialization.py", line 231, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/serialization.py", line 212, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'checkpoint/ucf101/51/10/010/exemplars.pth'

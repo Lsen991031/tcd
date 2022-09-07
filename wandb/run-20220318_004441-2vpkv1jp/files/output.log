@@ -1,0 +1,11 @@
+ucf101: 101 classes
+creating folder log/ucf101/51/5
+creating folder log/ucf101/51/5/003
+creating folder checkpoint/ucf101/51/5
+creating folder checkpoint/ucf101/51/5/003
+Traceback (most recent call last):
+  File "main.py", line 101, in <module>
+    main()
+  File "main.py", line 96, in main
+    cl_utils.compute_final_stats(n_test_vids, args, 'cnn')
+UnboundLocalError: local variable 'n_test_vids' referenced before assignment

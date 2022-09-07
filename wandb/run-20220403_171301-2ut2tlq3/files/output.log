@@ -1,0 +1,217 @@
+ucf101: 101 classes
+Method : OURS
+----AGE 5----
+current_task  [89, 0, 61, 1, 92, 94, 64, 71, 87, 51]
+current_head  101
+Phase 2 : Train RGB Model in an Incremental Manner
+=> base model: resnet34
+----------------------resnet34 pretraining----------------------
+------------------------------success---------------------------
+Load the Previous Model
+Copy the old Model
+lambda_0  : [1.0, 0.030166206257996712]
+Increment the Model
+SplitCosineLinear(
+  input_features=512, output_features=303, sigma=tensor([3.9575]), eta=tensor([3.1686])
+  (fc1): CosineLinear(input_features=512, output_features=273, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=512, output_features=30, sigma=1.0, eta=1.0)
+)
+video number : 944
+video number + exemplar : 1399
+DataLoader Constructed : Train 43
+Optimizer Constructed
+video number : 944
+video number + exemplar : 944
+Initialize Cosine Classifier
+Computing the class mean vectors...
+2022-04-03 17:13:33.924085
+Epoch: [0][0/43], lr: 0.00100	Time 4.564 (4.564)	Data 2.807 (2.807)	Loss 5.6265 (5.6265)	Loss CE 5.5113 (5.5113)	Loss KD (Logit) 1.0865 (1.0865)	Loss KD (GCAM) 0.0466 (0.0466)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6849 (0.6849)	Loss REG 0.0000 (0.0000)	Prec@1 78.125 (78.125)
+importanceList [Parameter containing:
+tensor([[0.9679, 0.9680, 0.9679, 0.9680, 0.9678, 0.9680, 0.9679, 0.9681, 0.9679,
+         0.9680, 0.9680, 0.9679, 0.9679, 0.9679, 0.9679, 0.9677, 0.9680, 0.9680,
+         0.9680, 0.9678, 0.9680, 0.9680, 0.9679, 0.9679, 0.9680, 0.9679, 0.9680,
+         0.9680, 0.9680, 0.9680, 0.9680, 0.9679, 0.9679, 0.9680, 0.9680, 0.9679,
+         0.9680, 0.9680, 0.9678, 0.9680, 0.9679, 0.9679, 0.9680, 0.9680, 0.9679,
+         0.9679, 0.9680, 0.9679, 0.9679, 0.9679, 0.9680, 0.9679, 0.9679, 0.9680,
+         0.9680, 0.9680, 0.9680, 0.9679, 0.9680, 0.9678, 0.9679, 0.9679, 0.9679,
+         0.9679],
+        [0.9679, 0.9680, 0.9679, 0.9680, 0.9678, 0.9680, 0.9679, 0.9681, 0.9679,
+         0.9679, 0.9680, 0.9679, 0.9679, 0.9679, 0.9679, 0.9677, 0.9679, 0.9680,
+         0.9679, 0.9678, 0.9680, 0.9680, 0.9679, 0.9679, 0.9680, 0.9679, 0.9679,
+         0.9680, 0.9680, 0.9679, 0.9680, 0.9679, 0.9679, 0.9680, 0.9680, 0.9679,
+         0.9680, 0.9680, 0.9679, 0.9679, 0.9679, 0.9679, 0.9680, 0.9680, 0.9679,
+         0.9679, 0.9679, 0.9679, 0.9679, 0.9679, 0.9680, 0.9679, 0.9679, 0.9679,
+         0.9679, 0.9680, 0.9680, 0.9679, 0.9680, 0.9678, 0.9679, 0.9679, 0.9679,
+         0.9679],
+        [0.9679, 0.9679, 0.9679, 0.9680, 0.9678, 0.9680, 0.9679, 0.9681, 0.9679,
+         0.9679, 0.9680, 0.9679, 0.9679, 0.9679, 0.9679, 0.9677, 0.9679, 0.9680,
+         0.9679, 0.9678, 0.9680, 0.9680, 0.9679, 0.9679, 0.9679, 0.9679, 0.9679,
+         0.9680, 0.9680, 0.9679, 0.9680, 0.9679, 0.9679, 0.9680, 0.9680, 0.9679,
+         0.9680, 0.9680, 0.9679, 0.9679, 0.9679, 0.9679, 0.9680, 0.9680, 0.9679,
+         0.9679, 0.9679, 0.9679, 0.9679, 0.9679, 0.9680, 0.9679, 0.9679, 0.9679,
+         0.9679, 0.9680, 0.9680, 0.9679, 0.9680, 0.9678, 0.9679, 0.9679, 0.9679,
+         0.9679],
+        [0.9679, 0.9679, 0.9679, 0.9680, 0.9678, 0.9680, 0.9679, 0.9681, 0.9679,
+         0.9679, 0.9680, 0.9679, 0.9679, 0.9679, 0.9679, 0.9677, 0.9679, 0.9680,
+         0.9679, 0.9678, 0.9680, 0.9680, 0.9679, 0.9679, 0.9679, 0.9679, 0.9679,
+         0.9680, 0.9680, 0.9679, 0.9680, 0.9679, 0.9679, 0.9680, 0.9680, 0.9679,
+         0.9680, 0.9680, 0.9679, 0.9679, 0.9679, 0.9679, 0.9680, 0.9680, 0.9679,
+         0.9679, 0.9679, 0.9679, 0.9679, 0.9679, 0.9680, 0.9679, 0.9679, 0.9679,
+         0.9679, 0.9680, 0.9680, 0.9679, 0.9680, 0.9678, 0.9679, 0.9679, 0.9679,
+         0.9679],
+        [0.9679, 0.9679, 0.9679, 0.9680, 0.9678, 0.9680, 0.9679, 0.9681, 0.9679,
+         0.9679, 0.9680, 0.9679, 0.9679, 0.9679, 0.9679, 0.9677, 0.9679, 0.9680,
+         0.9679, 0.9678, 0.9680, 0.9680, 0.9679, 0.9679, 0.9679, 0.9679, 0.9679,
+         0.9680, 0.9680, 0.9679, 0.9680, 0.9679, 0.9679, 0.9680, 0.9680, 0.9679,
+         0.9680, 0.9680, 0.9679, 0.9679, 0.9679, 0.9679, 0.9680, 0.9680, 0.9679,
+         0.9679, 0.9679, 0.9679, 0.9679, 0.9679, 0.9680, 0.9679, 0.9679, 0.9679,
+         0.9679, 0.9680, 0.9680, 0.9679, 0.9680, 0.9678, 0.9679, 0.9679, 0.9679,
+         0.9679],
+        [0.9679, 0.9679, 0.9679, 0.9680, 0.9678, 0.9680, 0.9679, 0.9681, 0.9679,
+         0.9679, 0.9680, 0.9679, 0.9679, 0.9679, 0.9679, 0.9677, 0.9679, 0.9680,
+         0.9679, 0.9678, 0.9680, 0.9679, 0.9679, 0.9679, 0.9679, 0.9679, 0.9679,
+         0.9680, 0.9680, 0.9679, 0.9680, 0.9679, 0.9679, 0.9680, 0.9680, 0.9679,
+         0.9680, 0.9680, 0.9679, 0.9679, 0.9679, 0.9679, 0.9680, 0.9680, 0.9679,
+         0.9679, 0.9679, 0.9679, 0.9679, 0.9679, 0.9680, 0.9679, 0.9679, 0.9679,
+         0.9679, 0.9680, 0.9680, 0.9679, 0.9680, 0.9678, 0.9679, 0.9679, 0.9679,
+         0.9679],
+        [0.9679, 0.9679, 0.9679, 0.9680, 0.9678, 0.9680, 0.9679, 0.9681, 0.9679,
+         0.9679, 0.9680, 0.9679, 0.9679, 0.9679, 0.9678, 0.9677, 0.9679, 0.9680,
+         0.9679, 0.9678, 0.9680, 0.9680, 0.9679, 0.9679, 0.9679, 0.9679, 0.9679,
+         0.9680, 0.9680, 0.9679, 0.9680, 0.9679, 0.9679, 0.9680, 0.9680, 0.9679,
+         0.9680, 0.9680, 0.9679, 0.9679, 0.9679, 0.9679, 0.9680, 0.9680, 0.9679,
+         0.9679, 0.9679, 0.9679, 0.9679, 0.9679, 0.9680, 0.9679, 0.9679, 0.9679,
+         0.9679, 0.9680, 0.9680, 0.9679, 0.9680, 0.9678, 0.9679, 0.9679, 0.9679,
+         0.9679],
+        [0.9679, 0.9679, 0.9679, 0.9680, 0.9678, 0.9680, 0.9680, 0.9681, 0.9679,
+         0.9679, 0.9680, 0.9680, 0.9680, 0.9679, 0.9678, 0.9678, 0.9679, 0.9680,
+         0.9680, 0.9679, 0.9680, 0.9680, 0.9679, 0.9679, 0.9680, 0.9680, 0.9680,
+         0.9680, 0.9680, 0.9679, 0.9680, 0.9679, 0.9679, 0.9680, 0.9680, 0.9679,
+         0.9680, 0.9680, 0.9679, 0.9680, 0.9680, 0.9679, 0.9680, 0.9680, 0.9679,
+         0.9679, 0.9680, 0.9679, 0.9679, 0.9679, 0.9680, 0.9679, 0.9679, 0.9680,
+         0.9679, 0.9680, 0.9680, 0.9678, 0.9680, 0.9678, 0.9679, 0.9679, 0.9679,
+         0.9679]], device='cuda:0', requires_grad=True), Parameter containing:
+tensor([[0.9680, 0.9680, 0.9680,  ..., 0.9680, 0.9680, 0.9680],
+        [0.9680, 0.9680, 0.9680,  ..., 0.9680, 0.9680, 0.9680],
+        [0.9680, 0.9680, 0.9680,  ..., 0.9680, 0.9680, 0.9680],
+        ...,
+        [0.9680, 0.9680, 0.9680,  ..., 0.9680, 0.9680, 0.9680],
+        [0.9680, 0.9680, 0.9680,  ..., 0.9680, 0.9680, 0.9680],
+        [0.9680, 0.9680, 0.9680,  ..., 0.9680, 0.9680, 0.9681]],
+       device='cuda:0', requires_grad=True), Parameter containing:
+tensor([[0.9680, 0.9679, 0.9680,  ..., 0.9680, 0.9681, 0.9681],
+        [0.9680, 0.9680, 0.9680,  ..., 0.9680, 0.9681, 0.9681],
+        [0.9680, 0.9680, 0.9680,  ..., 0.9680, 0.9681, 0.9681],
+        ...,
+        [0.9680, 0.9680, 0.9680,  ..., 0.9680, 0.9681, 0.9681],
+        [0.9680, 0.9680, 0.9680,  ..., 0.9680, 0.9681, 0.9681],
+        [0.9680, 0.9680, 0.9680,  ..., 0.9680, 0.9681, 0.9680]],
+       device='cuda:0', requires_grad=True), Parameter containing:
+tensor([[0.9681, 0.9681, 0.9681,  ..., 0.9681, 0.9681, 0.9681],
+        [0.9681, 0.9681, 0.9681,  ..., 0.9681, 0.9681, 0.9681],
+        [0.9681, 0.9681, 0.9681,  ..., 0.9681, 0.9681, 0.9681],
+        ...,
+        [0.9681, 0.9681, 0.9681,  ..., 0.9681, 0.9681, 0.9681],
+        [0.9681, 0.9681, 0.9681,  ..., 0.9681, 0.9681, 0.9681],
+        [0.9681, 0.9681, 0.9681,  ..., 0.9681, 0.9681, 0.9681]],
+       device='cuda:0', requires_grad=True), Parameter containing:
+tensor([[0.9680, 0.9679, 0.9679,  ..., 0.9679, 0.9678, 0.9678],
+        [0.9679, 0.9679, 0.9679,  ..., 0.9679, 0.9679, 0.9679],
+        [0.9679, 0.9679, 0.9679,  ..., 0.9679, 0.9679, 0.9679],
+        ...,
+        [0.9679, 0.9679, 0.9679,  ..., 0.9679, 0.9679, 0.9679],
+        [0.9679, 0.9680, 0.9679,  ..., 0.9679, 0.9679, 0.9679],
+        [0.9680, 0.9680, 0.9679,  ..., 0.9679, 0.9679, 0.9678]],
+       device='cuda:0', requires_grad=True)]
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/_functions.py:61: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+Traceback (most recent call last):
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+Traceback (most recent call last):
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+Traceback (most recent call last):
+Traceback (most recent call last):
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+Traceback (most recent call last):
+Traceback (most recent call last):
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+Traceback (most recent call last):
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "main.py", line 101, in <module>
+    main()
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+  File "main.py", line 71, in main
+    train_i_cl.train_task(args, i, current_task, current_head, class_indexer, model_flow=model_flow, prefix=prefix)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 480, in train_task
+    _train(args, train_loader, model, criterion, optimizer, epoch, age, regularizer=regularizer, lambda_0=lambda_0, model_old=model_old, importance_list=importance_list)
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 185, in _train
+    if loss_reg != 0:
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+KeyboardInterrupt
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe

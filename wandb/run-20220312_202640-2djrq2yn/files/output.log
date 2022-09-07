@@ -1,0 +1,68 @@
+ucf101: 101 classes
+Method : OURS
+----AGE 1----
+current_task  [98, 96]
+current_head  53
+Phase 2 : Train RGB Model in an Incremental Manner
+=> base model: resnet34
+Load the Previous Model
+Copy the old Model
+lambda_0  : [1.0, 0.05049752469181039]
+Increment the Model
+SplitCosineLinear(
+  input_features=512, output_features=159, sigma=tensor([3.6668]), eta=tensor([2.7653])
+  (fc1): CosineLinear(input_features=512, output_features=153, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=512, output_features=6, sigma=1.0, eta=1.0)
+)
+video number : 176
+video number + exemplar : 431
+DataLoader Constructed : Train 13
+Optimizer Constructed
+video number : 176
+video number + exemplar : 176
+Initialize Cosine Classifier
+Computing the class mean vectors...
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/_functions.py:61: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+2022-03-12 20:26:58.997100
+Epoch: [0][0/13], lr: 0.00100	Time 3.784 (3.784)	Data 2.130 (2.130)	Loss 2.7774 (2.7774)	Loss CE 2.6388 (2.6388)	Loss KD (Logit) 1.0992 (1.0992)	Loss KD (GCAM) 0.0552 (0.0552)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6658 (0.6658)	Loss REG 0.0000 (0.0000)	Prec@1 59.375 (59.375)
+Sigma : Parameter containing:
+tensor([3.5814], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.7087], device='cuda:0', requires_grad=True)
+2022-03-12 20:27:12.789882
+Epoch: [1][0/13], lr: 0.00100	Time 2.819 (2.819)	Data 1.735 (1.735)	Loss 0.4175 (0.4175)	Loss CE 0.2492 (0.2492)	Loss KD (Logit) 1.2945 (1.2945)	Loss KD (GCAM) 0.1129 (0.1129)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6899 (0.6899)	Loss REG 0.0000 (0.0000)	Prec@1 93.750 (93.750)
+Sigma : Parameter containing:
+tensor([3.5981], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.7201], device='cuda:0', requires_grad=True)
+2022-03-12 20:27:26.181289
+Epoch: [2][0/13], lr: 0.00100	Time 2.636 (2.636)	Data 1.514 (1.514)	Loss 0.4326 (0.4326)	Loss CE 0.2665 (0.2665)	Loss KD (Logit) 1.3000 (1.3000)	Loss KD (GCAM) 0.1130 (0.1130)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6656 (0.6656)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+Sigma : Parameter containing:
+tensor([3.6544], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.7566], device='cuda:0', requires_grad=True)
+2022-03-12 20:27:39.878458
+Epoch: [3][0/13], lr: 0.00100	Time 2.905 (2.905)	Data 1.993 (1.993)	Loss 0.3885 (0.3885)	Loss CE 0.2196 (0.2196)	Loss KD (Logit) 1.3264 (1.3264)	Loss KD (GCAM) 0.1163 (0.1163)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6709 (0.6709)	Loss REG 0.0000 (0.0000)	Prec@1 93.750 (93.750)
+Sigma : Parameter containing:
+tensor([3.6953], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.7837], device='cuda:0', requires_grad=True)
+2022-03-12 20:27:53.609102
+Epoch: [4][0/13], lr: 0.00100	Time 2.931 (2.931)	Data 1.857 (1.857)	Loss 0.2459 (0.2459)	Loss CE 0.0801 (0.0801)	Loss KD (Logit) 1.3103 (1.3103)	Loss KD (GCAM) 0.1171 (0.1171)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6447 (0.6447)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.7415], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.8144], device='cuda:0', requires_grad=True)
+Update Importance Mask...
+Traceback (most recent call last):
+  File "main.py", line 101, in <module>
+    main()
+  File "main.py", line 71, in main
+    train_i_cl.train_task(args, i, current_task, current_head, class_indexer, model_flow=model_flow, prefix=prefix)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 482, in train_task
+    tcd.compute_importance(args,model,train_loader,criterion)
+  File "/home/ustc/ls/tcd_code/cl_methods/tcd.py", line 21, in compute_importance
+    loss.backward()
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/tensor.py", line 107, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/autograd/__init__.py", line 93, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+  File "/home/ustc/ls/tcd_code/ops/resnet_models.py", line 16, in gradhook
+    print(grad_output.shape)
+AttributeError: 'tuple' object has no attribute 'shape'

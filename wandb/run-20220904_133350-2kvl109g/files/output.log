@@ -1,0 +1,43 @@
+ucf101: 101 classes
+Method : OURS
+----AGE 1----
+current_task  [98, 96, 18, 90, 75, 31, 95, 49, 43, 78]
+current_head  61
+Phase 2 : Train RGB Model in an Incremental Manner
+=> base model: resnet50
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/optim/sgd.py:101: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  super(SGD, self).__init__(params, defaults)
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torchvision/transforms/transforms.py:333: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  "Argument interpolation should be of type InterpolationMode instead of int. "
+Load the Previous Model
+Copy the old Model
+lambda_0  : [1.0, 0.022583179581272428]
+Increment the Model
+SplitCosineLinear(
+  input_features=2048, output_features=183, sigma=tensor([3.0770]), eta=tensor([2.9081])
+  (fc1): CosineLinear(input_features=2048, output_features=153, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=2048, output_features=30, sigma=1.0, eta=1.0)
+)
+video number : 897
+video number + exemplar : 1152
+DataLoader Constructed : Train 288
+Optimizer Constructed
+video number : 897
+video number + exemplar : 897
+Initialize Cosine Classifier
+Computing the class mean vectors...
+torch.Size([4, 24, 224, 224])
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/modules/module.py:1033: UserWarning: Using a non-full backward hook when the forward contains multiple autograd Nodes is deprecated and will be removed in future versions. This hook will be missing some grad_input. Please use register_full_backward_hook to get the documented behavior.
+  warnings.warn("Using a non-full backward hook when the forward contains multiple autograd Nodes "
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+Traceback (most recent call last):
+  File "main.py", line 102, in <module>
+    main()
+  File "main.py", line 72, in main
+    train_i_cl.train_task(args, i, current_task, current_head, class_indexer, model_flow=model_flow, prefix=prefix)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 523, in train_task
+    _train(args, train_loader, model, criterion, optimizer, epoch, age, regularizer=regularizer, lambda_0=lambda_0, model_old=model_old, importance_list=importance_list)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 84, in _train
+    new_feats = new_feats.cuda()
+AttributeError: 'list' object has no attribute 'cuda'

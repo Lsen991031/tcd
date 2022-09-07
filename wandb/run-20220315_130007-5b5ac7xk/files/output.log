@@ -1,0 +1,37 @@
+ucf101: 101 classes
+Method : OURS
+----AGE 5----
+current_task  [43, 78]
+current_head  61
+Phase 2 : Train RGB Model in an Incremental Manner
+=> base model: resnet34
+Traceback (most recent call last):
+  File "main.py", line 101, in <module>
+    main()
+  File "main.py", line 71, in main
+    train_i_cl.train_task(args, i, current_task, current_head, class_indexer, model_flow=model_flow, prefix=prefix)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 321, in train_task
+    cur_task_size=len(current_task),exemplar_segments=args.exemplar_segments)
+  File "/home/ustc/ls/tcd_code/ops/models.py", line 79, in __init__
+    self._prepare_base_model(self.base_model_name)
+  File "/home/ustc/ls/tcd_code/ops/models.py", line 161, in _prepare_base_model
+    self.remove_last_relu, self.importance, self.num_segments)
+  File "/home/ustc/ls/tcd_code/ops/resnet_models.py", line 288, in resnet34
+    model = ResNet(BasicBlock, [3, 4, 6, 3], remove_last_relu, importance, num_segments, **kwargs)
+  File "/home/ustc/ls/tcd_code/ops/resnet_models.py", line 152, in __init__
+    self.layer4 = self._make_layer(block, 512, layers[3], stride=2, remove_relu=self.remove_last_relu)
+  File "/home/ustc/ls/tcd_code/ops/resnet_models.py", line 190, in _make_layer
+    layers.append(block(self.inplanes, planes, remove_relu=remove_relu))
+  File "/home/ustc/ls/tcd_code/ops/resnet_models.py", line 71, in __init__
+    self.conv2 = conv3x3(planes, planes)
+  File "/home/ustc/ls/tcd_code/ops/resnet_models.py", line 57, in conv3x3
+    padding=1, bias=False)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 327, in __init__
+    False, _pair(0), groups, bias, padding_mode)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 45, in __init__
+    self.reset_parameters()
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 48, in reset_parameters
+    init.kaiming_uniform_(self.weight, a=math.sqrt(5))
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/init.py", line 328, in kaiming_uniform_
+    return tensor.uniform_(-bound, bound)
+KeyboardInterrupt

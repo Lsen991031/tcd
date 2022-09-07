@@ -1,0 +1,246 @@
+ucf101: 101 classes
+Method : OURS
+----AGE 0----
+current_task  [68, 56, 78, 8, 23, 84, 90, 65, 74, 76, 40, 89, 3, 92, 55, 9, 26, 80, 43, 38, 58, 70, 77, 1, 85, 19, 17, 50, 28, 53, 13, 81, 45, 82, 6, 59, 83, 16, 15, 44, 91, 41, 72, 60, 79, 52, 20, 10, 31, 54, 37]
+current_head  51
+Phase 2 : Train RGB Model in an Incremental Manner
+=> base model: resnet34
+----------------------resnet34 pretraining----------------------
+------------------------------success---------------------------
+CosineLinear(input_features=512, output_features=153, sigma=tensor([1.]), eta=tensor([1.]))
+video number : 4880
+video number + exemplar : 4880
+DataLoader Constructed : Train 152
+Optimizer Constructed
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/_functions.py:61: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+2022-03-24 21:10:41.360654
+Epoch: [0][0/152], lr: 0.00100	Time 14.447 (14.447)	Data 2.545 (2.545)	Loss 4.0002 (4.0002)	Loss CE 3.9374 (3.9374)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6281 (0.6281)	Loss REG 0.0000 (0.0000)	Prec@1 3.125 (3.125)
+importanceList [Parameter containing:
+tensor([[ 3.3477e+00,  9.4047e-01,  1.8917e+00,  6.9344e-01,  9.8585e-01,
+         -1.4559e+00, -1.5897e+00, -2.1755e-01, -5.4667e-01, -1.1392e+00,
+          4.4861e-01, -1.4189e+00, -1.6176e+00,  5.0767e-01, -4.4801e-01,
+         -8.7988e-01, -1.0100e+00, -5.9731e-01, -4.3393e-01, -9.5532e-01,
+          7.2060e-01, -1.3380e-01,  1.5440e+00,  9.4571e-01,  6.7836e-01,
+         -4.4736e-01, -2.2563e+00, -8.4045e-01,  9.2714e-01, -6.7271e-01,
+          2.9567e-01,  2.0265e+00, -1.4249e-01, -2.7631e-01, -1.4135e+00,
+          7.8557e-02, -1.1446e-01, -1.6142e-01,  3.4021e-01, -6.2699e-01,
+         -1.7109e+00,  3.7458e-01, -4.7189e-01,  8.9633e-01,  2.5631e+00,
+          1.1139e+00,  5.0211e-02,  2.0286e+00, -2.0353e+00, -1.2907e+00,
+         -1.4280e+00,  8.3075e-01, -8.2293e-01, -9.5157e-01, -9.0485e-01,
+          1.5314e-02, -1.0767e-01, -4.7673e-01,  7.5199e-01, -7.5131e-01,
+          1.9080e+00, -1.0075e+00,  1.3157e-01, -1.1695e+00],
+        [ 1.3399e+00, -3.2772e-01,  1.2339e+00,  7.7100e-01, -7.0422e-02,
+         -1.3098e-01, -1.9669e-02, -4.7004e-01, -3.7585e-01,  1.6216e+00,
+          1.2393e+00, -7.8364e-01,  3.3727e-02,  5.3228e-01,  1.7291e-01,
+         -8.3331e-01,  1.9854e+00, -1.7352e+00, -1.3518e-02,  1.1979e+00,
+          4.2081e-01,  1.9568e+00, -1.5835e+00,  4.9585e-01,  1.2983e+00,
+         -5.6991e-01,  1.0094e+00,  6.8064e-01,  4.5865e-01,  1.2561e+00,
+         -1.3636e-01, -1.2040e+00,  1.0366e+00, -5.0723e-01,  2.9304e-01,
+         -5.3989e-01, -1.5333e+00, -9.1602e-02, -8.6522e-02, -5.2215e-01,
+          3.8282e-01, -1.4590e-01, -6.5039e-01,  1.1429e-02,  5.8273e-01,
+         -1.7282e+00,  1.1344e+00,  6.1831e-01,  6.8300e-01, -4.6649e-01,
+          5.4739e-01, -4.2943e-01,  1.6989e+00, -1.0154e+00,  1.4799e+00,
+          1.5054e+00,  5.0368e-01, -1.5904e+00,  1.1941e+00, -1.3490e+00,
+          1.3649e+00,  8.9474e-01, -1.3281e+00,  1.4230e+00],
+        [ 2.9809e-01,  5.5815e-01,  6.4547e-01, -4.2797e-02,  1.8928e-01,
+          5.2513e-01,  3.7796e-01,  4.2930e-02,  7.9331e-01, -1.7257e+00,
+          1.3688e-01,  1.8639e+00,  7.7596e-01, -1.1526e+00, -6.3414e-01,
+          8.1752e-01, -4.1957e-01,  3.5729e-01,  1.5990e-01, -1.7154e+00,
+         -9.7355e-01, -7.6057e-01, -4.9816e-01, -6.3138e-02,  1.0268e-01,
+         -7.7122e-01,  6.1046e-01, -1.0297e+00,  1.9832e-01,  2.6194e-01,
+          4.4732e-01,  6.2666e-01,  7.5872e-01,  1.8067e-01,  1.9627e+00,
+         -1.4302e+00,  4.8500e-01, -4.7765e-01,  1.4098e+00,  3.2255e-01,
+          5.1907e-01, -1.1607e-01,  1.4043e+00, -3.0002e-01, -5.1701e-01,
+          1.1152e+00, -8.6850e-01,  4.4285e-02, -5.2071e-01, -1.6711e+00,
+          3.7565e-01, -6.4044e-01, -1.7404e+00, -1.4717e+00,  2.0871e+00,
+          3.8592e-01,  9.6813e-01, -1.0236e-01, -1.1052e+00,  2.2406e-01,
+          1.1849e+00, -6.3768e-01, -1.6417e+00, -1.5531e+00],
+        [-2.6644e-01,  4.2285e-01,  1.4373e+00,  1.7282e-01,  5.0585e-02,
+          3.6093e-01,  1.6924e+00, -2.8702e-01,  7.8550e-01,  1.0096e-02,
+         -6.3786e-01, -5.8149e-01, -6.0432e-01,  7.3144e-01, -1.6027e+00,
+          1.7480e+00,  3.8299e-01, -1.3154e+00, -1.8807e-02, -1.4504e+00,
+         -3.8882e+00, -3.8094e-01,  1.7786e+00,  4.7282e-01,  7.3424e-02,
+         -1.8013e-01,  1.8021e-01, -7.7769e-01, -6.7224e-01, -3.2250e-01,
+         -7.3578e-01, -9.4674e-01, -1.6103e+00, -4.0771e-01,  4.6071e-01,
+         -9.3500e-01, -6.0564e-01, -7.4747e-01,  1.9332e+00,  1.6021e+00,
+          1.0191e+00,  8.9872e-01, -3.7548e-01,  1.1969e+00,  5.3812e-01,
+          1.7267e+00, -4.4246e-02, -3.4524e-01, -1.3632e+00,  1.2360e+00,
+          5.0801e-01, -1.3173e+00, -1.9749e+00, -1.3653e+00, -2.0541e+00,
+         -6.3735e-01,  7.0193e-01, -3.6958e-01,  1.2176e+00, -4.7803e-01,
+          1.1681e+00,  5.8980e-01,  4.3932e-03,  3.1869e-01],
+        [ 3.0568e-01, -3.6960e-01, -4.3916e-01,  1.0375e-01,  1.1609e+00,
+         -2.3859e-02, -3.4418e-01,  1.1108e+00,  4.2100e-02,  2.5638e+00,
+         -4.0015e-01,  3.6828e-01, -1.2946e-01,  8.7120e-01, -8.6423e-01,
+          3.1837e-01, -3.4783e-01,  1.3463e+00, -1.1116e+00, -9.2741e-01,
+         -1.1344e+00,  2.5460e-01, -1.4458e+00, -1.9003e-01,  1.5461e-03,
+          3.3881e-01,  4.6544e-01,  6.9699e-01, -9.3592e-01,  1.1119e-01,
+          1.7708e+00, -8.8473e-01,  2.6456e-01,  9.7820e-01, -9.8781e-01,
+          1.4604e-01, -6.6829e-01,  1.0647e+00,  7.1027e-01, -1.0003e+00,
+          9.7283e-01,  6.7014e-02, -2.9268e-01,  8.2384e-01, -1.9390e+00,
+          5.2678e-01,  5.7887e-01, -1.0324e+00,  1.1370e-01,  7.4539e-01,
+         -6.1908e-01,  1.7013e+00,  7.0227e-01, -8.2227e-01,  5.9514e-01,
+          1.2494e+00,  6.4346e-01, -1.2280e+00, -5.0028e-01, -1.3829e+00,
+         -7.8942e-01,  9.5986e-02,  1.8724e+00,  3.1522e-02],
+        [ 5.2060e-01, -3.1091e-01, -7.5451e-01,  5.4700e-01, -9.1467e-01,
+          3.4859e-01,  2.4195e-01,  5.4037e-01,  1.8296e-01,  2.5708e-01,
+         -1.3783e-01, -1.0934e+00, -5.3324e-01, -1.1080e+00, -1.7094e+00,
+         -2.8769e-01,  2.2251e-01, -6.3987e-02,  5.4901e-01,  5.8630e-01,
+          9.7003e-03, -4.6664e-01,  1.0928e+00,  7.1729e-01, -1.2697e+00,
+          1.6323e+00, -6.8252e-01, -1.5613e+00, -1.1097e+00,  1.3519e+00,
+         -1.4579e+00,  2.5798e-01, -1.3653e+00,  3.3763e-01, -6.8325e-01,
+         -9.0885e-01, -4.0393e-01, -6.3213e-01,  1.3782e+00, -1.6207e+00,
+          1.1386e+00, -7.6526e-01, -1.2037e+00, -6.0451e-01,  1.0607e+00,
+          9.8261e-03,  8.3751e-01,  6.3148e-01,  1.5133e+00, -4.8864e-01,
+         -5.3318e-01,  3.7601e-01, -2.5443e+00, -3.7770e-01, -3.4461e-01,
+          1.8087e-01,  6.4779e-01,  3.0458e-01,  5.5745e-01,  7.2107e-02,
+          2.8997e-01,  4.4417e-01,  2.1271e+00, -8.2733e-01],
+        [-2.8808e-02, -8.5897e-02, -1.1100e-01,  6.9490e-01, -4.8572e-01,
+         -6.3180e-01, -6.3765e-01,  2.7094e-01, -3.7191e-01, -1.4176e-01,
+          6.6237e-01, -4.0384e-01, -3.2555e-01,  1.0246e+00,  6.7562e-01,
+          2.0235e-01, -8.7129e-01,  2.4139e+00, -1.5149e-01,  1.0225e+00,
+          2.3511e-01, -1.6897e+00, -4.8594e-02,  4.5699e-02,  1.9182e-01,
+          2.6007e-01, -3.4249e-02,  7.2498e-01,  2.2838e+00,  6.6187e-01,
+          3.9226e-01, -5.0364e-01, -1.8781e-01,  1.6697e+00, -1.1439e+00,
+         -3.8238e-01,  1.4369e+00, -1.4513e+00,  8.6707e-01,  1.2331e+00,
+         -9.0015e-01, -1.3341e-01, -5.2965e-03, -8.6505e-01,  1.8099e+00,
+          8.3637e-01,  3.7107e-01, -1.2609e+00, -1.8506e+00, -8.0143e-01,
+         -1.9630e-01,  4.9602e-01, -1.1855e+00, -1.2495e+00, -1.4291e-01,
+         -5.4761e-01,  2.5565e-01,  4.3707e-01, -7.8165e-01,  5.2516e-01,
+          1.2817e+00, -2.1946e-01,  1.8351e+00,  1.1257e+00],
+        [-1.3923e+00, -8.1492e-01,  1.4694e+00,  5.5053e-01,  1.5407e+00,
+          1.7634e+00, -4.0063e-02,  7.4708e-01, -9.8938e-01,  2.4259e-01,
+         -6.8654e-01,  1.8024e+00, -3.7284e-01,  1.8983e-01,  1.3313e-01,
+          1.1012e+00,  1.1846e-01, -8.2166e-01, -2.0921e+00, -3.1313e+00,
+          1.1218e+00, -1.4810e+00,  3.4182e-01,  1.0839e+00,  1.2849e+00,
+          1.6293e+00,  4.7585e-01,  5.8664e-01, -5.5934e-01, -1.7130e+00,
+          4.7798e-03,  5.2066e-02,  1.0925e-01, -6.9559e-01, -1.5201e-01,
+         -6.5291e-01,  1.5385e+00,  5.2208e-01, -6.1889e-01,  1.7978e-02,
+          4.3138e-01,  8.3694e-01, -1.8788e-01,  1.0540e+00, -5.9646e-01,
+         -2.4891e-01, -6.5106e-01,  1.6906e+00,  9.4946e-01,  3.9801e-01,
+         -3.9789e-01, -1.4593e+00, -4.8778e-01, -1.4151e+00,  1.3849e-01,
+         -2.4332e+00, -1.0797e+00,  7.5890e-01,  7.3443e-01, -1.0319e+00,
+          7.9544e-01,  1.1442e-01,  8.0268e-01,  3.8365e-01]], device='cuda:0',
+       requires_grad=True), Parameter containing:
+tensor([[-0.0566,  0.3702, -0.8745,  ..., -0.1231, -0.4893,  0.8932],
+        [-0.7370,  0.9557, -1.5136,  ..., -0.1590, -0.4685,  0.8235],
+        [ 1.1251, -1.0151, -0.9440,  ..., -0.0540, -0.1628,  0.0392],
+        ...,
+        [-1.6831,  2.9621, -0.7284,  ...,  0.9133, -1.0201,  0.1610],
+        [-1.4615,  0.2938, -0.6711,  ..., -0.2019,  1.5850, -0.5150],
+        [-0.5429,  0.1761,  1.1041,  ...,  3.1245,  0.6157, -0.8953]],
+       device='cuda:0', requires_grad=True), Parameter containing:
+tensor([[ 0.5440, -1.6502, -0.7588,  ..., -0.9627,  0.4169,  0.7750],
+        [-0.2255, -0.5065,  0.1168,  ...,  0.0600,  0.8006, -0.0191],
+        [ 2.4908, -0.2705,  1.4562,  ...,  1.5498, -0.9235, -0.1760],
+        ...,
+        [-0.9917,  0.4971, -0.3962,  ..., -0.2609,  0.2430,  0.8714],
+        [ 1.1690, -2.1949, -0.9720,  ...,  0.5396,  0.5002,  1.4679],
+        [ 1.0230, -0.9665,  2.2855,  ...,  0.0307,  0.6781, -0.1177]],
+       device='cuda:0', requires_grad=True), Parameter containing:
+tensor([[ 1.9552,  1.3733,  0.2909,  ..., -0.0048, -0.9670,  0.7049],
+        [ 0.3851,  0.9044,  0.2473,  ..., -0.4956, -1.2478, -0.5572],
+        [-0.5385, -0.7803, -0.4079,  ..., -0.9327, -2.0107,  0.3902],
+        ...,
+        [ 0.5150, -0.2441, -0.8491,  ...,  2.1785,  0.8138, -1.1366],
+        [-0.1155,  0.0426, -1.3750,  ...,  0.9006,  1.0626,  0.5310],
+        [-1.3482,  0.0834, -0.8387,  ..., -2.1692,  0.8186,  0.8474]],
+       device='cuda:0', requires_grad=True), Parameter containing:
+tensor([[-0.4070, -0.5725,  0.4265,  ...,  0.5107, -1.3638,  0.5156],
+        [ 0.3999, -2.1134,  0.4700,  ..., -0.5216, -0.0382,  0.4790],
+        [-0.8412, -0.7873, -1.9993,  ...,  1.1910,  2.0441,  1.2747],
+        ...,
+        [-1.6302,  1.7981, -0.9417,  ...,  1.8865, -0.5814, -1.4303],
+        [ 0.5409,  1.8727,  1.2286,  ..., -1.6810, -0.0127,  0.2919],
+        [-1.1424, -1.1992,  1.7303,  ...,  0.0518,  0.1118,  0.4097]],
+       device='cuda:0', requires_grad=True)]
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+Traceback (most recent call last):
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+Traceback (most recent call last):
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+Traceback (most recent call last):
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+BrokenPipeError: [Errno 32] Broken pipe
+BrokenPipeError: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "main.py", line 101, in <module>
+    main()
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+BrokenPipeError: [Errno 32] Broken pipe
+  File "main.py", line 71, in main
+    train_i_cl.train_task(args, i, current_task, current_head, class_indexer, model_flow=model_flow, prefix=prefix)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 480, in train_task
+    _train(args, train_loader, model, criterion, optimizer, epoch, age, regularizer=regularizer, lambda_0=lambda_0, model_old=model_old, importance_list=importance_list)
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 185, in _train
+    if loss_reg != 0:
+KeyboardInterrupt

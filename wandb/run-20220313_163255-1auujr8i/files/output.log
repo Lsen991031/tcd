@@ -1,0 +1,158 @@
+ucf101: 101 classes
+Method : OURS
+----AGE 1----
+current_task  [98, 96]
+current_head  53
+Phase 2 : Train RGB Model in an Incremental Manner
+=> base model: resnet34
+Load the Previous Model
+Copy the old Model
+lambda_0  : [1.0, 0.05049752469181039]
+Increment the Model
+SplitCosineLinear(
+  input_features=512, output_features=159, sigma=tensor([3.6668]), eta=tensor([2.7653])
+  (fc1): CosineLinear(input_features=512, output_features=153, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=512, output_features=6, sigma=1.0, eta=1.0)
+)
+video number : 176
+video number + exemplar : 431
+DataLoader Constructed : Train 13
+Optimizer Constructed
+video number : 176
+video number + exemplar : 176
+Initialize Cosine Classifier
+Computing the class mean vectors...
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([64, 512])
+1 torch.Size([64, 512])
+2 torch.Size([8, 8, 512])
+3 torch.Size([64, 512])
+1 torch.Size([64, 512])
+2 torch.Size([8, 8, 512])
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/_functions.py:61: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+4 torch.Size([16, 53])
+4 torch.Size([16, 53])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+4 torch.Size([16, 51])
+4 torch.Size([16, 51])
+2022-03-13 16:33:16.483639
+Epoch: [0][0/13], lr: 0.00100	Time 4.294 (4.294)	Data 1.872 (1.872)	Loss 2.7774 (2.7774)	Loss CE 2.6388 (2.6388)	Loss KD (Logit) 1.0992 (1.0992)	Loss KD (GCAM) 0.0552 (0.0552)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6658 (0.6658)	Loss REG 0.0000 (0.0000)	Prec@1 59.375 (59.375)
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+4 torch.Size([16, 53])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+4 torch.Size([16, 53])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+4 torch.Size([16, 51])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+4 torch.Size([16, 51])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+4 torch.Size([16, 53])
+4 torch.Size([16, 53])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+4 torch.Size([16, 51])
+4 torch.Size([16, 51])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+4 torch.Size([16, 53])
+4 torch.Size([16, 53])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+4 torch.Size([16, 51])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+4 torch.Size([16, 51])
+Traceback (most recent call last):
+  File "main.py", line 101, in <module>
+    main()
+  File "main.py", line 71, in main
+    train_i_cl.train_task(args, i, current_task, current_head, class_indexer, model_flow=model_flow, prefix=prefix)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 461, in train_task
+    _train(args, train_loader, model, criterion, optimizer, epoch, age, regularizer=regularizer, lambda_0=lambda_0, model_old=model_old, importance_list=importance_list)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 71, in _train
+    outputs = model(input=input,t_div=args.t_div)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/modules/module.py", line 493, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/data_parallel.py", line 152, in forward
+    outputs = self.parallel_apply(replicas, inputs, kwargs)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/data_parallel.py", line 162, in parallel_apply
+    return parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/parallel_apply.py", line 75, in parallel_apply
+    thread.join()
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/threading.py", line 1044, in join
+    self._wait_for_tstate_lock()
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/threading.py", line 1060, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+4 torch.Size([16, 53])
+4 torch.Size([16, 53])

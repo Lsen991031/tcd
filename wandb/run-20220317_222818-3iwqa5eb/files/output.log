@@ -1,0 +1,50 @@
+ucf101: 101 classes
+Method : POD
+----AGE 25----
+current_task  [87, 51]
+current_head  101
+Phase 2 : Train RGB Model in an Incremental Manner
+=> base model: resnet34
+Load the Previous Model
+Copy the old Model
+lambda_0  : [1.0, 0.07035623639735145]
+Increment the Model
+SplitCosineLinear(
+  input_features=512, output_features=303, sigma=tensor([4.0147]), eta=tensor([3.1504])
+  (fc1): CosineLinear(input_features=512, output_features=297, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=512, output_features=6, sigma=1.0, eta=1.0)
+)
+video number : 183
+video number + exemplar : 678
+DataLoader Constructed : Train 21
+Optimizer Constructed
+video number : 183
+video number + exemplar : 183
+Initialize Cosine Classifier
+Computing the class mean vectors...
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/_functions.py:61: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+2022-03-17 22:28:45.725198
+Epoch: [0][0/21], lr: 0.00100	Time 5.658 (5.658)	Data 3.170 (3.170)	Loss 0.1655 (0.1655)	Loss CE 0.0098 (0.0098)	Loss KD (Logit) 0.2238 (0.2238)	Loss KD (GCAM) 0.0392 (0.0392)	Loss MR 0.0000 (0.0000)	Loss DIV 0.5704 (0.5704)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9963], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1393], device='cuda:0', requires_grad=True)
+2022-03-17 22:29:08.466527
+Epoch: [1][0/21], lr: 0.00100	Time 2.939 (2.939)	Data 1.670 (1.670)	Loss 0.4111 (0.4111)	Loss CE 0.2047 (0.2047)	Loss KD (Logit) 0.2348 (0.2348)	Loss KD (GCAM) 0.0608 (0.0608)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6148 (0.6148)	Loss REG 0.0000 (0.0000)	Prec@1 93.750 (93.750)
+Sigma : Parameter containing:
+tensor([3.9804], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1300], device='cuda:0', requires_grad=True)
+2022-03-17 22:29:31.679635
+Epoch: [2][0/21], lr: 0.00100	Time 3.285 (3.285)	Data 1.922 (1.922)	Loss 0.2692 (0.2692)	Loss CE 0.0335 (0.0335)	Loss KD (Logit) 0.2541 (0.2541)	Loss KD (GCAM) 0.0750 (0.0750)	Loss MR 0.0000 (0.0000)	Loss DIV 0.5950 (0.5950)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+Traceback (most recent call last):
+  File "main.py", line 101, in <module>
+    main()
+  File "main.py", line 71, in main
+    train_i_cl.train_task(args, i, current_task, current_head, class_indexer, model_flow=model_flow, prefix=prefix)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 461, in train_task
+    _train(args, train_loader, model, criterion, optimizer, epoch, age, regularizer=regularizer, lambda_0=lambda_0, model_old=model_old, importance_list=importance_list)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 122, in _train
+    loss_ce = cl_dist.nca_loss(preds, target_)
+  File "/home/ustc/ls/tcd_code/cl_methods/distillation.py", line 215, in nca_loss
+    targets] = similarities[torch.arange(len(similarities)), targets]
+KeyboardInterrupt

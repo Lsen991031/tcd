@@ -1,0 +1,1516 @@
+ucf101: 101 classes
+Method : OURS
+----AGE 5----
+current_task  [89, 0, 61, 1, 92, 94, 64, 71, 87, 51]
+current_head  101
+Phase 2 : Train RGB Model in an Incremental Manner
+=> base model: resnet34
+----------------------resnet34 pretraining----------------------
+------------------------------success---------------------------
+Load the Previous Model
+Copy the old Model
+lambda_0  : [1.0, 0.030166206257996712]
+Increment the Model
+SplitCosineLinear(
+  input_features=512, output_features=303, sigma=tensor([3.9528]), eta=tensor([3.2879])
+  (fc1): CosineLinear(input_features=512, output_features=273, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=512, output_features=30, sigma=1.0, eta=1.0)
+)
+video number : 944
+video number + exemplar : 1399
+DataLoader Constructed : Train 43
+Optimizer Constructed
+video number : 944
+video number + exemplar : 944
+Initialize Cosine Classifier
+Computing the class mean vectors...
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/_functions.py:61: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+2022-04-04 12:16:01.484052
+Epoch: [0][0/43], lr: 0.00100	Time 4.193 (4.193)	Data 2.140 (2.140)	Loss 0.1348 (0.1348)	Loss CE 0.0177 (0.0177)	Loss KD (Logit) 1.0986 (1.0986)	Loss KD (GCAM) 0.0633 (0.0633)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6492 (0.6492)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.8677], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2359], device='cuda:0', requires_grad=True)
+2022-04-04 12:16:49.024456
+Epoch: [1][0/43], lr: 0.00100	Time 4.255 (4.255)	Data 2.898 (2.898)	Loss 0.3352 (0.3352)	Loss CE 0.1923 (0.1923)	Loss KD (Logit) 1.2196 (1.2196)	Loss KD (GCAM) 0.1200 (0.1200)	Loss MR 0.0000 (0.0000)	Loss DIV 0.7007 (0.7007)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+Sigma : Parameter containing:
+tensor([3.8203], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2086], device='cuda:0', requires_grad=True)
+2022-04-04 12:17:43.964594
+Epoch: [2][0/43], lr: 0.00100	Time 3.806 (3.806)	Data 2.205 (2.205)	Loss 0.1985 (0.1985)	Loss CE 0.0563 (0.0563)	Loss KD (Logit) 1.2055 (1.2055)	Loss KD (GCAM) 0.1227 (0.1227)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6907 (0.6907)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.8088], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2040], device='cuda:0', requires_grad=True)
+2022-04-04 12:18:33.100831
+Epoch: [3][0/43], lr: 0.00100	Time 3.838 (3.838)	Data 2.648 (2.648)	Loss 0.2939 (0.2939)	Loss CE 0.1600 (0.1600)	Loss KD (Logit) 1.1946 (1.1946)	Loss KD (GCAM) 0.1107 (0.1107)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6464 (0.6464)	Loss REG 0.0000 (0.0000)	Prec@1 90.625 (90.625)
+Sigma : Parameter containing:
+tensor([3.7837], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1916], device='cuda:0', requires_grad=True)
+2022-04-04 12:19:13.802948
+Epoch: [4][0/43], lr: 0.00100	Time 3.491 (3.491)	Data 2.465 (2.465)	Loss 0.4302 (0.4302)	Loss CE 0.2889 (0.2889)	Loss KD (Logit) 1.2197 (1.2197)	Loss KD (GCAM) 0.1299 (0.1299)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6547 (0.6547)	Loss REG 0.0000 (0.0000)	Prec@1 87.500 (87.500)
+Sigma : Parameter containing:
+tensor([3.7927], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1981], device='cuda:0', requires_grad=True)
+2022-04-04 12:20:09.536417
+Epoch: [5][0/43], lr: 0.00100	Time 4.550 (4.550)	Data 2.812 (2.812)	Loss 0.1605 (0.1605)	Loss CE 0.0218 (0.0218)	Loss KD (Logit) 1.1931 (1.1931)	Loss KD (GCAM) 0.1167 (0.1167)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6770 (0.6770)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.8135], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2116], device='cuda:0', requires_grad=True)
+2022-04-04 12:21:03.113580
+Epoch: [6][0/43], lr: 0.00100	Time 3.868 (3.868)	Data 2.726 (2.726)	Loss 0.1419 (0.1419)	Loss CE 0.0029 (0.0029)	Loss KD (Logit) 1.1892 (1.1892)	Loss KD (GCAM) 0.1188 (0.1188)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6741 (0.6741)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.8215], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2172], device='cuda:0', requires_grad=True)
+2022-04-04 12:21:49.747219
+Epoch: [7][0/43], lr: 0.00100	Time 3.730 (3.730)	Data 2.698 (2.698)	Loss 0.1651 (0.1651)	Loss CE 0.0280 (0.0280)	Loss KD (Logit) 1.1993 (1.1993)	Loss KD (GCAM) 0.1145 (0.1145)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6658 (0.6658)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.8329], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2249], device='cuda:0', requires_grad=True)
+2022-04-04 12:22:39.495345
+Epoch: [8][0/43], lr: 0.00100	Time 4.418 (4.418)	Data 3.026 (3.026)	Loss 0.1497 (0.1497)	Loss CE 0.0106 (0.0106)	Loss KD (Logit) 1.2030 (1.2030)	Loss KD (GCAM) 0.1177 (0.1177)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6741 (0.6741)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.8401], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2300], device='cuda:0', requires_grad=True)
+2022-04-04 12:23:34.791093
+Epoch: [9][0/43], lr: 0.00100	Time 4.218 (4.218)	Data 2.584 (2.584)	Loss 0.2494 (0.2494)	Loss CE 0.1141 (0.1141)	Loss KD (Logit) 1.1746 (1.1746)	Loss KD (GCAM) 0.1095 (0.1095)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6700 (0.6700)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+Sigma : Parameter containing:
+tensor([3.8500], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2371], device='cuda:0', requires_grad=True)
+2022-04-04 12:24:23.093166
+Epoch: [10][0/43], lr: 0.00100	Time 3.757 (3.757)	Data 2.367 (2.367)	Loss 0.1357 (0.1357)	Loss CE 0.0021 (0.0021)	Loss KD (Logit) 1.1833 (1.1833)	Loss KD (GCAM) 0.1067 (0.1067)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6587 (0.6587)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.8578], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2416], device='cuda:0', requires_grad=True)
+2022-04-04 12:25:11.741445
+Epoch: [11][0/43], lr: 0.00100	Time 4.888 (4.888)	Data 3.175 (3.175)	Loss 0.1416 (0.1416)	Loss CE 0.0028 (0.0028)	Loss KD (Logit) 1.2097 (1.2097)	Loss KD (GCAM) 0.1133 (0.1133)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6835 (0.6835)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.8710], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2491], device='cuda:0', requires_grad=True)
+2022-04-04 12:26:05.657520
+Epoch: [12][0/43], lr: 0.00100	Time 4.143 (4.143)	Data 2.802 (2.802)	Loss 0.1426 (0.1426)	Loss CE 0.0051 (0.0051)	Loss KD (Logit) 1.2049 (1.2049)	Loss KD (GCAM) 0.1145 (0.1145)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6677 (0.6677)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.8871], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2585], device='cuda:0', requires_grad=True)
+2022-04-04 12:26:57.777685
+Epoch: [13][0/43], lr: 0.00100	Time 3.668 (3.668)	Data 2.297 (2.297)	Loss 0.1474 (0.1474)	Loss CE 0.0134 (0.0134)	Loss KD (Logit) 1.1748 (1.1748)	Loss KD (GCAM) 0.1068 (0.1068)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6657 (0.6657)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.8947], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2625], device='cuda:0', requires_grad=True)
+2022-04-04 12:27:45.588568
+Epoch: [14][0/43], lr: 0.00100	Time 4.736 (4.736)	Data 3.372 (3.372)	Loss 0.1476 (0.1476)	Loss CE 0.0075 (0.0075)	Loss KD (Logit) 1.1895 (1.1895)	Loss KD (GCAM) 0.1136 (0.1136)	Loss MR 0.0000 (0.0000)	Loss DIV 0.7011 (0.7011)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.8961], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2642], device='cuda:0', requires_grad=True)
+2022-04-04 12:28:35.571189
+Epoch: [15][0/43], lr: 0.00100	Time 4.176 (4.176)	Data 2.780 (2.780)	Loss 0.1516 (0.1516)	Loss CE 0.0105 (0.0105)	Loss KD (Logit) 1.1915 (1.1915)	Loss KD (GCAM) 0.1103 (0.1103)	Loss MR 0.0000 (0.0000)	Loss DIV 0.7200 (0.7200)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9054], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2683], device='cuda:0', requires_grad=True)
+2022-04-04 12:29:29.777387
+Epoch: [16][0/43], lr: 0.00100	Time 4.439 (4.439)	Data 3.023 (3.023)	Loss 0.1799 (0.1799)	Loss CE 0.0485 (0.0485)	Loss KD (Logit) 1.1693 (1.1693)	Loss KD (GCAM) 0.1034 (0.1034)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6506 (0.6506)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+Sigma : Parameter containing:
+tensor([3.9191], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2762], device='cuda:0', requires_grad=True)
+2022-04-04 12:30:17.357067
+Epoch: [17][0/43], lr: 0.00100	Time 4.014 (4.014)	Data 2.864 (2.864)	Loss 0.1518 (0.1518)	Loss CE 0.0185 (0.0185)	Loss KD (Logit) 1.1939 (1.1939)	Loss KD (GCAM) 0.1069 (0.1069)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6519 (0.6519)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9200], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2760], device='cuda:0', requires_grad=True)
+2022-04-04 12:31:05.919191
+Epoch: [18][0/43], lr: 0.00100	Time 4.214 (4.214)	Data 2.930 (2.930)	Loss 0.1599 (0.1599)	Loss CE 0.0209 (0.0209)	Loss KD (Logit) 1.1975 (1.1975)	Loss KD (GCAM) 0.1157 (0.1157)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6815 (0.6815)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9279], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2796], device='cuda:0', requires_grad=True)
+2022-04-04 12:32:00.100054
+Epoch: [19][0/43], lr: 0.00100	Time 4.166 (4.166)	Data 2.602 (2.602)	Loss 0.1552 (0.1552)	Loss CE 0.0187 (0.0187)	Loss KD (Logit) 1.1860 (1.1860)	Loss KD (GCAM) 0.1059 (0.1059)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6894 (0.6894)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9320], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2820], device='cuda:0', requires_grad=True)
+2022-04-04 12:32:50.057843
+Epoch: [20][0/43], lr: 0.00010	Time 3.610 (3.610)	Data 2.359 (2.359)	Loss 0.2033 (0.2033)	Loss CE 0.0678 (0.0678)	Loss KD (Logit) 1.1993 (1.1993)	Loss KD (GCAM) 0.1070 (0.1070)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6725 (0.6725)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+Sigma : Parameter containing:
+tensor([3.9326], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2824], device='cuda:0', requires_grad=True)
+2022-04-04 12:33:38.136125
+Epoch: [21][0/43], lr: 0.00010	Time 4.049 (4.049)	Data 2.877 (2.877)	Loss 0.1377 (0.1377)	Loss CE 0.0034 (0.0034)	Loss KD (Logit) 1.1905 (1.1905)	Loss KD (GCAM) 0.1028 (0.1028)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6752 (0.6752)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9332], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2827], device='cuda:0', requires_grad=True)
+2022-04-04 12:34:29.658183
+Epoch: [22][0/43], lr: 0.00010	Time 4.606 (4.606)	Data 3.164 (3.164)	Loss 0.1546 (0.1546)	Loss CE 0.0217 (0.0217)	Loss KD (Logit) 1.2022 (1.2022)	Loss KD (GCAM) 0.1085 (0.1085)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6410 (0.6410)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9341], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2831], device='cuda:0', requires_grad=True)
+2022-04-04 12:35:22.112842
+Epoch: [23][0/43], lr: 0.00010	Time 3.832 (3.832)	Data 2.231 (2.231)	Loss 0.1336 (0.1336)	Loss CE 0.0031 (0.0031)	Loss KD (Logit) 1.1728 (1.1728)	Loss KD (GCAM) 0.1008 (0.1008)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6489 (0.6489)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9350], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2835], device='cuda:0', requires_grad=True)
+2022-04-04 12:36:09.439223
+Epoch: [24][0/43], lr: 0.00010	Time 3.968 (3.968)	Data 2.841 (2.841)	Loss 0.1321 (0.1321)	Loss CE 0.0027 (0.0027)	Loss KD (Logit) 1.1943 (1.1943)	Loss KD (GCAM) 0.1059 (0.1059)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6166 (0.6166)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9358], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2839], device='cuda:0', requires_grad=True)
+2022-04-04 12:36:57.316620
+Epoch: [25][0/43], lr: 0.00010	Time 4.489 (4.489)	Data 3.015 (3.015)	Loss 0.1373 (0.1373)	Loss CE 0.0054 (0.0054)	Loss KD (Logit) 1.1832 (1.1832)	Loss KD (GCAM) 0.1010 (0.1010)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6586 (0.6586)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9366], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2843], device='cuda:0', requires_grad=True)
+2022-04-04 12:37:51.128562
+Epoch: [26][0/43], lr: 0.00010	Time 4.225 (4.225)	Data 2.673 (2.673)	Loss 0.1329 (0.1329)	Loss CE 0.0004 (0.0004)	Loss KD (Logit) 1.1681 (1.1681)	Loss KD (GCAM) 0.1018 (0.1018)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6678 (0.6678)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9373], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2845], device='cuda:0', requires_grad=True)
+2022-04-04 12:38:42.742653
+Epoch: [27][0/43], lr: 0.00010	Time 4.010 (4.010)	Data 2.907 (2.907)	Loss 0.1370 (0.1370)	Loss CE 0.0046 (0.0046)	Loss KD (Logit) 1.1817 (1.1817)	Loss KD (GCAM) 0.1073 (0.1073)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6451 (0.6451)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9380], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2848], device='cuda:0', requires_grad=True)
+2022-04-04 12:39:30.481548
+Epoch: [28][0/43], lr: 0.00010	Time 3.823 (3.823)	Data 2.693 (2.693)	Loss 0.1424 (0.1424)	Loss CE 0.0115 (0.0115)	Loss KD (Logit) 1.1740 (1.1740)	Loss KD (GCAM) 0.0967 (0.0967)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6645 (0.6645)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9384], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2850], device='cuda:0', requires_grad=True)
+2022-04-04 12:40:20.619125
+Epoch: [29][0/43], lr: 0.00010	Time 4.235 (4.235)	Data 2.587 (2.587)	Loss 0.1346 (0.1346)	Loss CE 0.0008 (0.0008)	Loss KD (Logit) 1.1913 (1.1913)	Loss KD (GCAM) 0.0999 (0.0999)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6792 (0.6792)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9390], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2853], device='cuda:0', requires_grad=True)
+2022-04-04 12:41:13.636489
+Epoch: [30][0/43], lr: 0.00001	Time 4.113 (4.113)	Data 2.478 (2.478)	Loss 0.2759 (0.2759)	Loss CE 0.1423 (0.1423)	Loss KD (Logit) 1.1836 (1.1836)	Loss KD (GCAM) 0.0992 (0.0992)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6812 (0.6812)	Loss REG 0.0000 (0.0000)	Prec@1 93.750 (93.750)
+Sigma : Parameter containing:
+tensor([3.9389], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2852], device='cuda:0', requires_grad=True)
+2022-04-04 12:42:03.444101
+Epoch: [31][0/43], lr: 0.00001	Time 3.763 (3.763)	Data 2.198 (2.198)	Loss 0.1350 (0.1350)	Loss CE 0.0013 (0.0013)	Loss KD (Logit) 1.1875 (1.1875)	Loss KD (GCAM) 0.0984 (0.0984)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6836 (0.6836)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9390], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2853], device='cuda:0', requires_grad=True)
+2022-04-04 12:42:51.624802
+Epoch: [32][0/43], lr: 0.00001	Time 4.461 (4.461)	Data 2.985 (2.985)	Loss 0.1347 (0.1347)	Loss CE 0.0017 (0.0017)	Loss KD (Logit) 1.1756 (1.1756)	Loss KD (GCAM) 0.0982 (0.0982)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6801 (0.6801)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9391], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2853], device='cuda:0', requires_grad=True)
+2022-04-04 12:43:45.025847
+Epoch: [33][0/43], lr: 0.00001	Time 4.364 (4.364)	Data 2.542 (2.542)	Loss 0.1284 (0.1284)	Loss CE 0.0008 (0.0008)	Loss KD (Logit) 1.1819 (1.1819)	Loss KD (GCAM) 0.0987 (0.0987)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6236 (0.6236)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9392], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2854], device='cuda:0', requires_grad=True)
+2022-04-04 12:44:36.844784
+Epoch: [34][0/43], lr: 0.00001	Time 3.567 (3.567)	Data 2.241 (2.241)	Loss 0.1320 (0.1320)	Loss CE 0.0006 (0.0006)	Loss KD (Logit) 1.1542 (1.1542)	Loss KD (GCAM) 0.1017 (0.1017)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6601 (0.6601)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9392], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2854], device='cuda:0', requires_grad=True)
+2022-04-04 12:45:24.591135
+Epoch: [35][0/43], lr: 0.00001	Time 3.989 (3.989)	Data 2.818 (2.818)	Loss 0.1378 (0.1378)	Loss CE 0.0024 (0.0024)	Loss KD (Logit) 1.1959 (1.1959)	Loss KD (GCAM) 0.1033 (0.1033)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6836 (0.6836)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9393], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2854], device='cuda:0', requires_grad=True)
+2022-04-04 12:46:15.192357
+Epoch: [36][0/43], lr: 0.00001	Time 4.089 (4.089)	Data 2.159 (2.159)	Loss 0.1368 (0.1368)	Loss CE 0.0028 (0.0028)	Loss KD (Logit) 1.1721 (1.1721)	Loss KD (GCAM) 0.1011 (0.1011)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6825 (0.6825)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9394], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2855], device='cuda:0', requires_grad=True)
+2022-04-04 12:47:08.542416
+Epoch: [37][0/43], lr: 0.00001	Time 4.409 (4.409)	Data 2.576 (2.576)	Loss 0.1503 (0.1503)	Loss CE 0.0219 (0.0219)	Loss KD (Logit) 1.1810 (1.1810)	Loss KD (GCAM) 0.0938 (0.0938)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6459 (0.6459)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9395], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2855], device='cuda:0', requires_grad=True)
+2022-04-04 12:47:58.566108
+Epoch: [38][0/43], lr: 0.00001	Time 4.370 (4.370)	Data 3.343 (3.343)	Loss 0.1406 (0.1406)	Loss CE 0.0028 (0.0028)	Loss KD (Logit) 1.1791 (1.1791)	Loss KD (GCAM) 0.1040 (0.1040)	Loss MR 0.0000 (0.0000)	Loss DIV 0.7101 (0.7101)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9395], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2855], device='cuda:0', requires_grad=True)
+2022-04-04 12:48:46.320250
+Epoch: [39][0/43], lr: 0.00001	Time 4.406 (4.406)	Data 3.041 (3.041)	Loss 0.1319 (0.1319)	Loss CE 0.0020 (0.0020)	Loss KD (Logit) 1.1716 (1.1716)	Loss KD (GCAM) 0.0922 (0.0922)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6688 (0.6688)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9396], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2855], device='cuda:0', requires_grad=True)
+2022-04-04 12:49:39.432815
+Epoch: [40][0/43], lr: 0.00001	Time 4.489 (4.489)	Data 2.940 (2.940)	Loss 0.1312 (0.1312)	Loss CE 0.0015 (0.0015)	Loss KD (Logit) 1.1606 (1.1606)	Loss KD (GCAM) 0.0990 (0.0990)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6502 (0.6502)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9396], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2856], device='cuda:0', requires_grad=True)
+2022-04-04 12:50:31.387623
+Epoch: [41][0/43], lr: 0.00001	Time 4.120 (4.120)	Data 3.108 (3.108)	Loss 0.1353 (0.1353)	Loss CE 0.0026 (0.0026)	Loss KD (Logit) 1.1754 (1.1754)	Loss KD (GCAM) 0.1022 (0.1022)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6654 (0.6654)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9397], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2856], device='cuda:0', requires_grad=True)
+2022-04-04 12:51:18.905618
+Epoch: [42][0/43], lr: 0.00001	Time 4.042 (4.042)	Data 3.004 (3.004)	Loss 0.1328 (0.1328)	Loss CE 0.0037 (0.0037)	Loss KD (Logit) 1.1721 (1.1721)	Loss KD (GCAM) 0.0934 (0.0934)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6573 (0.6573)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9397], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2856], device='cuda:0', requires_grad=True)
+2022-04-04 12:52:10.601440
+Epoch: [43][0/43], lr: 0.00001	Time 4.777 (4.777)	Data 3.436 (3.436)	Loss 0.1367 (0.1367)	Loss CE 0.0022 (0.0022)	Loss KD (Logit) 1.1838 (1.1838)	Loss KD (GCAM) 0.1017 (0.1017)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6833 (0.6833)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9398], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2857], device='cuda:0', requires_grad=True)
+2022-04-04 12:53:04.613857
+Epoch: [44][0/43], lr: 0.00001	Time 3.798 (3.798)	Data 2.179 (2.179)	Loss 0.1348 (0.1348)	Loss CE 0.0019 (0.0019)	Loss KD (Logit) 1.1721 (1.1721)	Loss KD (GCAM) 0.1019 (0.1019)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6689 (0.6689)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9399], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2857], device='cuda:0', requires_grad=True)
+2022-04-04 12:53:51.704465
+Epoch: [45][0/43], lr: 0.00001	Time 3.610 (3.610)	Data 2.196 (2.196)	Loss 0.1318 (0.1318)	Loss CE 0.0024 (0.0024)	Loss KD (Logit) 1.1719 (1.1719)	Loss KD (GCAM) 0.0985 (0.0985)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6453 (0.6453)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9399], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2857], device='cuda:0', requires_grad=True)
+2022-04-04 12:54:38.549573
+Epoch: [46][0/43], lr: 0.00001	Time 4.186 (4.186)	Data 2.404 (2.404)	Loss 0.1273 (0.1273)	Loss CE 0.0042 (0.0042)	Loss KD (Logit) 1.1678 (1.1678)	Loss KD (GCAM) 0.0969 (0.0969)	Loss MR 0.0000 (0.0000)	Loss DIV 0.5873 (0.5873)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9400], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2858], device='cuda:0', requires_grad=True)
+2022-04-04 12:55:33.265353
+Epoch: [47][0/43], lr: 0.00001	Time 4.704 (4.704)	Data 3.243 (3.243)	Loss 0.1324 (0.1324)	Loss CE 0.0035 (0.0035)	Loss KD (Logit) 1.1675 (1.1675)	Loss KD (GCAM) 0.0967 (0.0967)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6462 (0.6462)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9400], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2858], device='cuda:0', requires_grad=True)
+2022-04-04 12:56:25.002065
+Epoch: [48][0/43], lr: 0.00001	Time 4.297 (4.297)	Data 2.778 (2.778)	Loss 0.1516 (0.1516)	Loss CE 0.0173 (0.0173)	Loss KD (Logit) 1.1869 (1.1869)	Loss KD (GCAM) 0.1060 (0.1060)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6666 (0.6666)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9401], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2858], device='cuda:0', requires_grad=True)
+2022-04-04 12:57:12.882384
+Epoch: [49][0/43], lr: 0.00001	Time 4.791 (4.791)	Data 3.445 (3.445)	Loss 0.1414 (0.1414)	Loss CE 0.0119 (0.0119)	Loss KD (Logit) 1.1694 (1.1694)	Loss KD (GCAM) 0.0994 (0.0994)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6444 (0.6444)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9401], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2858], device='cuda:0', requires_grad=True)
+Update Importance Mask...
+Phase 3 : Manage Exemplar Sets
+=> base model: resnet34
+----------------------resnet34 pretraining----------------------
+------------------------------success---------------------------
+Construct Exemplar Set
+Load the Model
+SplitCosineLinear(
+  input_features=512, output_features=303, sigma=tensor([3.9401]), eta=tensor([3.2858])
+  (fc1): CosineLinear(input_features=512, output_features=273, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=512, output_features=30, sigma=1.0, eta=1.0)
+)
+Exemplar per class : 5
+video number : 944
+video number + exemplar : 944
+Phase 4 : Class-balanced Fine-Tuning
+=> base model: resnet34
+----------------------resnet34 pretraining----------------------
+------------------------------success---------------------------
+Load the Model
+SplitCosineLinear(
+  input_features=512, output_features=303, sigma=tensor([3.9401]), eta=tensor([3.2858])
+  (fc1): CosineLinear(input_features=512, output_features=273, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=512, output_features=30, sigma=1.0, eta=1.0)
+)
+exemplar : 505
+DataLoader CBF Constructed : Train 15
+Optimizer Constructed
+2022-04-04 12:58:53.526685
+Epoch: [0][0/15], lr: 0.00050	Time 4.123 (4.123)	Data 3.084 (3.084)	Loss 0.0110 (0.0110)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9427], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2869], device='cuda:0', requires_grad=True)
+2022-04-04 12:59:07.375469
+Epoch: [1][0/15], lr: 0.00050	Time 3.468 (3.468)	Data 2.382 (2.382)	Loss 0.0009 (0.0009)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9446], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2874], device='cuda:0', requires_grad=True)
+2022-04-04 12:59:20.444921
+Epoch: [2][0/15], lr: 0.00050	Time 3.733 (3.733)	Data 3.009 (3.009)	Loss 0.0694 (0.0694)	Prec@1 96.875 (96.875)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9449], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2876], device='cuda:0', requires_grad=True)
+2022-04-04 12:59:34.168512
+Epoch: [3][0/15], lr: 0.00050	Time 3.792 (3.792)	Data 2.977 (2.977)	Loss 0.0001 (0.0001)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9447], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2873], device='cuda:0', requires_grad=True)
+2022-04-04 12:59:47.832896
+Epoch: [4][0/15], lr: 0.00050	Time 3.615 (3.615)	Data 2.750 (2.750)	Loss 0.0014 (0.0014)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9448], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2872], device='cuda:0', requires_grad=True)
+2022-04-04 13:00:00.472346
+Epoch: [5][0/15], lr: 0.00050	Time 2.896 (2.896)	Data 2.213 (2.213)	Loss 0.0162 (0.0162)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9450], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2871], device='cuda:0', requires_grad=True)
+2022-04-04 13:00:13.518537
+Epoch: [6][0/15], lr: 0.00050	Time 3.578 (3.578)	Data 2.716 (2.716)	Loss 0.0002 (0.0002)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9462], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2875], device='cuda:0', requires_grad=True)
+2022-04-04 13:00:28.251871
+Epoch: [7][0/15], lr: 0.00050	Time 3.991 (3.991)	Data 3.004 (3.004)	Loss 0.0010 (0.0010)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9474], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2880], device='cuda:0', requires_grad=True)
+2022-04-04 13:00:43.455680
+Epoch: [8][0/15], lr: 0.00050	Time 3.711 (3.711)	Data 2.520 (2.520)	Loss 0.0006 (0.0006)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9482], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2883], device='cuda:0', requires_grad=True)
+2022-04-04 13:00:58.359312
+Epoch: [9][0/15], lr: 0.00050	Time 3.645 (3.645)	Data 2.634 (2.634)	Loss 0.0033 (0.0033)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9489], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2889], device='cuda:0', requires_grad=True)
+2022-04-04 13:01:13.554723
+Epoch: [10][0/15], lr: 0.00050	Time 3.850 (3.850)	Data 2.947 (2.947)	Loss 0.0013 (0.0013)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9505], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2896], device='cuda:0', requires_grad=True)
+2022-04-04 13:01:28.455533
+Epoch: [11][0/15], lr: 0.00050	Time 3.628 (3.628)	Data 2.787 (2.787)	Loss 0.0004 (0.0004)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9518], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2902], device='cuda:0', requires_grad=True)
+2022-04-04 13:01:42.167700
+Epoch: [12][0/15], lr: 0.00050	Time 3.080 (3.080)	Data 2.189 (2.189)	Loss 0.0051 (0.0051)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9532], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2907], device='cuda:0', requires_grad=True)
+2022-04-04 13:01:55.292366
+Epoch: [13][0/15], lr: 0.00050	Time 3.769 (3.769)	Data 3.173 (3.173)	Loss 0.0007 (0.0007)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9536], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2907], device='cuda:0', requires_grad=True)
+2022-04-04 13:02:08.143560
+Epoch: [14][0/15], lr: 0.00050	Time 3.726 (3.726)	Data 2.768 (2.768)	Loss 0.0024 (0.0024)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9542], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2909], device='cuda:0', requires_grad=True)
+2022-04-04 13:02:20.738688
+Epoch: [15][0/15], lr: 0.00050	Time 3.849 (3.849)	Data 3.089 (3.089)	Loss 0.0002 (0.0002)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9548], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2912], device='cuda:0', requires_grad=True)
+2022-04-04 13:02:34.262219
+Epoch: [16][0/15], lr: 0.00050	Time 3.678 (3.678)	Data 2.715 (2.715)	Loss 0.0009 (0.0009)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9562], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2918], device='cuda:0', requires_grad=True)
+2022-04-04 13:02:47.672894
+Epoch: [17][0/15], lr: 0.00050	Time 3.636 (3.636)	Data 2.559 (2.559)	Loss 0.0062 (0.0062)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9576], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2924], device='cuda:0', requires_grad=True)
+2022-04-04 13:03:00.596983
+Epoch: [18][0/15], lr: 0.00050	Time 3.157 (3.157)	Data 2.208 (2.208)	Loss 0.0003 (0.0003)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9583], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2925], device='cuda:0', requires_grad=True)
+2022-04-04 13:03:16.008037
+Epoch: [19][0/15], lr: 0.00050	Time 4.143 (4.143)	Data 2.962 (2.962)	Loss 0.0012 (0.0012)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.9590], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.2927], device='cuda:0', requires_grad=True)
+Phase 5 : Eval RGB Model for the Tasks Trained so far
+=> base model: resnet34
+----------------------resnet34 pretraining----------------------
+------------------------------success---------------------------
+Load the Trained Model from checkpoint/ucf101/51/10/005/task_005.pth.tar
+exemplar : 505
+Computing the class mean vectors...
+Eval Task 0 for Age 5
+Current Task : [37, 97, 56, 55, 33, 84, 3, 4, 72, 59, 66, 48, 65, 91, 99, 39, 34, 22, 67, 74, 19, 35, 9, 86, 88, 63, 85, 38, 54, 25, 57, 62, 83, 76, 6, 13, 2, 53, 8, 24, 44, 12, 100, 29, 5, 17, 15, 73, 47, 27, 46]
+video number : 1909
+video number + exemplar : 1909
+DataLoader Constructed
+************************target************************ torch.Size([16])
+************************target************************ tensor([14, 47, 30, 46, 50, 16, 35, 33, 46, 15, 15, 43, 42, 50, 18,  4],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+Test: [0/120]	Time 6.864 (6.864)	Prec@1 62.500 (62.500)
+************************target************************ torch.Size([16])
+************************target************************ tensor([48, 29, 41, 21, 14, 17, 36, 28, 15, 21, 18,  6, 32,  5, 42,  3],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([24, 36,  5, 39, 12, 36, 48, 37, 47, 24, 17, 22, 19,  3, 47, 21],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([15, 29, 20, 39, 27, 24, 34, 44, 20, 50, 27,  8, 48, 22, 27, 11],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([40, 14, 36,  9, 34, 18,  0, 34, 19, 47,  3, 10, 28,  6, 19, 22],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 9, 24,  6, 13, 15, 17, 20,  9, 19, 17, 12, 48,  7, 36, 50, 31],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([29, 29,  3, 37, 24, 22, 50,  5, 32, 27,  3, 21, 31, 29, 36, 45],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([29, 17, 49, 39, 13, 18, 19, 27, 43,  9,  9,  5, 13, 31, 32, 24],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 0, 32, 31, 30,  2, 31, 35,  0, 42, 19,  2, 24, 37, 22,  2, 21],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([14, 21, 44,  1,  6, 34, 11, 27, 47,  9, 43, 15,  8, 50, 19, 12],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([25, 44, 19, 25, 43,  4, 45, 41, 44, 28, 49, 26, 47, 42, 36, 18],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([27, 24, 47, 21,  1, 44, 37, 15, 33, 44, 34, 14, 14,  6, 35, 48],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 0,  3, 25, 38,  2, 17, 33, 20, 26, 43,  6, 30, 28,  2, 11, 29],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 4,  6,  2, 31, 20, 24, 33,  7, 35, 14, 12,  8, 25,  6, 32, 14],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([44, 46,  7, 46, 50,  1, 21,  0, 16,  0,  1, 28, 15, 48, 50, 15],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([18,  2, 16,  4, 43, 37, 13, 29, 41, 32, 49, 23,  5,  9, 28, 40],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([17, 24, 26,  2, 48, 13, 24,  9, 22, 27, 47, 35, 34, 25, 38, 50],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([31,  6, 26, 27, 45, 24, 26, 25, 27, 47,  2, 30, 33, 45, 48, 19],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([46, 11, 38, 35,  9, 22, 33, 36, 36, 33, 37, 48, 11, 47, 22,  0],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([43, 13, 29, 23, 49,  7, 49, 41, 49,  1, 32, 49, 41, 18, 13, 12],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([40,  4, 34, 47, 12,  5,  7, 22, 42, 13, 22, 36, 22, 31, 25, 36],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([24, 48,  6, 17, 41, 11, 34, 33,  1, 36, 46, 39, 31, 17, 46, 19],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 0,  2,  8, 49, 35, 17, 18, 42, 44, 34, 46, 35, 33, 11, 17, 43],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 0, 33, 47, 37,  5, 13, 42,  7, 29, 19, 25, 11, 27, 23, 33,  3],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([12, 39, 33, 33, 48, 48, 26, 32, 21, 23,  1, 24, 12, 47, 47, 45],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([18, 43, 18, 46, 43, 27, 21, 47, 45, 38,  1, 44, 17, 18, 20, 33],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([10, 28, 36, 48, 47,  4, 15, 31, 49, 34, 28, 23, 36, 38, 38, 49],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([31, 26, 27, 43,  7, 46,  7, 37, 44, 40, 22, 48, 26, 26, 46, 32],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([11, 38, 37, 24, 33,  9, 39, 40,  8, 37, 21, 46, 47, 31,  3, 40],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([16,  0, 34,  1, 38, 19, 21, 17, 30, 27, 18,  0,  7, 37, 32, 47],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([41, 17, 28,  3, 23, 13, 24, 18, 27, 21, 46, 29, 16, 21, 44,  5],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([34, 24, 36,  8, 35, 14, 11, 48, 34,  9, 31,  9, 47,  5,  5, 23],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([14, 35, 31, 16, 12, 12, 41, 23,  0, 29, 17, 35, 37, 20, 14,  8],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([24,  4, 10, 13, 46, 33, 13, 47, 26, 44,  0, 23, 32,  5, 29, 13],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([35, 50, 38, 21, 32, 33, 19, 32, 28, 14, 30, 40, 28, 25, 13, 42],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([29, 32,  0,  4, 40,  3,  9,  9,  2, 20, 34, 31, 28,  0, 41, 43],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([30, 38, 35, 39, 38, 14, 46, 23, 18, 27, 43, 36, 35, 22, 22, 41],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([17, 47, 34, 20,  9, 10, 42, 34, 14, 18, 41, 42, 39, 21, 42, 18],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([37,  8, 48, 10, 49, 22, 26, 21, 36,  1, 46, 42, 10, 30, 15, 38],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([13, 16, 27,  3,  4,  6, 20, 24, 17, 24, 20, 31, 24, 38, 28, 48],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([38, 35, 16, 11, 31, 49,  7, 14, 33, 39, 31, 35, 46, 35,  6, 26],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([45, 45, 21, 41, 36, 14, 28, 15, 16, 49, 24, 42, 39, 43, 46, 34],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([41, 47, 46, 20, 47, 28, 29, 45, 13, 44,  3, 27, 45,  3, 22, 46],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([37, 40, 22, 14,  0, 34,  2, 41, 42,  4, 14, 50,  4, 33, 23, 10],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 1,  7, 43, 38, 29, 21, 30, 45, 22,  2, 31,  5, 47, 33, 15, 23],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 4,  5, 15,  9, 26, 41, 50, 21, 13, 29, 41, 46,  8, 33, 21,  2],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([14, 50, 10, 21, 32, 46, 31, 41, 36,  8, 27, 50, 25, 10,  5,  0],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([49, 38, 14, 37, 12, 49, 30,  1,  0, 43, 24, 47, 46, 39, 43, 38],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([20, 17,  6, 23, 31, 37, 27,  7, 37, 18,  2, 33,  8,  0, 30, 11],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 5, 49, 48, 29, 50, 39,  5, 37, 30,  2,  5, 33, 20, 40, 36, 44],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([15, 48, 37, 44, 44,  1,  6, 48, 45, 13, 14, 36, 28,  8,  3,  2],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([36, 11, 12, 22, 28,  2, 13, 50,  3, 50, 26, 31,  1, 27,  3,  0],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 2, 10, 50,  7,  8,  6, 32, 12, 29, 23, 46, 47, 16, 21, 14, 34],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([30, 35, 31, 32, 28, 29,  9, 48, 18, 23, 13, 35, 44, 20, 23, 49],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([18, 33,  1, 13, 43, 21, 39, 19,  0, 36,  4, 25,  1, 34, 22,  4],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([48, 32,  5, 37, 40, 27, 44, 18, 21, 11, 40, 37, 40, 10, 48, 23],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 4, 35, 45,  1,  7,  4, 48, 41, 45, 41, 34, 29, 27, 43, 34,  2],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([22, 43,  4, 10, 42,  4, 46, 13, 33, 39, 49,  2, 49, 50, 25, 11],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([14, 26,  2, 21, 22, 28, 42,  1,  3, 29, 14, 24, 20, 40, 11,  1],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([11, 42, 16, 46, 18, 45, 36, 32, 13, 14, 34, 43, 11, 10, 17, 21],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([21, 16,  8,  2,  3, 12, 23,  1,  4, 47,  7, 16, 30,  5, 25, 45],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([44, 12, 33,  3, 23,  5, 42, 16, 27, 34, 50, 32, 25, 12, 38,  4],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([40, 36, 31,  0, 25, 14, 21, 34,  9, 13, 45,  7,  2, 20,  7,  7],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 0, 11, 36,  9, 22, 49, 33, 28, 19, 24, 37,  2,  2,  4, 30, 30],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([29, 50,  7, 25, 26, 26, 21, 24, 40, 15, 31, 43, 22, 22, 22, 30],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([15,  5, 38, 45, 11, 24, 28,  9, 46,  0, 44, 16, 34, 44, 13, 21],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([14, 50, 31, 18,  0, 20, 17,  1, 14,  4, 26, 24, 39, 28, 33, 46],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([34, 15, 27, 43, 47,  7, 19, 29, 14,  6, 17, 17, 26, 21, 20, 11],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([17,  1, 42,  3, 26, 17, 14, 28, 43, 35, 42, 38,  9, 15, 32,  8],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([41,  9, 28, 15, 41, 30,  2, 22, 39, 29, 12, 16, 43, 46, 19, 15],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([12,  1, 30, 47, 16, 12,  9, 44, 23, 15, 19, 27, 15, 45, 34, 41],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([24,  0, 24, 30, 50, 13, 13, 49, 29, 32, 45,  5,  1, 23, 47, 41],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([22, 13, 25, 34, 41,  3, 15, 32, 45, 32, 22, 17, 36, 27, 18, 45],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([23,  6, 11, 35, 41,  6,  3, 28, 48, 18, 36, 40, 14, 27, 21, 18],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([37, 11, 38, 19,  8, 37, 42, 20,  7,  9, 45,  2,  8,  1, 38, 34],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([20, 30, 12, 50, 11, 31, 36, 21, 48, 41, 38, 43, 29,  5, 37, 13],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([34, 29, 35, 45, 21,  6, 26, 21, 40, 16, 14,  5,  4, 24, 30, 49],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([34, 47, 49, 13, 34, 33, 42, 47, 34, 21,  3, 14, 16,  8, 32,  9],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([41, 39,  7, 23, 46, 36, 37, 15, 16,  9, 49,  6, 32, 24, 40, 42],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([40, 45, 22, 20, 33, 20, 31, 36,  7, 25, 11, 19, 48, 16, 30, 29],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 1, 44, 20, 20, 12, 27, 13, 21, 27, 44, 13, 44, 47,  6,  2, 46],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([37, 10, 34, 43, 35, 38, 18, 20,  1,  7, 11, 37, 11, 19, 43, 13],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([47, 36, 21, 37,  4, 14, 24,  6, 30, 10, 31, 32, 44, 29, 17, 33],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([28,  0, 10, 29, 16,  4,  1,  9, 36, 24, 33, 39, 35, 44, 44,  3],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([30, 49,  9, 14,  2, 46, 37,  4, 37, 44, 39, 48, 47, 41, 20, 49],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([11, 32, 31, 18, 28, 40, 15,  3, 49, 30, 17,  5, 38, 15, 31,  1],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([33, 32, 14, 36,  3, 20, 37, 17, 46, 44, 10, 39, 34, 30, 31, 16],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 8, 13, 14, 25, 15, 10, 11, 22,  6, 33, 16, 21, 18, 33, 18, 50],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([26, 38,  5, 40, 13, 23,  1,  5, 18, 11, 23, 46, 16, 17, 21, 37],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([31, 29, 11, 50, 36, 13, 35, 11, 48, 27, 13, 22, 43, 48, 38,  5],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([19, 46,  5, 13,  9, 26,  0, 27, 23,  3, 47, 38,  3, 22, 31, 45],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([43, 46, 10, 50, 45, 50, 33, 40, 49, 17, 31, 46, 23, 19, 19, 29],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([45,  6, 39, 13,  3, 24, 18, 13, 31, 37,  8,  5,  6, 46, 41,  9],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([35, 19, 19, 22, 10, 42,  3, 19, 14, 29, 10, 16, 11, 47, 29, 31],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([42,  8, 20, 29, 43, 35, 27, 21, 33, 20, 18, 14, 43,  9, 30, 24],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([40, 26, 22, 24, 45, 41, 18, 29, 25, 41, 10, 21, 37,  7, 44, 28],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([15, 39, 26, 24, 27, 30, 15,  7, 12, 39, 40, 39, 17, 10, 29, 14],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([41, 13, 44, 42, 23, 22,  5, 19,  5,  6, 34, 35, 23, 27, 36, 33],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([22, 18, 15, 17,  5, 36, 32, 48,  1,  9, 25, 42, 39, 20, 41, 32],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([40, 50, 14, 37, 30, 27, 37, 28, 24, 48, 37,  5, 14, 40, 16, 17],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([45, 37, 45, 36, 44, 42, 25, 39, 46,  0, 32, 44, 38, 22, 22, 38],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+Test: [100/120]	Time 0.459 (0.646)	Prec@1 62.500 (56.064)
+************************target************************ torch.Size([16])
+************************target************************ tensor([42, 32, 48, 45, 10, 32, 24, 42,  7, 29, 13,  9, 40, 39,  7, 49],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([27,  8, 34, 32, 18,  1, 44, 19,  7, 12,  5,  6,  9, 43, 25, 40],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 5, 22, 16, 20, 35, 33, 33,  6,  8, 47,  3, 50, 40, 45, 31, 15],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([35, 19,  8,  6, 18,  2, 45, 38, 27, 50,  0,  2,  8,  1, 10, 10],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([13,  2, 20, 23,  3, 50, 37, 12, 22,  4,  4,  3, 26, 39, 19, 23],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([34,  9, 28, 25, 31, 11, 12, 19, 25, 29,  9, 46,  1, 13, 36,  6],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([39, 27, 15, 18, 39,  4, 42, 16, 34, 22, 39, 42, 25,  6, 30,  4],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 0, 20,  2, 11, 31, 26, 49,  9, 41,  8, 41, 26,  2, 25, 38, 19],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([22, 30, 27, 15, 23, 17, 24, 33, 32, 36, 23, 40, 15, 30, 11,  4],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([22, 21, 31, 29, 14, 17, 48, 12, 43, 45, 13, 43, 41, 36, 49, 14],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([47, 22,  4, 45, 43,  9, 49, 48, 44, 34, 21, 31, 26,  7, 44, 50],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([50,  6, 38, 13, 34,  6,  1, 13, 18,  0, 46, 22, 37,  1, 31,  5],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([16, 33, 16, 28, 32, 42, 16, 50,  9,  7, 38, 12, 42, 16, 35, 49],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([22, 38, 13,  3, 26, 50,  5, 18,  5, 20,  0,  9, 10, 19, 32, 17],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 2, 37, 46, 42, 44, 46,  6, 34, 37, 25, 15, 39, 45, 29, 49,  8],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([44,  6,  8, 12, 15, 48, 35, 28, 47, 26,  4, 24, 44, 20, 26, 48],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([41, 18, 47, 14, 33,  5, 37, 44, 44, 42, 12,  9, 37, 28, 10, 41],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([27, 38, 32, 50, 39, 13,  0, 12,  3, 44, 29, 38,  2, 29,  5, 12],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([5])
+************************target************************ tensor([29, 28, 22, 48, 23], device='cuda:0')
+************************outputsoftmax************************ torch.Size([5, 101])
+Testing Results: Prec@1 57.203
+Classify using the NME Classifier...
+Test (NME): [0/120]	Time 0.000 (0.000)	Prec@1 75.000 (75.000)
+Test (NME): [100/120]	Time 0.000 (0.000)	Prec@1 75.000 (64.604)
+Testing Results (NME): Prec@1 65.794
+Eval Task 1 for Age 5
+Current Task : [98, 96, 18, 90, 75, 31, 95, 49, 43, 78]
+video number : 353
+video number + exemplar : 353
+DataLoader Constructed
+************************target************************ torch.Size([16])
+************************target************************ tensor([57, 51, 58, 56, 55, 54, 54, 60, 58, 51, 58, 60, 58, 52, 52, 51],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+Test: [0/23]	Time 5.318 (5.318)	Prec@1 50.000 (50.000)
+************************target************************ torch.Size([16])
+************************target************************ tensor([56, 59, 51, 56, 55, 56, 52, 54, 57, 56, 52, 56, 53, 53, 51, 59],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([58, 51, 54, 52, 52, 52, 53, 60, 55, 52, 59, 60, 59, 55, 57, 58],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([58, 55, 60, 52, 59, 60, 58, 56, 51, 59, 56, 60, 55, 53, 59, 54],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([55, 53, 57, 55, 60, 54, 60, 55, 60, 55, 60, 59, 60, 57, 59, 52],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([55, 57, 51, 51, 54, 56, 51, 55, 51, 57, 52, 54, 59, 60, 52, 58],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([53, 51, 59, 55, 54, 60, 56, 54, 56, 52, 60, 55, 52, 60, 56, 53],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([55, 52, 51, 59, 52, 53, 54, 60, 57, 59, 55, 52, 57, 56, 51, 59],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([57, 53, 58, 58, 56, 59, 54, 60, 58, 59, 51, 57, 54, 56, 60, 56],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([59, 52, 57, 60, 60, 58, 60, 53, 53, 52, 55, 60, 51, 52, 55, 58],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([59, 56, 55, 58, 51, 58, 56, 56, 54, 55, 57, 56, 52, 51, 59, 58],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([53, 59, 59, 51, 54, 53, 60, 57, 52, 58, 52, 51, 52, 53, 60, 60],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([58, 55, 55, 59, 58, 58, 52, 53, 51, 51, 52, 54, 57, 51, 53, 53],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([56, 58, 52, 52, 57, 58, 56, 51, 59, 53, 59, 51, 60, 58, 60, 59],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([60, 59, 60, 55, 58, 55, 59, 56, 60, 59, 59, 53, 59, 59, 51, 51],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([52, 59, 52, 51, 55, 56, 59, 60, 58, 53, 56, 58, 59, 55, 58, 57],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([58, 52, 58, 57, 56, 58, 54, 60, 59, 57, 51, 54, 55, 55, 55, 60],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([54, 60, 59, 59, 53, 58, 58, 54, 59, 59, 58, 52, 60, 54, 57, 60],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([60, 56, 60, 55, 60, 54, 57, 56, 56, 51, 56, 51, 57, 54, 57, 59],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([59, 55, 60, 55, 51, 51, 54, 56, 53, 55, 56, 59, 57, 54, 56, 51],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([55, 59, 53, 53, 53, 60, 59, 52, 56, 57, 56, 56, 53, 55, 53, 57],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([52, 60, 59, 55, 53, 56, 54, 59, 52, 57, 57, 60, 60, 51, 54, 54],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([1])
+************************target************************ tensor([60], device='cuda:0')
+************************outputsoftmax************************ torch.Size([1, 101])
+Testing Results: Prec@1 58.074
+Classify using the NME Classifier...
+Test (NME): [0/23]	Time 0.000 (0.000)	Prec@1 62.500 (62.500)
+Testing Results (NME): Prec@1 65.439
+Eval Task 2 for Age 5
+Current Task : [23, 68, 16, 7, 26, 21, 50, 70, 32, 52]
+video number : 402
+video number + exemplar : 402
+DataLoader Constructed
+************************target************************ torch.Size([16])
+************************target************************ tensor([70, 69, 65, 63, 67, 61, 66, 61, 64, 63, 69, 61, 64, 67, 66, 62],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+Test: [0/26]	Time 6.222 (6.222)	Prec@1 50.000 (50.000)
+************************target************************ torch.Size([16])
+************************target************************ tensor([63, 68, 64, 65, 61, 66, 70, 62, 68, 61, 63, 69, 68, 63, 65, 67],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([66, 63, 61, 67, 64, 68, 68, 63, 63, 63, 63, 63, 62, 63, 64, 63],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([66, 61, 66, 66, 65, 63, 61, 70, 64, 69, 62, 63, 62, 66, 65, 61],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([65, 64, 61, 68, 62, 68, 61, 66, 65, 63, 68, 69, 61, 64, 67, 62],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([62, 67, 62, 66, 63, 70, 66, 64, 64, 64, 70, 69, 64, 65, 62, 68],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([62, 61, 64, 70, 70, 63, 62, 70, 70, 64, 67, 66, 70, 65, 70, 63],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([69, 61, 69, 65, 68, 69, 65, 68, 64, 64, 69, 63, 62, 64, 67, 69],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([64, 65, 68, 64, 63, 65, 68, 66, 68, 65, 61, 64, 70, 61, 67, 70],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([65, 69, 70, 69, 69, 65, 70, 63, 63, 63, 61, 69, 66, 64, 63, 68],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([61, 68, 68, 63, 63, 66, 64, 61, 64, 67, 68, 70, 67, 62, 69, 61],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([69, 65, 63, 63, 68, 66, 67, 68, 69, 69, 65, 64, 61, 61, 62, 61],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([65, 61, 62, 63, 65, 65, 65, 69, 62, 67, 66, 62, 65, 66, 64, 67],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([66, 68, 68, 67, 63, 69, 69, 69, 61, 68, 67, 64, 61, 64, 69, 61],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([70, 61, 68, 70, 70, 66, 66, 63, 66, 68, 62, 70, 66, 63, 61, 69],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([70, 62, 66, 63, 61, 63, 65, 62, 65, 70, 62, 62, 65, 68, 66, 66],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([62, 65, 69, 65, 69, 67, 66, 62, 63, 67, 67, 63, 63, 67, 69, 61],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([64, 65, 68, 67, 63, 62, 63, 65, 65, 65, 67, 62, 64, 68, 66, 64],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([66, 66, 62, 65, 65, 65, 67, 67, 61, 65, 67, 68, 66, 69, 67, 70],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([66, 61, 70, 68, 62, 61, 61, 69, 69, 67, 68, 66, 61, 65, 70, 62],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([70, 63, 69, 62, 66, 61, 65, 63, 63, 65, 70, 62, 67, 63, 61, 69],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([61, 68, 62, 66, 63, 68, 64, 62, 64, 69, 66, 64, 67, 61, 70, 61],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([70, 67, 61, 69, 64, 67, 69, 66, 68, 61, 63, 70, 67, 67, 64, 66],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([67, 67, 61, 61, 61, 61, 68, 68, 63, 69, 65, 65, 65, 69, 63, 70],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([62, 70, 61, 68, 67, 65, 68, 67, 68, 63, 69, 61, 65, 66, 67, 70],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([2])
+************************target************************ tensor([65, 67], device='cuda:0')
+************************outputsoftmax************************ torch.Size([2, 101])
+Testing Results: Prec@1 55.970
+Classify using the NME Classifier...
+Test (NME): [0/26]	Time 0.000 (0.000)	Prec@1 68.750 (68.750)
+Testing Results (NME): Prec@1 58.955
+Eval Task 3 for Age 5
+Current Task : [11, 69, 93, 14, 79, 10, 80, 77, 81, 28]
+video number : 351
+video number + exemplar : 351
+DataLoader Constructed
+************************target************************ torch.Size([16])
+************************target************************ tensor([76, 80, 80, 73, 74, 78, 78, 72, 78, 78, 73, 75, 80, 79, 76, 80],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+Test: [0/22]	Time 6.271 (6.271)	Prec@1 56.250 (56.250)
+************************target************************ torch.Size([16])
+************************target************************ tensor([75, 71, 76, 71, 78, 77, 80, 75, 76, 77, 73, 71, 78, 79, 77, 80],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([79, 72, 75, 77, 79, 74, 77, 76, 78, 76, 77, 72, 78, 79, 77, 72],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([75, 78, 75, 75, 79, 77, 75, 77, 77, 77, 73, 72, 77, 74, 75, 78],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([73, 78, 74, 71, 80, 74, 76, 75, 72, 80, 79, 71, 73, 78, 76, 80],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([77, 75, 71, 76, 77, 80, 78, 77, 78, 74, 73, 71, 73, 79, 76, 80],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([73, 76, 71, 74, 76, 79, 72, 79, 76, 77, 75, 71, 76, 79, 76, 80],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([80, 77, 78, 73, 80, 79, 78, 77, 80, 72, 71, 72, 76, 80, 77, 78],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([75, 78, 76, 76, 73, 76, 74, 75, 74, 77, 71, 75, 80, 74, 76, 73],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([78, 80, 74, 71, 74, 79, 77, 78, 76, 80, 76, 80, 72, 77, 71, 80],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([72, 79, 75, 78, 78, 78, 75, 77, 77, 74, 74, 78, 73, 72, 78, 71],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([79, 78, 80, 72, 80, 74, 71, 75, 71, 79, 75, 71, 73, 76, 78, 74],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([72, 71, 75, 75, 77, 73, 79, 80, 74, 80, 73, 75, 78, 71, 75, 74],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([75, 80, 73, 71, 80, 72, 71, 78, 78, 80, 80, 75, 71, 77, 80, 74],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([78, 77, 72, 76, 75, 80, 75, 72, 74, 77, 76, 72, 77, 72, 78, 78],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([77, 76, 71, 71, 76, 80, 73, 73, 71, 71, 71, 73, 71, 73, 71, 76],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([78, 77, 80, 74, 76, 71, 79, 80, 74, 77, 74, 71, 78, 79, 71, 76],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([72, 74, 78, 79, 71, 80, 75, 80, 73, 75, 76, 71, 73, 72, 76, 77],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([77, 73, 73, 72, 76, 77, 79, 73, 79, 74, 78, 72, 77, 77, 78, 78],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([74, 79, 79, 72, 75, 78, 75, 76, 74, 75, 76, 78, 76, 78, 73, 71],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([71, 77, 71, 73, 77, 73, 74, 74, 73, 72, 72, 71, 79, 79, 74, 72],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([15])
+************************target************************ tensor([76, 71, 78, 73, 76, 72, 80, 77, 80, 79, 79, 73, 71, 80, 80],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([15, 101])
+Testing Results: Prec@1 67.521
+Classify using the NME Classifier...
+Test (NME): [0/22]	Time 0.000 (0.000)	Prec@1 56.250 (56.250)
+Testing Results (NME): Prec@1 71.510
+Eval Task 4 for Age 5
+Current Task : [82, 30, 20, 41, 58, 42, 60, 36, 40, 45]
+video number : 380
+video number + exemplar : 380
+DataLoader Constructed
+************************target************************ torch.Size([16])
+************************target************************ tensor([86, 82, 86, 85, 82, 82, 89, 83, 87, 84, 90, 82, 85, 87, 86, 86],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+Test: [0/24]	Time 5.944 (5.944)	Prec@1 68.750 (68.750)
+************************target************************ torch.Size([16])
+************************target************************ tensor([90, 90, 90, 81, 86, 84, 87, 84, 83, 84, 85, 87, 86, 84, 84, 89],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([89, 88, 89, 84, 83, 87, 81, 84, 90, 85, 83, 83, 82, 85, 88, 85],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([88, 86, 89, 83, 88, 83, 81, 85, 88, 83, 88, 81, 83, 87, 83, 89],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([81, 88, 84, 81, 81, 87, 85, 87, 81, 87, 88, 82, 81, 85, 88, 88],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([82, 82, 90, 81, 89, 85, 84, 87, 87, 90, 90, 81, 87, 86, 87, 88],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([89, 90, 88, 83, 87, 85, 89, 90, 89, 86, 84, 90, 82, 81, 90, 82],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([87, 81, 89, 84, 88, 89, 84, 83, 83, 90, 83, 87, 89, 84, 88, 88],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([88, 86, 86, 82, 86, 82, 83, 82, 83, 88, 85, 90, 85, 89, 84, 85],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([81, 81, 86, 89, 85, 89, 85, 87, 84, 86, 90, 87, 89, 82, 83, 90],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([81, 83, 86, 85, 90, 87, 85, 84, 89, 87, 85, 81, 85, 87, 84, 89],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([86, 89, 84, 84, 85, 82, 86, 85, 90, 84, 83, 84, 87, 87, 85, 84],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([87, 84, 84, 85, 86, 90, 87, 89, 90, 89, 81, 87, 90, 82, 84, 87],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([86, 90, 83, 87, 85, 89, 86, 84, 83, 84, 81, 83, 85, 84, 83, 87],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([85, 81, 86, 87, 85, 87, 85, 88, 85, 84, 90, 81, 85, 86, 90, 84],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([89, 86, 82, 90, 85, 87, 87, 84, 82, 86, 84, 82, 87, 89, 81, 84],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([90, 88, 84, 90, 85, 83, 87, 89, 87, 83, 90, 85, 81, 90, 85, 84],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([90, 90, 88, 82, 81, 87, 84, 81, 90, 84, 90, 82, 85, 84, 85, 85],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([87, 90, 81, 84, 84, 83, 89, 84, 87, 84, 86, 89, 88, 82, 87, 85],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([86, 86, 87, 88, 88, 88, 85, 84, 82, 87, 82, 82, 86, 83, 85, 84],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([90, 86, 89, 89, 81, 82, 85, 88, 90, 85, 86, 82, 90, 89, 82, 85],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([83, 89, 83, 84, 83, 88, 82, 84, 83, 87, 86, 81, 87, 82, 88, 82],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([90, 81, 86, 83, 81, 89, 81, 87, 87, 87, 82, 82, 87, 87, 86, 82],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([12])
+************************target************************ tensor([84, 89, 89, 84, 83, 82, 86, 82, 90, 90, 82, 88], device='cuda:0')
+************************outputsoftmax************************ torch.Size([12, 101])
+Testing Results: Prec@1 82.105
+Classify using the NME Classifier...
+Test (NME): [0/24]	Time 0.000 (0.000)	Prec@1 56.250 (56.250)
+Testing Results (NME): Prec@1 76.579
+Eval Task 5 for Age 5
+Current Task : [89, 0, 61, 1, 92, 94, 64, 71, 87, 51]
+video number : 388
+video number + exemplar : 388
+DataLoader Constructed
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 99,  95,  98,  96,  97,  93,  97,  93,  98,  99,  93,  98,  96, 100,
+         91,  96], device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+Test: [0/25]	Time 5.419 (5.419)	Prec@1 87.500 (87.500)
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 97,  98,  93,  92,  94,  92, 100,  98,  94,  96,  92,  93,  92,  94,
+         97,  98], device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 93,  93,  91,  98,  91, 100,  94,  95,  91,  95,  91,  96,  93,  92,
+        100,  95], device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 98,  93,  93,  96,  96,  97,  96,  99, 100,  94,  92,  92,  93,  99,
+         99,  96], device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 96,  96,  98,  97,  94,  99,  96,  99, 100, 100,  95,  95,  94,  93,
+        100,  91], device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 92,  97,  97,  97,  98,  95, 100,  92,  97,  92,  93,  91,  96,  92,
+         94,  95], device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 98,  95,  92,  94,  91,  99,  91,  95,  96,  91,  92,  93, 100,  94,
+         93,  93], device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([100,  95,  93,  94, 100,  92,  95,  94,  96,  96,  96,  95,  92,  99,
+         91,  99], device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 97,  94,  93,  95,  93,  92,  95,  92,  92,  94,  92, 100,  97, 100,
+         91,  95], device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 95,  91,  92,  93,  96, 100,  97,  98,  97,  99, 100,  97,  93,  98,
+        100,  91], device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 99,  98,  91,  97,  95,  91,  93,  94,  98,  92, 100,  99,  92,  96,
+         96,  98], device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 94,  97,  97, 100,  97,  98,  97,  99,  97,  92,  98,  99,  99, 100,
+         99,  93], device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 96,  98, 100,  97,  92,  92,  97,  96,  96,  99,  93,  95,  91,  99,
+         97,  91], device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 93,  96,  99, 100,  96,  96,  93, 100,  91,  92,  93,  94,  93,  92,
+         95,  99], device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 97,  95,  93,  91,  91,  95,  94,  96,  96,  95,  95,  91, 100, 100,
+         93,  98], device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([91, 98, 96, 93, 99, 93, 91, 92, 98, 97, 99, 96, 99, 96, 96, 97],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([96, 92, 95, 96, 94, 96, 93, 94, 97, 94, 91, 92, 99, 95, 91, 95],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 98, 100,  95,  95,  97,  91,  93,  98,  91, 100,  92,  99,  93,  99,
+         97,  97], device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 93,  94,  94,  92,  92,  96,  93, 100,  96,  92,  93,  97,  93,  91,
+         94, 100], device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 97,  98,  91,  91,  95,  94,  99,  94,  93,  98, 100,  97,  97,  98,
+         98,  95], device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 97,  97,  96, 100,  99,  97,  92,  97,  92,  96, 100,  94,  91,  94,
+         97,  94], device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([ 93,  94,  96,  98,  91,  95,  96,  93, 100, 100,  93,  99, 100,  96,
+         92,  92], device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([95, 95, 92, 92, 98, 95, 91, 94, 97, 99, 91, 97, 99, 94, 92, 97],
+       device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([16])
+************************target************************ tensor([100,  91,  93,  95,  93,  92,  91,  91,  97,  95,  92,  93,  93,  96,
+        100,  93], device='cuda:0')
+************************outputsoftmax************************ torch.Size([16, 101])
+************************target************************ torch.Size([4])
+************************target************************ tensor([91, 95, 92, 99], device='cuda:0')
+************************outputsoftmax************************ torch.Size([4, 101])
+Testing Results: Prec@1 85.309
+Classify using the NME Classifier...
+Test (NME): [0/25]	Time 0.000 (0.000)	Prec@1 75.000 (75.000)
+Testing Results (NME): Prec@1 76.546
+num_test_videos [1909, 353, 402, 351, 380, 388]
+n_vids [1909  353  402  351  380  388]
+n_vids_pad [[1909.]
+ [ 353.]
+ [ 402.]
+ [ 351.]
+ [ 380.]
+ [ 388.]]
+tmp [[162500.         141400.         126100.         116100.
+  121300.         109200.        ]
+ [-70600.          31700.          26500.          23000.
+   22900.          20500.        ]
+ [-80400.         -80400.          36400.          26600.
+   22800.          22500.        ]
+ [-70200.         -70200.         -70200.          31399.99996185
+   26999.99996185  23699.99992371]
+ [-76000.         -76000.         -76000.         -76000.
+   35699.99993896  31199.99993896]
+ [-77600.         -77600.         -77600.         -77600.
+  -77600.          33100.        ]]
+tmp [[ 2.11000000e+04  1.53000000e+04  1.00000000e+04 -5.20000000e+03
+   1.21000000e+04]
+ [-1.02300000e+05  5.20000000e+03  3.50000000e+03  1.00000000e+02
+   2.40000000e+03]
+ [-0.00000000e+00 -1.16800000e+05  9.80000000e+03  3.80000000e+03
+   3.00000000e+02]
+ [-0.00000000e+00 -0.00000000e+00 -1.01600000e+05  4.40000000e+03
+   3.30000004e+03]
+ [-0.00000000e+00 -0.00000000e+00 -0.00000000e+00 -1.11700000e+05
+   4.50000000e+03]]
+tmp [[21100.         15300.         10000.         -5200.
+  12100.        ]
+ [    0.          5200.          3500.           100.
+   2400.        ]
+ [    0.             0.          9800.          3800.
+    300.        ]
+ [    0.             0.             0.          4400.
+   3300.00003815]
+ [    0.             0.             0.             0.
+   4500.        ]]
+tmp [21100.         20500.         23300.          3100.
+ 22600.00003815]
+cumsum_n_vids [1909 2262 2664 3015 3395]
+fgt [11.05290728  9.0627763   8.74624625  1.02819237  6.65684832]
+fgt 7.309394104149197
+fgt [7.3093941]
+n_vids [1909  353  402  351  380  388]
+n_vids_pad [[1909.]
+ [ 353.]
+ [ 402.]
+ [ 351.]
+ [ 380.]
+ [ 388.]]
+tmp [[158400.         151700.         144400.         135300.
+  130700.         125600.        ]
+ [-70600.          27700.          26000.          23500.
+   23800.          23100.        ]
+ [-80400.         -80400.          28800.          24800.
+   23500.          23700.        ]
+ [-70200.         -70200.         -70200.          27000.
+   25700.          25099.99996185]
+ [-76000.         -76000.         -76000.         -76000.
+   30099.99996948  29099.99993896]
+ [-77600.         -77600.         -77600.         -77600.
+  -77600.          29700.        ]]
+tmp [[   6700.            7300.            9100.            4600.
+     5100.        ]
+ [ -98300.            1700.            2500.            -300.
+      700.        ]
+ [     -0.         -109200.            4000.            1300.
+     -200.        ]
+ [     -0.              -0.          -97200.            1300.
+      600.00003815]
+ [     -0.              -0.              -0.         -106099.99996948
+     1000.00003052]]
+tmp [[6700.         7300.         9100.         4600.         5100.        ]
+ [   0.         1700.         2500.         -300.          700.        ]
+ [   0.            0.         4000.         1300.         -200.        ]
+ [   0.            0.            0.         1300.          600.00003815]
+ [   0.            0.            0.            0.         1000.00003052]]
+tmp [ 6700.          9000.         15600.          6900.
+  7200.00006866]
+cumsum_n_vids [1909 2262 2664 3015 3395]
+fgt [3.50969094 3.97877984 5.85585586 2.28855721 2.12076585]
+fgt 3.5507299401259886
+fgt [3.55072994]

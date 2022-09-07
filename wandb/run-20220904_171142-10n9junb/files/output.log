@@ -1,0 +1,32 @@
+ucf101: 101 classes
+Method : OURS
+----AGE 1----
+current_task  [98, 96, 18, 90, 75, 31, 95, 49, 43, 78]
+current_head  61
+Phase 2 : Train RGB Model in an Incremental Manner
+Traceback (most recent call last):
+  File "main.py", line 102, in <module>
+    main()
+  File "main.py", line 72, in main
+    train_i_cl.train_task(args, i, current_task, current_head, class_indexer, model_flow=model_flow, prefix=prefix)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 370, in train_task
+    importance_dict = load_importance(args)
+  File "/home/ustc/ls/tcd_code/ops/utils.py", line 113, in load_importance
+    importance_dict = torch.load(filename)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/serialization.py", line 1046, in _load
+    result = unpickler.load()
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/serialization.py", line 1016, in persistent_load
+    load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/serialization.py", line 1001, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/serialization.py", line 176, in default_restore_location
+    result = fn(storage, location)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/serialization.py", line 158, in _cuda_deserialize
+    return obj.cuda(device)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/_utils.py", line 79, in _cuda
+    return new_type(self.size()).copy_(self, non_blocking)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/cuda/__init__.py", line 661, in _lazy_new
+    return super(_CudaBase, cls).__new__(cls, *args, **kwargs)
+KeyboardInterrupt

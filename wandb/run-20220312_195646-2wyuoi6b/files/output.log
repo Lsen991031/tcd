@@ -1,0 +1,71 @@
+ucf101: 101 classes
+Method : OURS
+----AGE 1----
+current_task  [98, 96]
+current_head  53
+Phase 2 : Train RGB Model in an Incremental Manner
+=> base model: resnet34
+torch.Size([8, 64])
+Load the Previous Model
+Copy the old Model
+lambda_0  : [1.0, 0.05049752469181039]
+Increment the Model
+SplitCosineLinear(
+  input_features=512, output_features=159, sigma=tensor([3.6668]), eta=tensor([2.7653])
+  (fc1): CosineLinear(input_features=512, output_features=153, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=512, output_features=6, sigma=1.0, eta=1.0)
+)
+video number : 176
+video number + exemplar : 431
+DataLoader Constructed : Train 13
+Optimizer Constructed
+video number : 176
+video number + exemplar : 176
+Initialize Cosine Classifier
+Computing the class mean vectors...
+2022-03-12 19:57:05.004602
+Epoch: [0][0/13], lr: 0.00100	Time 3.819 (3.819)	Data 1.450 (1.450)	Loss 2.7774 (2.7774)	Loss CE 2.6388 (2.6388)	Loss KD (Logit) 1.0992 (1.0992)	Loss KD (GCAM) 0.0552 (0.0552)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6658 (0.6658)	Loss REG 0.0000 (0.0000)	Prec@1 59.375 (59.375)
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/_functions.py:61: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+Sigma : Parameter containing:
+tensor([3.5814], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.7087], device='cuda:0', requires_grad=True)
+2022-03-12 19:57:19.111538
+Epoch: [1][0/13], lr: 0.00100	Time 2.972 (2.972)	Data 1.999 (1.999)	Loss 0.4175 (0.4175)	Loss CE 0.2492 (0.2492)	Loss KD (Logit) 1.2945 (1.2945)	Loss KD (GCAM) 0.1129 (0.1129)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6899 (0.6899)	Loss REG 0.0000 (0.0000)	Prec@1 93.750 (93.750)
+Sigma : Parameter containing:
+tensor([3.5981], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.7201], device='cuda:0', requires_grad=True)
+2022-03-12 19:57:32.733863
+Epoch: [2][0/13], lr: 0.00100	Time 2.755 (2.755)	Data 1.865 (1.865)	Loss 0.4326 (0.4326)	Loss CE 0.2665 (0.2665)	Loss KD (Logit) 1.3000 (1.3000)	Loss KD (GCAM) 0.1130 (0.1130)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6656 (0.6656)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+Sigma : Parameter containing:
+tensor([3.6544], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.7566], device='cuda:0', requires_grad=True)
+2022-03-12 19:57:46.558015
+Epoch: [3][0/13], lr: 0.00100	Time 2.961 (2.961)	Data 2.003 (2.003)	Loss 0.3885 (0.3885)	Loss CE 0.2196 (0.2196)	Loss KD (Logit) 1.3264 (1.3264)	Loss KD (GCAM) 0.1163 (0.1163)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6709 (0.6709)	Loss REG 0.0000 (0.0000)	Prec@1 93.750 (93.750)
+Sigma : Parameter containing:
+tensor([3.6953], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.7837], device='cuda:0', requires_grad=True)
+2022-03-12 19:58:00.312773
+Epoch: [4][0/13], lr: 0.00100	Time 2.830 (2.830)	Data 1.970 (1.970)	Loss 0.2459 (0.2459)	Loss CE 0.0801 (0.0801)	Loss KD (Logit) 1.3103 (1.3103)	Loss KD (GCAM) 0.1171 (0.1171)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6447 (0.6447)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Traceback (most recent call last):
+  File "main.py", line 101, in <module>
+    main()
+  File "main.py", line 71, in main
+    train_i_cl.train_task(args, i, current_task, current_head, class_indexer, model_flow=model_flow, prefix=prefix)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 461, in train_task
+    _train(args, train_loader, model, criterion, optimizer, epoch, age, regularizer=regularizer, lambda_0=lambda_0, model_old=model_old, importance_list=importance_list)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 71, in _train
+    outputs = model(input=input,t_div=args.t_div)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/modules/module.py", line 493, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/data_parallel.py", line 152, in forward
+    outputs = self.parallel_apply(replicas, inputs, kwargs)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/data_parallel.py", line 162, in parallel_apply
+    return parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/parallel_apply.py", line 75, in parallel_apply
+    thread.join()
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/threading.py", line 1044, in join
+    self._wait_for_tstate_lock()
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/threading.py", line 1060, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt

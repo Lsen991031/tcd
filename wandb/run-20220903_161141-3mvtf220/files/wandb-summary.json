@@ -1,0 +1,1 @@
+{"task_0/loss": 3.9951467514038086, "task_0/loss_ce": 3.9349308013916016, "task_0/loss_kd (logit)": 0.0, "task_0/loss_kd (att)": 0.0, "task_0/loss_mr (att)": 0.0, "task_0/loss_div": 0.6021605134010315, "task_0/loss_reg": 0.0, "task_0/train_top1": 0.0, "task_0/lr": 0.001, "_timestamp": 1662192719, "_runtime": 18, "_step": 0, "_wandb": {"runtime": 35}}

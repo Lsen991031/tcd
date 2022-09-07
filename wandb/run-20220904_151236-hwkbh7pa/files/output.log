@@ -1,0 +1,55 @@
+ucf101: 101 classes
+Method : OURS
+----AGE 0----
+current_task  [37, 97, 56, 55, 33, 84, 3, 4, 72, 59, 66, 48, 65, 91, 99, 39, 34, 22, 67, 74, 19, 35, 9, 86, 88, 63, 85, 38, 54, 25, 57, 62, 83, 76, 6, 13, 2, 53, 8, 24, 44, 12, 100, 29, 5, 17, 15, 73, 47, 27, 46]
+current_head  51
+Phase 2 : Train RGB Model in an Incremental Manner
+=> base model: resnet50
+CosineLinear(input_features=2048, output_features=153, sigma=tensor([1.]), eta=tensor([1.]))
+video number : 4793
+video number + exemplar : 4793
+DataLoader Constructed : Train 299
+Optimizer Constructed
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+2022-09-04 15:12:55.797444
+Epoch: [0][0/299], lr: 0.00100	Time 10.026 (10.026)	Data 1.319 (1.319)	Loss 3.9979 (3.9979)	Loss CE 3.9377 (3.9377)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6014 (0.6014)	Loss REG 0.0000 (0.0000)	Prec@1 0.000 (0.000)
+2022-09-04 15:14:00.032183
+Epoch: [0][100/299], lr: 0.00100	Time 0.741 (0.735)	Data 0.000 (0.013)	Loss 3.9858 (3.9913)	Loss CE 3.9253 (3.9290)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6051 (0.6228)	Loss REG 0.0000 (0.0000)	Prec@1 0.000 (3.589)
+2022-09-04 15:15:03.832326
+Epoch: [0][200/299], lr: 0.00100	Time 0.636 (0.687)	Data 0.000 (0.007)	Loss 3.9745 (3.9865)	Loss CE 3.9139 (3.9250)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6067 (0.6144)	Loss REG 0.0000 (0.0000)	Prec@1 12.500 (6.468)
+Sigma : Parameter containing:
+tensor([1.3333], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([1.1741], device='cuda:0', requires_grad=True)
+2022-09-04 15:16:09.839505
+Epoch: [1][0/299], lr: 0.00100	Time 1.919 (1.919)	Data 1.146 (1.146)	Loss 3.9508 (3.9508)	Loss CE 3.8890 (3.8890)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6184 (0.6184)	Loss REG 0.0000 (0.0000)	Prec@1 31.250 (31.250)
+2022-09-04 15:17:13.699273
+Epoch: [1][100/299], lr: 0.00100	Time 0.632 (0.651)	Data 0.000 (0.012)	Loss 3.6719 (3.8418)	Loss CE 3.6060 (3.7809)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6586 (0.6095)	Loss REG 0.0000 (0.0000)	Prec@1 31.250 (30.693)
+2022-09-04 15:18:17.614843
+Epoch: [1][200/299], lr: 0.00100	Time 0.635 (0.645)	Data 0.000 (0.006)	Loss 1.4765 (3.1729)	Loss CE 1.4110 (3.1107)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6547 (0.6218)	Loss REG 0.0000 (0.0000)	Prec@1 56.250 (38.961)
+Sigma : Parameter containing:
+tensor([3.9442], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.9242], device='cuda:0', requires_grad=True)
+2022-09-04 15:19:24.047021
+Epoch: [2][0/299], lr: 0.00100	Time 2.138 (2.138)	Data 1.436 (1.436)	Loss 1.5412 (1.5412)	Loss CE 1.4806 (1.4806)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6066 (0.6066)	Loss REG 0.0000 (0.0000)	Prec@1 62.500 (62.500)
+2022-09-04 15:20:27.619561
+Epoch: [2][100/299], lr: 0.00100	Time 0.630 (0.651)	Data 0.000 (0.014)	Loss 0.7402 (1.1608)	Loss CE 0.6810 (1.0972)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.5922 (0.6362)	Loss REG 0.0000 (0.0000)	Prec@1 81.250 (69.802)
+2022-09-04 15:21:30.912258
+Epoch: [2][200/299], lr: 0.00100	Time 0.630 (0.642)	Data 0.000 (0.007)	Loss 0.6319 (1.0984)	Loss CE 0.5688 (1.0348)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6310 (0.6359)	Loss REG 0.0000 (0.0000)	Prec@1 87.500 (71.549)
+Sigma : Parameter containing:
+tensor([3.8207], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.9642], device='cuda:0', requires_grad=True)
+2022-09-04 15:22:36.613692
+Epoch: [3][0/299], lr: 0.00100	Time 2.076 (2.076)	Data 1.324 (1.324)	Loss 0.5601 (0.5601)	Loss CE 0.4960 (0.4960)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6406 (0.6406)	Loss REG 0.0000 (0.0000)	Prec@1 81.250 (81.250)
+Traceback (most recent call last):
+  File "main.py", line 102, in <module>
+    main()
+  File "main.py", line 72, in main
+    train_i_cl.train_task(args, i, current_task, current_head, class_indexer, model_flow=model_flow, prefix=prefix)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 524, in train_task
+    # RGB Only
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 208, in _train
+    if args.fc == 'lsc':
+  File "/home/ustc/ls/tcd_code/cl_methods/distillation.py", line 215, in nca_loss
+    targets] = similarities[torch.arange(len(similarities)), targets]
+KeyboardInterrupt

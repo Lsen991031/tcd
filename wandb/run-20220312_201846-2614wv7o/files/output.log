@@ -1,0 +1,877 @@
+ucf101: 101 classes
+Method : OURS
+----AGE 1----
+current_task  [98, 96]
+current_head  53
+Phase 2 : Train RGB Model in an Incremental Manner
+=> base model: resnet34
+Load the Previous Model
+Copy the old Model
+lambda_0  : [1.0, 0.05049752469181039]
+Increment the Model
+SplitCosineLinear(
+  input_features=512, output_features=159, sigma=tensor([3.6668]), eta=tensor([2.7653])
+  (fc1): CosineLinear(input_features=512, output_features=153, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=512, output_features=6, sigma=1.0, eta=1.0)
+)
+video number : 176
+video number + exemplar : 431
+DataLoader Constructed : Train 13
+Optimizer Constructed
+video number : 176
+video number + exemplar : 176
+Initialize Cosine Classifier
+Computing the class mean vectors...
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/_functions.py:61: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+2022-03-12 20:19:04.508515
+Epoch: [0][0/13], lr: 0.00100	Time 3.582 (3.582)	Data 1.692 (1.692)	Loss 2.7774 (2.7774)	Loss CE 2.6388 (2.6388)	Loss KD (Logit) 1.0992 (1.0992)	Loss KD (GCAM) 0.0552 (0.0552)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6658 (0.6658)	Loss REG 0.0000 (0.0000)	Prec@1 59.375 (59.375)
+Sigma : Parameter containing:
+tensor([3.5814], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.7087], device='cuda:0', requires_grad=True)
+2022-03-12 20:19:18.676210
+Epoch: [1][0/13], lr: 0.00100	Time 2.712 (2.712)	Data 1.491 (1.491)	Loss 0.4175 (0.4175)	Loss CE 0.2492 (0.2492)	Loss KD (Logit) 1.2945 (1.2945)	Loss KD (GCAM) 0.1129 (0.1129)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6899 (0.6899)	Loss REG 0.0000 (0.0000)	Prec@1 93.750 (93.750)
+Sigma : Parameter containing:
+tensor([3.5981], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.7201], device='cuda:0', requires_grad=True)
+2022-03-12 20:19:32.389954
+Epoch: [2][0/13], lr: 0.00100	Time 2.927 (2.927)	Data 1.946 (1.946)	Loss 0.4326 (0.4326)	Loss CE 0.2665 (0.2665)	Loss KD (Logit) 1.3000 (1.3000)	Loss KD (GCAM) 0.1130 (0.1130)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6656 (0.6656)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+Sigma : Parameter containing:
+tensor([3.6544], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.7566], device='cuda:0', requires_grad=True)
+2022-03-12 20:19:46.315430
+Epoch: [3][0/13], lr: 0.00100	Time 3.056 (3.056)	Data 2.190 (2.190)	Loss 0.3885 (0.3885)	Loss CE 0.2196 (0.2196)	Loss KD (Logit) 1.3264 (1.3264)	Loss KD (GCAM) 0.1163 (0.1163)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6709 (0.6709)	Loss REG 0.0000 (0.0000)	Prec@1 93.750 (93.750)
+Sigma : Parameter containing:
+tensor([3.6953], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.7837], device='cuda:0', requires_grad=True)
+2022-03-12 20:19:59.886877
+Epoch: [4][0/13], lr: 0.00100	Time 2.642 (2.642)	Data 1.513 (1.513)	Loss 0.2459 (0.2459)	Loss CE 0.0801 (0.0801)	Loss KD (Logit) 1.3103 (1.3103)	Loss KD (GCAM) 0.1171 (0.1171)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6447 (0.6447)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.7415], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.8144], device='cuda:0', requires_grad=True)
+Update Importance Mask...
+1
+torch.Size([128, 512])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512])
+1
+torch.Size([128, 512, 7, 7])
+2
+torch.Size([16, 8, 512])
+3
+2
+torch.Size([8, 512])
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512, 7, 7])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 256, 14, 14])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 512])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512, 7, 7])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512, 7, 7])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 512])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512, 7, 7])
+1
+torch.Size([128, 512])
+2
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 512, 7, 7])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 256, 14, 14])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 512])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512])
+1
+2
+torch.Size([128, 512, 7, 7])
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512, 7, 7])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 512])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512])
+2
+1
+torch.Size([16, 8, 512])
+torch.Size([128, 512, 7, 7])
+3
+torch.Size([8, 512])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512, 7, 7])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 512])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512, 7, 7])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512, 7, 7])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 512])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512, 7, 7])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512, 7, 7])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 512])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512, 7, 7])
+2
+torch.Size([16, 8, 512])
+1
+torch.Size([128, 512])
+3
+2
+torch.Size([8, 512])
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512, 7, 7])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 512])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512, 7, 7])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512, 7, 7])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 512])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512, 7, 7])
+1
+torch.Size([128, 512])
+2
+torch.Size([16, 8, 512])
+2
+3
+torch.Size([16, 8, 512])
+torch.Size([8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512, 7, 7])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 512])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512, 7, 7])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512, 7, 7])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 512])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512])
+1
+2
+torch.Size([128, 512, 7, 7])
+torch.Size([16, 8, 512])
+2
+3
+torch.Size([16, 8, 512])
+torch.Size([8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512, 7, 7])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 512])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512, 7, 7])
+2
+torch.Size([16, 8, 512])
+1
+3
+torch.Size([128, 512])
+torch.Size([8, 512])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 512, 7, 7])
+2
+torch.Size([16, 8, 512])
+3
+torch.Size([8, 512])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 256, 14, 14])
+2
+torch.Size([16, 8, 256])
+3
+torch.Size([8, 256])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 128, 28, 28])
+2
+torch.Size([16, 8, 128])
+3
+torch.Size([8, 128])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+1
+torch.Size([128, 64, 56, 56])
+2
+torch.Size([16, 8, 64])
+3
+torch.Size([8, 64])
+Phase 3 : Manage Exemplar Sets
+=> base model: resnet34
+Construct Exemplar Set
+Load the Model
+SplitCosineLinear(
+  input_features=512, output_features=159, sigma=tensor([3.7415]), eta=tensor([2.8144])
+  (fc1): CosineLinear(input_features=512, output_features=153, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=512, output_features=6, sigma=1.0, eta=1.0)
+)
+Exemplar per class : 5
+video number : 176
+video number + exemplar : 176
+Phase 4 : Class-balanced Fine-Tuning
+=> base model: resnet34
+Load the Model
+SplitCosineLinear(
+  input_features=512, output_features=159, sigma=tensor([3.7415]), eta=tensor([2.8144])
+  (fc1): CosineLinear(input_features=512, output_features=153, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=512, output_features=6, sigma=1.0, eta=1.0)
+)
+exemplar : 265
+DataLoader CBF Constructed : Train 8
+Optimizer Constructed
+2022-03-12 20:20:26.453711
+Epoch: [0][0/8], lr: 0.00050	Time 2.493 (2.493)	Data 1.781 (1.781)	Loss 0.2977 (0.2977)	Prec@1 87.500 (87.500)	Prec@5 100.000 (100.000)
+Traceback (most recent call last):
+  File "main.py", line 101, in <module>
+    main()
+  File "main.py", line 82, in main
+    cbf.train_task(args, i, total_task_list[:i+1], current_head, class_indexer, prefix)
+  File "/home/ustc/ls/tcd_code/train/cbf.py", line 241, in train_task
+    _train(args, train_loader, model, criterion, optimizer, epoch, age)#, lambda_0=lambda_0, model_old=model_old)
+  File "/home/ustc/ls/tcd_code/train/cbf.py", line 48, in _train
+    for i, (input, target, _) in enumerate(train_loader):
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 571, in __next__
+    self._shutdown_workers()
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    w.join()
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/process.py", line 140, in join
+    res = self._popen.wait(timeout)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/popen_fork.py", line 48, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/popen_fork.py", line 28, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+KeyboardInterrupt

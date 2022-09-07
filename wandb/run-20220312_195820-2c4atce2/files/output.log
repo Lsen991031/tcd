@@ -1,0 +1,192 @@
+ucf101: 101 classes
+Method : OURS
+----AGE 1----
+current_task  [98, 96]
+current_head  53
+Phase 2 : Train RGB Model in an Incremental Manner
+=> base model: resnet34
+torch.Size([8, 64])
+Load the Previous Model
+Copy the old Model
+lambda_0  : [1.0, 0.05049752469181039]
+Increment the Model
+SplitCosineLinear(
+  input_features=512, output_features=159, sigma=tensor([3.6668]), eta=tensor([2.7653])
+  (fc1): CosineLinear(input_features=512, output_features=153, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=512, output_features=6, sigma=1.0, eta=1.0)
+)
+video number : 176
+video number + exemplar : 431
+DataLoader Constructed : Train 13
+Optimizer Constructed
+video number : 176
+video number + exemplar : 176
+Initialize Cosine Classifier
+Computing the class mean vectors...
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/_functions.py:61: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+2022-03-12 19:58:37.852611
+Epoch: [0][0/13], lr: 0.00100	Time 3.521 (3.521)	Data 2.044 (2.044)	Loss 2.7774 (2.7774)	Loss CE 2.6388 (2.6388)	Loss KD (Logit) 1.0992 (1.0992)	Loss KD (GCAM) 0.0552 (0.0552)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6658 (0.6658)	Loss REG 0.0000 (0.0000)	Prec@1 59.375 (59.375)
+Sigma : Parameter containing:
+tensor([3.5814], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.7087], device='cuda:0', requires_grad=True)
+2022-03-12 19:58:51.632358
+Epoch: [1][0/13], lr: 0.00100	Time 2.524 (2.524)	Data 1.406 (1.406)	Loss 0.4175 (0.4175)	Loss CE 0.2492 (0.2492)	Loss KD (Logit) 1.2945 (1.2945)	Loss KD (GCAM) 0.1129 (0.1129)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6899 (0.6899)	Loss REG 0.0000 (0.0000)	Prec@1 93.750 (93.750)
+Sigma : Parameter containing:
+tensor([3.5981], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.7201], device='cuda:0', requires_grad=True)
+2022-03-12 19:59:05.086900
+Epoch: [2][0/13], lr: 0.00100	Time 2.713 (2.713)	Data 1.774 (1.774)	Loss 0.4326 (0.4326)	Loss CE 0.2665 (0.2665)	Loss KD (Logit) 1.3000 (1.3000)	Loss KD (GCAM) 0.1130 (0.1130)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6656 (0.6656)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+Sigma : Parameter containing:
+tensor([3.6544], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.7566], device='cuda:0', requires_grad=True)
+2022-03-12 19:59:18.532199
+Epoch: [3][0/13], lr: 0.00100	Time 2.591 (2.591)	Data 1.503 (1.503)	Loss 0.3885 (0.3885)	Loss CE 0.2196 (0.2196)	Loss KD (Logit) 1.3264 (1.3264)	Loss KD (GCAM) 0.1163 (0.1163)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6709 (0.6709)	Loss REG 0.0000 (0.0000)	Prec@1 93.750 (93.750)
+Sigma : Parameter containing:
+tensor([3.6953], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.7837], device='cuda:0', requires_grad=True)
+2022-03-12 19:59:32.092827
+Epoch: [4][0/13], lr: 0.00100	Time 2.603 (2.603)	Data 1.551 (1.551)	Loss 0.2459 (0.2459)	Loss CE 0.0801 (0.0801)	Loss KD (Logit) 1.3103 (1.3103)	Loss KD (GCAM) 0.1171 (0.1171)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6447 (0.6447)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.7415], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.8144], device='cuda:0', requires_grad=True)
+Update Importance Mask...
+Phase 3 : Manage Exemplar Sets
+=> base model: resnet34
+torch.Size([8, 64])
+Construct Exemplar Set
+Load the Model
+SplitCosineLinear(
+  input_features=512, output_features=159, sigma=tensor([3.7415]), eta=tensor([2.8144])
+  (fc1): CosineLinear(input_features=512, output_features=153, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=512, output_features=6, sigma=1.0, eta=1.0)
+)
+Exemplar per class : 5
+video number : 176
+video number + exemplar : 176
+Phase 4 : Class-balanced Fine-Tuning
+=> base model: resnet34
+torch.Size([8, 64])
+Load the Model
+SplitCosineLinear(
+  input_features=512, output_features=159, sigma=tensor([3.7415]), eta=tensor([2.8144])
+  (fc1): CosineLinear(input_features=512, output_features=153, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=512, output_features=6, sigma=1.0, eta=1.0)
+)
+exemplar : 265
+DataLoader CBF Constructed : Train 8
+Optimizer Constructed
+2022-03-12 19:59:58.754037
+Epoch: [0][0/8], lr: 0.00050	Time 2.663 (2.663)	Data 2.032 (2.032)	Loss 0.2977 (0.2977)	Prec@1 87.500 (87.500)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.7491], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.8198], device='cuda:0', requires_grad=True)
+2022-03-12 20:00:05.588393
+Epoch: [1][0/8], lr: 0.00050	Time 2.400 (2.400)	Data 1.520 (1.520)	Loss 0.0860 (0.0860)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.7664], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.8314], device='cuda:0', requires_grad=True)
+2022-03-12 20:00:12.188244
+Epoch: [2][0/8], lr: 0.00050	Time 2.177 (2.177)	Data 1.450 (1.450)	Loss 0.0836 (0.0836)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.7906], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.8475], device='cuda:0', requires_grad=True)
+2022-03-12 20:00:19.218637
+Epoch: [3][0/8], lr: 0.00050	Time 2.580 (2.580)	Data 1.783 (1.783)	Loss 0.0733 (0.0733)	Prec@1 96.875 (96.875)	Prec@5 100.000 (100.000)
+Sigma : Parameter containing:
+tensor([3.8141], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.8635], device='cuda:0', requires_grad=True)
+2022-03-12 20:00:26.133922
+Epoch: [4][0/8], lr: 0.00050	Time 2.497 (2.497)	Data 1.658 (1.658)	Loss 0.0185 (0.0185)	Prec@1 100.000 (100.000)	Prec@5 100.000 (100.000)
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+Traceback (most recent call last):
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "main.py", line 101, in <module>
+    main()
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "main.py", line 82, in main
+    cbf.train_task(args, i, total_task_list[:i+1], current_head, class_indexer, prefix)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/ls/tcd_code/train/cbf.py", line 241, in train_task
+    _train(args, train_loader, model, criterion, optimizer, epoch, age)#, lambda_0=lambda_0, model_old=model_old)
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/ls/tcd_code/train/cbf.py", line 71, in _train
+    loss = cl_dist.nca_loss(preds, target_)
+BrokenPipeError: [Errno 32] Broken pipe
+BrokenPipeError: [Errno 32] Broken pipe
+BrokenPipeError: [Errno 32] Broken pipe
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/ls/tcd_code/cl_methods/distillation.py", line 215, in nca_loss
+    targets] = similarities[torch.arange(len(similarities)), targets]
+BrokenPipeError: [Errno 32] Broken pipe
+KeyboardInterrupt

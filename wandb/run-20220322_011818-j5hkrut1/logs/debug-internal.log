@@ -1,0 +1,1576 @@
+2022-03-22 01:18:19,153 INFO    MainThread:6820 [internal.py:wandb_internal():95] W&B internal server running at pid: 6820, started at: 2022-03-22 01:18:19.152732
+2022-03-22 01:18:19,155 INFO    WriterThread:6820 [datastore.py:open_for_write():77] open: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/run-j5hkrut1.wandb
+2022-03-22 01:18:19,158 DEBUG   SenderThread:6820 [sender.py:send():235] send: header
+2022-03-22 01:18:19,158 DEBUG   SenderThread:6820 [sender.py:send():235] send: run
+2022-03-22 01:18:19,678 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: check_version
+2022-03-22 01:18:19,680 INFO    SenderThread:6820 [dir_watcher.py:__init__():169] watching files in: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files
+2022-03-22 01:18:19,680 INFO    SenderThread:6820 [sender.py:_start_run_threads():815] run started: j5hkrut1 with start time 1647883098
+2022-03-22 01:18:19,680 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:18:19,680 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:18:19,681 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: check_version
+2022-03-22 01:18:20,120 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: run_start
+2022-03-22 01:18:20,128 DEBUG   HandlerThread:6820 [meta.py:__init__():37] meta init
+2022-03-22 01:18:20,128 DEBUG   HandlerThread:6820 [meta.py:__init__():51] meta init done
+2022-03-22 01:18:20,128 DEBUG   HandlerThread:6820 [meta.py:probe():211] probe
+2022-03-22 01:18:20,134 DEBUG   HandlerThread:6820 [git.py:repo():33] git repository is invalid
+2022-03-22 01:18:20,134 DEBUG   HandlerThread:6820 [meta.py:_save_pip():55] save pip
+2022-03-22 01:18:20,135 DEBUG   HandlerThread:6820 [meta.py:_save_pip():69] save pip done
+2022-03-22 01:18:20,135 DEBUG   HandlerThread:6820 [meta.py:_save_conda():76] save conda
+2022-03-22 01:18:20,685 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/requirements.txt
+2022-03-22 01:18:20,686 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:18:20,686 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/conda-environment.yaml
+2022-03-22 01:18:22,834 DEBUG   HandlerThread:6820 [meta.py:_save_conda():86] save conda done
+2022-03-22 01:18:22,834 DEBUG   HandlerThread:6820 [meta.py:probe():249] probe done
+2022-03-22 01:18:22,839 DEBUG   SenderThread:6820 [sender.py:send():235] send: files
+2022-03-22 01:18:22,840 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2022-03-22 01:18:22,852 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:18:22,853 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:18:23,266 DEBUG   SenderThread:6820 [sender.py:send():235] send: telemetry
+2022-03-22 01:18:23,688 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/conda-environment.yaml
+2022-03-22 01:18:23,689 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-metadata.json
+2022-03-22 01:18:23,689 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:18:23,926 INFO    Thread-11 :6820 [upload_job.py:push():137] Uploaded file /tmp/tmpet7ozi6lwandb/1iim7j1c-wandb-metadata.json
+2022-03-22 01:18:25,690 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:18:29,692 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:18:38,273 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:18:38,273 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:18:44,375 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:18:44,379 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:18:44,380 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:18:44,386 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:18:44,699 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:18:45,699 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:18:50,187 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:18:50,702 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/config.yaml
+2022-03-22 01:18:53,677 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:18:53,677 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:19:09,101 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:19:09,102 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:19:22,784 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:19:24,531 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:19:24,532 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:19:39,968 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:19:39,969 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:19:44,790 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:19:44,794 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:19:44,795 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:19:44,799 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:19:45,728 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:19:45,729 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:19:55,470 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:19:55,472 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:19:55,892 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:20:10,984 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:20:10,985 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:20:15,745 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:20:19,081 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:20:19,086 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:20:19,086 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:20:19,093 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:20:19,747 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:20:21,748 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:20:26,411 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:20:26,412 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:20:28,344 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:20:41,841 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:20:41,842 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:20:57,253 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:20:57,253 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:21:00,465 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:21:12,657 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:21:12,657 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:21:26,518 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:21:26,522 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:21:26,522 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:21:26,523 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:21:26,784 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:21:27,785 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:21:28,082 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:21:28,082 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:21:32,799 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:21:43,494 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:21:43,494 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:21:58,906 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:21:58,906 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:22:01,801 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:22:05,023 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:22:09,048 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:22:09,051 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:22:09,051 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:22:09,052 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:22:09,805 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:22:09,805 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:22:14,636 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:22:14,637 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:22:30,071 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:22:30,072 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:22:37,713 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:22:45,500 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:22:45,500 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:23:00,947 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:23:00,947 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:23:07,256 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:23:07,259 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:23:07,260 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:23:07,265 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:23:07,831 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:23:08,831 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:23:10,621 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:23:17,504 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:23:17,505 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:23:32,954 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:23:32,955 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:23:38,846 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:23:41,848 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:23:41,851 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:23:41,852 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:23:41,852 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:23:42,848 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:23:43,002 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:23:44,849 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:23:48,362 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:23:48,363 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:24:03,781 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:24:03,782 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:24:15,320 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:24:19,559 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:24:19,559 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:24:34,969 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:24:34,970 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:24:47,699 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:24:49,224 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:24:49,227 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:24:49,227 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:24:49,228 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:24:49,883 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:24:50,424 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:24:50,424 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:24:50,883 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:25:05,863 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:25:05,863 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:25:20,035 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:25:21,270 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:25:21,271 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:25:22,898 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:25:27,017 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:25:27,020 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:25:27,021 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:25:27,022 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:25:27,901 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:25:28,901 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:25:36,698 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:25:36,698 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:25:52,150 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:25:52,151 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:25:52,570 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:26:07,573 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:26:07,573 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:26:23,049 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:26:23,049 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:26:24,539 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:26:24,544 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:26:24,544 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:26:24,545 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:26:24,929 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:26:25,076 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:26:26,930 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:26:39,205 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:26:39,205 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:26:54,621 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:26:54,621 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:26:57,469 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:26:58,945 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:27:03,136 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:27:03,138 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:27:03,139 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:27:03,140 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:27:03,948 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:27:04,948 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:27:10,043 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:27:10,043 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:27:25,854 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:27:25,855 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:27:29,624 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:27:41,254 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:27:41,255 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:27:56,683 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:27:56,683 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:28:02,033 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:28:10,759 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:28:10,761 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:28:10,761 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:28:10,762 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:28:10,982 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:28:12,105 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:28:12,105 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:28:12,982 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:28:27,530 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:28:27,530 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:28:34,409 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:28:42,940 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:28:42,941 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:28:42,996 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:28:45,482 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:28:45,485 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:28:45,486 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:28:45,486 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:28:45,998 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:28:46,999 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:28:58,346 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:28:58,346 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:29:06,649 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:29:13,751 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:29:13,752 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:29:29,168 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:29:29,168 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:29:39,221 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:29:42,760 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:29:42,764 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:29:42,765 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:29:42,765 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:29:43,035 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:29:44,598 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:29:44,598 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:29:45,036 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:30:00,074 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:30:00,074 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:30:11,614 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:30:15,483 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:30:15,483 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:30:19,052 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:30:22,510 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:30:22,513 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:30:22,514 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:30:22,515 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:30:23,054 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:30:23,055 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:30:31,035 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:30:31,035 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:30:43,632 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:30:46,458 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:30:46,458 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:31:01,865 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:31:01,866 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:31:16,152 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:31:17,284 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:31:17,285 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:31:25,548 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:31:25,551 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:31:25,551 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:31:25,551 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:31:26,083 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:31:28,084 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:31:32,698 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:31:32,698 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:31:48,114 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:31:48,115 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:31:48,636 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:31:54,095 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:31:58,331 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:31:58,334 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:31:58,334 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:31:58,335 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:31:59,097 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:32:00,098 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:32:03,533 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:32:03,533 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:32:18,970 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:32:18,971 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:32:21,374 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:32:34,463 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:32:34,463 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:32:49,121 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:32:49,124 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:32:49,125 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:32:49,126 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:32:49,875 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:32:49,876 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:32:50,126 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:32:52,128 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:32:53,988 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:33:05,288 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:33:05,289 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:33:20,705 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:33:20,706 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:33:24,142 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:33:26,370 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:33:27,594 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:33:27,598 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:33:27,598 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:33:27,599 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:33:28,144 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:33:30,145 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:33:36,112 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:33:36,113 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:33:51,525 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:33:51,526 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:33:58,769 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:34:06,954 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:34:06,954 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:34:22,451 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:34:22,451 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:34:31,151 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:34:31,636 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:34:31,639 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:34:31,639 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:34:31,640 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:34:32,182 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:34:34,185 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:34:37,853 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:34:37,854 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:34:53,268 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:34:53,268 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:35:00,197 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:35:03,492 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:35:04,235 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:35:04,237 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:35:04,238 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:35:04,239 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:35:05,220 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:35:06,220 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:35:08,679 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:35:08,680 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:35:24,552 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:35:24,552 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:35:36,620 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:35:40,004 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:35:40,006 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:35:55,455 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:35:55,456 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:35:55,873 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:35:55,878 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:35:55,878 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:35:55,879 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:35:56,244 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:35:56,244 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:36:09,205 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:36:10,869 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:36:10,869 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:36:26,280 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:36:26,281 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:36:30,260 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:36:33,793 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:36:33,796 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:36:33,796 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:36:33,797 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:36:34,262 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:36:36,263 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:36:41,456 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:36:41,699 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:36:41,699 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:36:57,105 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:36:57,105 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:37:12,515 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:37:12,515 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:37:14,097 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:37:28,039 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:37:28,040 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:37:37,578 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:37:37,581 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:37:37,582 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:37:37,583 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:37:38,291 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:37:38,292 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:37:43,733 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:37:43,734 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:37:46,496 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:37:59,149 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:37:59,150 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:38:07,306 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:38:09,601 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:38:09,604 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:38:09,604 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:38:09,605 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:38:10,307 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:38:11,308 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:38:14,621 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:38:14,622 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:38:19,100 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:38:30,035 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:38:30,036 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:38:45,467 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:38:45,468 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:38:52,012 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:38:59,698 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:38:59,701 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:38:59,701 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:38:59,702 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:39:00,332 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:39:00,879 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:39:00,880 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:39:01,333 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:39:16,291 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:39:16,292 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:39:24,345 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:39:32,012 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:39:32,012 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:39:35,348 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:39:38,534 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:39:38,536 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:39:38,536 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:39:38,537 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:39:39,349 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:39:41,351 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:39:47,439 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:39:47,440 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:39:56,398 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:40:02,851 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:40:02,852 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:40:18,277 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:40:18,278 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:40:29,100 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:40:33,696 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:40:33,697 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:40:41,716 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:40:41,718 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:40:41,719 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:40:41,720 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:40:42,381 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:40:43,381 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:40:49,138 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:40:49,139 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:41:01,741 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:41:04,540 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:41:04,541 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:41:11,402 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:41:14,842 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:41:14,845 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:41:14,845 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:41:14,846 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:41:15,404 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:41:17,405 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:41:21,169 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:41:21,170 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:41:34,114 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:41:36,584 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:41:36,584 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:41:52,043 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:41:52,044 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:42:07,020 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:42:07,281 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:42:07,284 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:42:07,284 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:42:07,285 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:42:07,434 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:42:07,470 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:42:07,470 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:42:09,435 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:42:23,226 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:42:23,227 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:42:38,777 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:42:38,778 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:42:39,430 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:42:43,451 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:42:46,217 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:42:46,219 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:42:46,219 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:42:46,219 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:42:46,452 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:42:47,453 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:42:54,215 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:42:54,215 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:43:09,640 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:43:09,640 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:43:11,856 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:43:25,195 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:43:25,195 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:43:40,600 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:43:40,600 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:43:44,375 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:43:50,841 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:43:50,845 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:43:50,845 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:43:50,846 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:43:51,490 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:43:51,490 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:43:56,005 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:43:56,006 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:44:11,415 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:44:11,415 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:44:17,087 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:44:21,504 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:44:25,355 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:44:25,358 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:44:25,358 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:44:25,359 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:44:25,506 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:44:26,840 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:44:26,840 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:44:27,508 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:44:42,257 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:44:42,257 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:44:49,538 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:44:57,661 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:44:57,662 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:45:13,083 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:45:13,085 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:45:21,944 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:45:26,387 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:45:26,390 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:45:26,390 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:45:26,392 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:45:26,534 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:45:28,535 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:45:28,543 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:45:28,544 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:45:43,954 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:45:43,955 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:45:54,144 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:45:59,364 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:45:59,364 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:46:02,554 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:46:05,170 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:46:05,174 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:46:05,175 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:46:05,176 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:46:05,555 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:46:06,556 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:46:14,768 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:46:14,768 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:46:26,498 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:46:30,183 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:46:30,183 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:46:45,595 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:46:45,595 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:46:58,857 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:47:01,008 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:47:01,008 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:47:07,463 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:47:07,465 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:47:07,465 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:47:07,466 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:47:07,585 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:47:08,585 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:47:16,424 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:47:16,424 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:47:31,396 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:47:31,827 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:47:31,827 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:47:38,606 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:47:41,527 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:47:41,529 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:47:41,529 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:47:41,529 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:47:41,608 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:47:42,609 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:47:47,236 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:47:47,237 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:48:02,646 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:48:02,647 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:48:03,622 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:48:18,059 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:48:18,059 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:48:33,471 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:48:33,472 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:48:35,794 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:48:45,903 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:48:45,906 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:48:45,907 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:48:45,907 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:48:46,648 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:48:48,648 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:48:48,994 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:48:48,995 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:49:04,403 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:49:04,404 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:49:08,014 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:49:19,982 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:49:19,984 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:49:20,664 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:49:24,647 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:49:24,650 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:49:24,651 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:49:24,652 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:49:24,665 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:49:26,666 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:49:35,399 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:49:35,399 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:49:40,332 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:49:50,816 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:49:50,816 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:50:06,218 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:50:06,218 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:50:12,800 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:50:21,624 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:50:21,625 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:50:23,817 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:50:23,821 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:50:23,822 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:50:23,823 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:50:24,712 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:50:24,712 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:50:37,033 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:50:37,033 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:50:45,186 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:50:52,500 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:50:52,501 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:50:52,725 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:50:55,862 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:50:55,865 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:50:55,865 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:50:55,865 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:50:56,727 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:50:56,728 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:51:07,915 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:51:07,916 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:51:17,522 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:51:23,568 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:51:23,568 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:51:38,972 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:51:38,973 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:51:49,911 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:51:54,379 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:51:54,380 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:52:03,303 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:52:03,308 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:52:03,309 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:52:03,310 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:52:03,762 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:52:04,763 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:52:10,088 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:52:10,088 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:52:22,463 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:52:25,497 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:52:25,497 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:52:37,778 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:52:40,916 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:52:40,917 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:52:41,475 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:52:41,479 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:52:41,480 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:52:41,481 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:52:41,780 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:52:43,781 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:52:54,650 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:52:56,339 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:52:56,340 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:53:11,748 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:53:11,748 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:53:27,153 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:53:27,156 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:53:27,567 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:53:39,100 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:53:39,107 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:53:39,107 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:53:39,108 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:53:39,806 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:53:41,807 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:53:42,569 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:53:42,569 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:53:58,991 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:53:58,991 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:53:59,835 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:54:11,820 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:54:13,835 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:54:13,839 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:54:13,839 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:54:13,840 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:54:14,406 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:54:14,406 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:54:14,822 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:54:15,823 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:54:29,829 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:54:29,829 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:54:31,970 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:54:45,245 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:54:45,246 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:55:00,647 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:55:00,647 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:55:04,218 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:55:16,057 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:55:16,058 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:55:21,042 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:55:21,045 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:55:21,045 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:55:21,046 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:55:21,860 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:55:21,860 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:55:31,471 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:55:31,471 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:55:36,617 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:55:46,879 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:55:46,879 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:55:53,875 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:55:56,381 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:55:56,384 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:55:56,385 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:55:56,385 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:55:56,877 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:55:57,877 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:56:02,282 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:56:02,282 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:56:09,428 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:56:18,390 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:56:18,390 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:56:33,795 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:56:33,796 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:56:42,010 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:56:49,209 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:56:49,209 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:56:53,314 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:56:53,316 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:56:53,316 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:56:53,317 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:56:53,908 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:56:55,909 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:57:04,688 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:57:04,688 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:57:14,269 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:57:20,565 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:57:20,565 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:57:29,925 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:57:32,773 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:57:32,775 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:57:32,775 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:57:32,776 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:57:32,927 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:57:33,927 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:57:35,970 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:57:35,970 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:57:46,678 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:57:51,385 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:57:51,386 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:58:06,806 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:58:06,807 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:58:18,947 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:58:22,398 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:58:22,399 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:58:36,167 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:58:36,170 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:58:36,172 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:58:36,172 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:58:36,963 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:58:37,802 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:58:37,803 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:58:37,964 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:58:51,391 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:58:53,212 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:58:53,213 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:59:05,977 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:59:08,460 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:59:08,463 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:59:08,463 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:59:08,464 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 01:59:08,615 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:59:08,616 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:59:08,979 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 01:59:09,987 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 01:59:23,881 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:59:24,059 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:59:24,059 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:59:39,466 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:59:39,467 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:59:54,891 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 01:59:54,892 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 01:59:56,512 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 01:59:59,965 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 01:59:59,968 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 01:59:59,969 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 01:59:59,970 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:00:00,015 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:00:02,016 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:00:10,316 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:00:10,317 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:00:25,724 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:00:25,724 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:00:28,902 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:00:35,031 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:00:37,736 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:00:37,738 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:00:37,739 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:00:37,740 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:00:38,033 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:00:39,033 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:00:41,135 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:00:41,136 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:00:56,534 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:00:56,535 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:01:01,166 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:01:11,945 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:01:11,946 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:01:27,360 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:01:27,361 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:01:33,600 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:01:40,747 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:01:40,749 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:01:40,749 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:01:40,750 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:01:41,065 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:01:42,768 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:01:42,768 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:01:43,066 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:01:58,191 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:01:58,191 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:02:06,306 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:02:09,077 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:02:12,330 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:02:12,334 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:02:12,334 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:02:12,335 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:02:13,079 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:02:13,608 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:02:13,608 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:02:15,080 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:02:29,100 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:02:29,100 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:02:38,972 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:02:44,504 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:02:44,505 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:02:59,919 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:02:59,920 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:03:04,660 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:03:04,662 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:03:04,663 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:03:04,663 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:03:05,102 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:03:07,103 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:03:11,343 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:03:15,335 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:03:15,335 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:03:30,759 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:03:30,760 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:03:39,121 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:03:42,695 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:03:42,698 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:03:42,699 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:03:42,706 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:03:43,123 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:03:43,579 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:03:45,124 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:03:46,175 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:03:46,175 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:04:01,582 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:04:01,582 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:04:16,072 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:04:17,007 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:04:17,007 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:04:32,413 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:04:32,414 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:04:46,321 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:04:46,323 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:04:46,324 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:04:46,325 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:04:47,161 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:04:47,839 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:04:47,840 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:04:48,567 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:04:49,162 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:05:03,257 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:05:03,258 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:05:15,173 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:05:18,595 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:05:18,598 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:05:18,598 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:05:18,606 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:05:18,677 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:05:18,677 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:05:19,175 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:05:20,904 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:05:21,176 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:05:34,081 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:05:34,082 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:05:49,529 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:05:49,531 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:05:53,472 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:06:04,961 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:06:04,962 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:06:11,365 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:06:11,368 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:06:11,368 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:06:11,369 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:06:12,202 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:06:13,202 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:06:20,452 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:06:20,453 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:06:26,068 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:06:35,857 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:06:35,857 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:06:47,219 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:06:49,819 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:06:49,822 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:06:49,823 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:06:49,824 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:06:50,222 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:06:51,223 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:06:51,267 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:06:51,270 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:06:58,302 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:07:06,684 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:07:06,685 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:07:22,115 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:07:22,115 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:07:30,720 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:07:37,518 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:07:37,519 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:07:52,531 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:07:52,535 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:07:52,536 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:07:52,537 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:07:52,926 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:07:52,927 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:07:53,250 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:07:53,251 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:08:03,368 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:08:08,337 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:08:08,337 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:08:21,263 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:08:23,773 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:08:23,774 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:08:24,509 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:08:24,512 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:08:24,512 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:08:24,513 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:08:25,265 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:08:25,265 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:08:35,896 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:08:39,224 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:08:39,225 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:08:54,632 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:08:54,632 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:09:08,579 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:09:10,057 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:09:10,058 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:09:20,984 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:09:20,987 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:09:20,988 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:09:20,989 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:09:21,293 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:09:22,294 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:09:25,484 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:09:25,484 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:09:40,841 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:09:40,912 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:09:40,912 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:09:56,345 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:09:56,346 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:09:58,311 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:09:59,946 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:09:59,949 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:09:59,950 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:09:59,951 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:10:00,312 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:10:02,313 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:10:11,814 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:10:11,815 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:10:13,085 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:10:27,223 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:10:27,223 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:10:42,623 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:10:42,623 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:10:45,299 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:10:58,052 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:10:58,052 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:11:03,753 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:11:03,762 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:11:03,763 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:11:03,763 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:11:04,347 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:11:06,348 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:11:13,466 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:11:13,467 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:11:17,820 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:11:28,871 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:11:28,872 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:11:34,365 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:11:36,897 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:11:36,901 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:11:36,901 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:11:36,902 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:11:37,366 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:11:38,367 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:11:44,344 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:11:44,344 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:11:50,067 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:11:59,761 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:11:59,761 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:12:15,181 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:12:15,181 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:12:22,471 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:12:30,600 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:12:30,601 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:12:39,530 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:12:39,533 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:12:39,534 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:12:39,534 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:12:40,403 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:12:42,404 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:12:46,018 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:12:46,018 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:12:54,799 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:13:01,454 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:13:01,455 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:13:16,422 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:13:16,872 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:13:16,872 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:13:18,283 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:13:18,286 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:13:18,287 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:13:18,288 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:13:18,423 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:13:20,425 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:13:27,053 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:13:32,295 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:13:32,295 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:13:47,704 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:13:47,704 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:13:59,597 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:14:03,112 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:14:03,113 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:14:18,545 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:14:18,546 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:14:19,130 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:14:19,132 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:14:19,133 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:14:19,134 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:14:19,458 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:14:20,458 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:14:32,124 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:14:33,962 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:14:33,963 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:14:48,473 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:14:49,425 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:14:49,425 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:14:51,779 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:14:51,782 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:14:51,783 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:14:51,783 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:14:52,474 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:14:52,475 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:15:04,592 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:15:04,841 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:15:04,842 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:15:20,307 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:15:20,307 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:15:35,721 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:15:35,721 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:15:37,198 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:15:46,013 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:15:46,018 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:15:46,018 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:15:46,019 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:15:46,503 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:15:48,503 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:15:51,124 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:15:51,124 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:16:06,533 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:16:06,533 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:16:09,431 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:16:14,516 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:16:18,032 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:16:18,036 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:16:18,036 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:16:18,037 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:16:18,517 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:16:20,519 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:16:21,982 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:16:21,982 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:16:37,399 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:16:37,400 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:16:42,104 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:16:52,812 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:16:52,813 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:17:08,257 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:17:08,260 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:17:10,522 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:17:10,525 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:17:10,526 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:17:10,526 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:17:10,540 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:17:12,541 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:17:14,592 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:17:23,675 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:17:23,675 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:17:38,559 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:17:39,189 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:17:39,189 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:17:41,299 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:17:41,301 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:17:41,301 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:17:41,302 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:17:41,561 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:17:42,563 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:17:47,181 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:17:54,609 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:17:54,609 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:18:10,037 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:18:10,037 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:18:19,439 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:18:25,474 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:18:25,474 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:18:33,254 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:18:33,257 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:18:33,258 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:18:33,258 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:18:33,588 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:18:34,589 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:18:40,891 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:18:40,892 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:18:51,802 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:18:56,306 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:18:56,307 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:19:01,603 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:19:04,395 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:19:04,398 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:19:04,398 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:19:04,399 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:19:04,604 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:19:07,606 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:19:11,719 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:19:11,720 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:19:24,168 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:19:27,138 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:19:27,139 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:19:42,547 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:19:42,548 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:19:56,574 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:19:56,786 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:19:56,792 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:19:56,795 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:19:56,796 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:19:57,632 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:19:57,956 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:19:57,957 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:19:59,633 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:20:13,377 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:20:13,378 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:20:25,646 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:20:27,283 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:20:27,285 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:20:27,285 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:20:27,295 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:20:27,647 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:20:28,794 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:20:28,795 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:20:29,204 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:20:29,648 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:20:44,206 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:20:44,207 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:20:59,753 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:20:59,754 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:21:01,237 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:21:15,180 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:21:15,181 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:21:18,808 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:21:18,812 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:21:18,813 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:21:18,814 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:21:19,672 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:21:21,673 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:21:30,592 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:21:30,593 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:21:33,708 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:21:46,025 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:21:46,025 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:21:47,686 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:21:49,139 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:21:49,142 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:21:49,143 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:21:49,143 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:21:49,687 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:21:51,690 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:22:01,539 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:22:01,539 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:22:06,170 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:22:16,971 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:22:16,972 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:22:32,383 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:22:32,384 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:22:38,528 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:22:41,099 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:22:41,102 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:22:41,103 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:22:41,104 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:22:41,716 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:22:43,717 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:22:47,807 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:22:47,807 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:23:03,213 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:23:03,213 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:23:09,729 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:23:11,103 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:23:11,522 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:23:11,525 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:23:11,525 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:23:11,526 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:23:11,752 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:23:13,753 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:23:18,696 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:23:18,697 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:23:34,097 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:23:34,097 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:23:43,613 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:23:49,505 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:23:49,505 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:24:03,691 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:24:03,695 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:24:03,695 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:24:03,696 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:24:03,786 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:24:04,944 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:24:04,945 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:24:05,787 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:24:16,124 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:24:20,406 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:24:20,407 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:24:29,799 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:24:31,448 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:24:31,451 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:24:31,452 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:24:31,453 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:24:31,799 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:24:33,800 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:24:35,827 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:24:35,828 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:24:48,676 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:24:51,230 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:24:51,230 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:25:06,642 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:25:06,642 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:25:17,459 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:25:17,462 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:25:17,462 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:25:17,463 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:25:17,832 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:25:19,833 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:25:21,116 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:25:22,055 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:25:22,055 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:25:37,508 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:25:37,509 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:25:41,848 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:25:44,621 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:25:44,625 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:25:44,625 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:25:44,626 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:25:44,849 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:25:45,850 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:25:52,926 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:25:52,926 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:25:53,794 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:26:08,342 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:26:08,342 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:26:24,436 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:26:24,436 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:26:26,314 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:26:31,620 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:26:31,623 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:26:31,624 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:26:31,625 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:26:31,871 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:26:32,872 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:26:39,848 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:26:39,849 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:26:55,259 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:26:55,260 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:26:56,884 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:26:58,527 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:26:59,781 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:26:59,784 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:26:59,785 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:26:59,786 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:26:59,885 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:27:00,886 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:27:10,689 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:27:10,690 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:27:26,129 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:27:26,130 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:27:31,242 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:27:41,549 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:27:41,550 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:27:46,297 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:27:46,301 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:27:46,301 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:27:46,302 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:27:46,911 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:27:48,912 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:27:56,962 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:27:56,962 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:28:03,981 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:28:12,369 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:28:12,370 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:28:12,926 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:28:14,492 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:28:14,494 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:28:14,495 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:28:14,496 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:28:14,927 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:28:16,928 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:28:27,777 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:28:27,777 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:28:36,651 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:28:43,191 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:28:43,192 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:28:58,624 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:28:58,627 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:29:00,617 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:29:00,621 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:29:00,621 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:29:00,624 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:29:00,951 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:29:02,952 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:29:09,563 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:29:14,095 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:29:14,095 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:29:24,963 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:29:27,149 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:29:27,155 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:29:27,155 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:29:27,156 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:29:27,965 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:29:28,966 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:29:29,500 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:29:29,501 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:29:42,107 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:29:44,908 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:29:44,908 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:30:00,315 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:30:00,316 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:30:12,491 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:30:12,493 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:30:12,494 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:30:12,494 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:30:12,998 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:30:14,642 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:30:14,998 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:30:15,720 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:30:15,721 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:30:31,136 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:30:31,136 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:30:37,010 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:30:39,503 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:30:39,505 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:30:39,506 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:30:39,507 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:30:40,011 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:30:41,012 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:30:46,553 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:30:46,553 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:30:47,136 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:31:01,955 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:31:01,956 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:31:17,420 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:31:17,421 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:31:19,836 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:31:25,296 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:31:25,299 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:31:25,299 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:31:25,300 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:31:26,034 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:31:27,035 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:31:32,828 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:31:32,829 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:31:48,234 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:31:48,235 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:31:49,050 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:31:51,987 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:31:51,990 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:31:51,990 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:31:51,995 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:31:52,052 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:31:52,349 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:31:53,052 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:32:03,664 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:32:03,664 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:32:19,071 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:32:19,072 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:32:25,163 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:32:34,493 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:32:34,494 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:32:37,718 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:32:37,721 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:32:37,722 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:32:37,723 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:32:38,073 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:32:39,074 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:32:49,910 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:32:49,910 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:32:57,655 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:33:01,085 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:33:03,983 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:33:03,986 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:33:03,987 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:33:03,987 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:33:04,086 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:33:05,087 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:33:05,359 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:33:05,360 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:33:20,908 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:33:20,909 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:33:30,246 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:33:36,324 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:33:36,324 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:33:49,238 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:33:49,241 DEBUG   SenderThread:6820 [sender.py:send():235] send: history
+2022-03-22 02:33:49,242 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:33:49,242 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:33:50,120 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:33:51,841 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:33:51,841 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:33:52,121 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:34:02,764 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:34:07,250 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:34:07,251 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:34:14,132 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:34:16,134 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:34:22,801 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:34:22,802 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:34:35,733 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:34:38,225 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:34:38,226 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:34:53,630 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:34:53,630 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:35:08,628 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:35:09,039 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:35:09,039 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:35:20,166 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:35:22,167 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:35:24,474 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:35:24,475 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:35:39,891 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:35:39,892 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:35:41,387 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:35:55,305 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:35:55,306 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:36:10,733 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-22 02:36:10,734 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: stop_status
+2022-03-22 02:36:10,905 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-22 02:36:11,230 DEBUG   SenderThread:6820 [sender.py:send():235] send: telemetry
+2022-03-22 02:36:12,208 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:36:13,208 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:36:13,821 DEBUG   SenderThread:6820 [sender.py:send():235] send: exit
+2022-03-22 02:36:13,821 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:13,821 INFO    SenderThread:6820 [sender.py:send_exit():371] handling exit code: 1
+2022-03-22 02:36:13,822 INFO    SenderThread:6820 [sender.py:send_exit():373] handling runtime: 4673
+2022-03-22 02:36:13,823 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:36:13,824 INFO    SenderThread:6820 [sender.py:send_exit():379] send defer
+2022-03-22 02:36:13,824 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:13,826 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: defer
+2022-03-22 02:36:13,826 INFO    HandlerThread:6820 [handler.py:handle_request_defer():164] handle defer: 0
+2022-03-22 02:36:13,826 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: defer
+2022-03-22 02:36:13,826 INFO    SenderThread:6820 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-03-22 02:36:13,826 INFO    SenderThread:6820 [sender.py:transition_state():392] send defer: 1
+2022-03-22 02:36:13,827 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: defer
+2022-03-22 02:36:13,827 INFO    HandlerThread:6820 [handler.py:handle_request_defer():164] handle defer: 1
+2022-03-22 02:36:14,000 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:14,000 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: defer
+2022-03-22 02:36:14,002 INFO    SenderThread:6820 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-03-22 02:36:14,002 INFO    SenderThread:6820 [sender.py:transition_state():392] send defer: 2
+2022-03-22 02:36:14,002 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:14,003 DEBUG   SenderThread:6820 [sender.py:send():235] send: stats
+2022-03-22 02:36:14,003 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: defer
+2022-03-22 02:36:14,004 INFO    HandlerThread:6820 [handler.py:handle_request_defer():164] handle defer: 2
+2022-03-22 02:36:14,005 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: defer
+2022-03-22 02:36:14,005 INFO    SenderThread:6820 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-03-22 02:36:14,005 INFO    SenderThread:6820 [sender.py:transition_state():392] send defer: 3
+2022-03-22 02:36:14,006 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: defer
+2022-03-22 02:36:14,006 INFO    HandlerThread:6820 [handler.py:handle_request_defer():164] handle defer: 3
+2022-03-22 02:36:14,006 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: defer
+2022-03-22 02:36:14,007 INFO    SenderThread:6820 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-03-22 02:36:14,007 INFO    SenderThread:6820 [sender.py:transition_state():392] send defer: 4
+2022-03-22 02:36:14,007 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: defer
+2022-03-22 02:36:14,007 INFO    HandlerThread:6820 [handler.py:handle_request_defer():164] handle defer: 4
+2022-03-22 02:36:14,008 DEBUG   SenderThread:6820 [sender.py:send():235] send: summary
+2022-03-22 02:36:14,009 INFO    SenderThread:6820 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-22 02:36:14,009 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: defer
+2022-03-22 02:36:14,010 INFO    SenderThread:6820 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-03-22 02:36:14,010 INFO    SenderThread:6820 [sender.py:transition_state():392] send defer: 5
+2022-03-22 02:36:14,010 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: defer
+2022-03-22 02:36:14,011 INFO    HandlerThread:6820 [handler.py:handle_request_defer():164] handle defer: 5
+2022-03-22 02:36:14,011 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: defer
+2022-03-22 02:36:14,011 INFO    SenderThread:6820 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-03-22 02:36:14,105 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:14,209 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:36:14,209 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:36:14,490 INFO    SenderThread:6820 [sender.py:transition_state():392] send defer: 6
+2022-03-22 02:36:14,491 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:14,492 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: defer
+2022-03-22 02:36:14,492 INFO    HandlerThread:6820 [handler.py:handle_request_defer():164] handle defer: 6
+2022-03-22 02:36:14,492 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: defer
+2022-03-22 02:36:14,493 INFO    SenderThread:6820 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-03-22 02:36:14,493 INFO    SenderThread:6820 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-03-22 02:36:14,594 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:15,210 INFO    Thread-7  :6820 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/config.yaml
+2022-03-22 02:36:15,211 INFO    SenderThread:6820 [dir_watcher.py:finish():313] scan: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files
+2022-03-22 02:36:15,211 INFO    SenderThread:6820 [dir_watcher.py:finish():327] scan save: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log output.log
+2022-03-22 02:36:15,212 INFO    SenderThread:6820 [dir_watcher.py:finish():327] scan save: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/conda-environment.yaml conda-environment.yaml
+2022-03-22 02:36:15,213 INFO    SenderThread:6820 [dir_watcher.py:finish():327] scan save: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json wandb-summary.json
+2022-03-22 02:36:15,236 INFO    SenderThread:6820 [dir_watcher.py:finish():327] scan save: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/config.yaml config.yaml
+2022-03-22 02:36:15,238 INFO    SenderThread:6820 [dir_watcher.py:finish():327] scan save: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/requirements.txt requirements.txt
+2022-03-22 02:36:15,250 INFO    SenderThread:6820 [dir_watcher.py:finish():327] scan save: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-metadata.json wandb-metadata.json
+2022-03-22 02:36:15,250 INFO    SenderThread:6820 [sender.py:transition_state():392] send defer: 7
+2022-03-22 02:36:15,263 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:15,273 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: defer
+2022-03-22 02:36:15,273 INFO    HandlerThread:6820 [handler.py:handle_request_defer():164] handle defer: 7
+2022-03-22 02:36:15,273 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: defer
+2022-03-22 02:36:15,273 INFO    SenderThread:6820 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-03-22 02:36:15,273 INFO    SenderThread:6820 [file_pusher.py:finish():145] shutting down file pusher
+2022-03-22 02:36:15,374 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:15,375 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:15,477 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:15,477 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:15,580 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:15,581 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:15,689 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:15,691 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:15,793 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:15,793 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:15,896 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:15,896 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:15,999 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:16,000 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:16,103 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:16,103 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:16,206 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:16,206 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:16,309 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:16,309 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:16,337 INFO    Thread-16 :6820 [upload_job.py:push():137] Uploaded file /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/requirements.txt
+2022-03-22 02:36:16,412 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:16,412 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:16,492 INFO    Thread-12 :6820 [upload_job.py:push():137] Uploaded file /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/output.log
+2022-03-22 02:36:16,515 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:16,516 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:16,618 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:16,619 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:16,660 INFO    Thread-14 :6820 [upload_job.py:push():137] Uploaded file /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/wandb-summary.json
+2022-03-22 02:36:16,703 INFO    Thread-15 :6820 [upload_job.py:push():137] Uploaded file /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/config.yaml
+2022-03-22 02:36:16,721 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:16,722 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:16,824 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:16,824 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:16,874 INFO    Thread-13 :6820 [upload_job.py:push():137] Uploaded file /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/files/conda-environment.yaml
+2022-03-22 02:36:16,927 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:16,927 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:17,030 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:17,030 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:17,075 INFO    Thread-6  :6820 [sender.py:transition_state():392] send defer: 8
+2022-03-22 02:36:17,076 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: defer
+2022-03-22 02:36:17,077 INFO    HandlerThread:6820 [handler.py:handle_request_defer():164] handle defer: 8
+2022-03-22 02:36:17,077 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: defer
+2022-03-22 02:36:17,077 INFO    SenderThread:6820 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-03-22 02:36:17,133 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:17,908 INFO    SenderThread:6820 [sender.py:transition_state():392] send defer: 9
+2022-03-22 02:36:17,909 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:17,910 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: defer
+2022-03-22 02:36:17,911 INFO    HandlerThread:6820 [handler.py:handle_request_defer():164] handle defer: 9
+2022-03-22 02:36:17,911 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: defer
+2022-03-22 02:36:17,911 INFO    SenderThread:6820 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-03-22 02:36:17,912 INFO    SenderThread:6820 [sender.py:transition_state():392] send defer: 10
+2022-03-22 02:36:17,913 DEBUG   SenderThread:6820 [sender.py:send():235] send: final
+2022-03-22 02:36:17,913 DEBUG   SenderThread:6820 [sender.py:send():235] send: footer
+2022-03-22 02:36:17,914 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: defer
+2022-03-22 02:36:17,914 INFO    HandlerThread:6820 [handler.py:handle_request_defer():164] handle defer: 10
+2022-03-22 02:36:17,914 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: defer
+2022-03-22 02:36:17,914 INFO    SenderThread:6820 [sender.py:send_request_defer():388] handle sender defer: 10
+2022-03-22 02:36:18,012 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-22 02:36:18,013 DEBUG   SenderThread:6820 [sender.py:send_request():249] send_request: poll_exit
+2022-03-22 02:36:18,013 INFO    SenderThread:6820 [file_pusher.py:join():150] waiting for file pusher
+2022-03-22 02:36:18,953 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: sampled_history
+2022-03-22 02:36:18,960 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: get_summary
+2022-03-22 02:36:18,962 DEBUG   HandlerThread:6820 [handler.py:handle_request():141] handle_request: shutdown
+2022-03-22 02:36:18,962 INFO    HandlerThread:6820 [handler.py:finish():778] shutting down handler
+2022-03-22 02:36:19,850 INFO    SenderThread:6820 [sender.py:finish():1078] shutting down sender
+2022-03-22 02:36:19,851 INFO    SenderThread:6820 [file_pusher.py:finish():145] shutting down file pusher
+2022-03-22 02:36:19,851 INFO    SenderThread:6820 [file_pusher.py:join():150] waiting for file pusher
+2022-03-22 02:36:19,914 INFO    WriterThread:6820 [datastore.py:close():281] close: /home/ustc/ls/tcd_code/wandb/run-20220322_011818-j5hkrut1/run-j5hkrut1.wandb
+2022-03-22 02:36:19,915 INFO    MainThread:6820 [internal.py:handle_exit():82] Internal process exited

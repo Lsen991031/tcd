@@ -1,0 +1,310 @@
+ucf101: 101 classes
+Method : OURS
+----AGE 1----
+current_task  [98, 96]
+current_head  53
+Phase 2 : Train RGB Model in an Incremental Manner
+=> base model: resnet34
+Load the Previous Model
+Copy the old Model
+lambda_0  : [1.0, 0.05049752469181039]
+Increment the Model
+SplitCosineLinear(
+  input_features=512, output_features=159, sigma=tensor([3.6668]), eta=tensor([2.7653])
+  (fc1): CosineLinear(input_features=512, output_features=153, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=512, output_features=6, sigma=1.0, eta=1.0)
+)
+video number : 176
+video number + exemplar : 431
+DataLoader Constructed : Train 13
+Optimizer Constructed
+video number : 176
+video number + exemplar : 176
+Initialize Cosine Classifier
+Computing the class mean vectors...
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([64, 512])
+1 torch.Size([64, 512])
+2 torch.Size([8, 8, 512])
+3 torch.Size([64, 512])
+1 torch.Size([64, 512])
+2 torch.Size([8, 8, 512])
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/_functions.py:61: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+2022-03-13 16:24:39.502304
+Epoch: [0][0/13], lr: 0.00100	Time 3.578 (3.578)	Data 1.623 (1.623)	Loss 2.7774 (2.7774)	Loss CE 2.6388 (2.6388)	Loss KD (Logit) 1.0992 (1.0992)	Loss KD (GCAM) 0.0552 (0.0552)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6658 (0.6658)	Loss REG 0.0000 (0.0000)	Prec@1 59.375 (59.375)
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+3 torch.Size([128, 512])
+1 torch.Size([128, 512])
+2 torch.Size([16, 8, 512])
+Traceback (most recent call last):
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+Traceback (most recent call last):
+BrokenPipeError: [Errno 32] Broken pipe
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+Traceback (most recent call last):
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "main.py", line 101, in <module>
+    main()
+  File "main.py", line 71, in main
+    train_i_cl.train_task(args, i, current_task, current_head, class_indexer, model_flow=model_flow, prefix=prefix)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 461, in train_task
+    _train(args, train_loader, model, criterion, optimizer, epoch, age, regularizer=regularizer, lambda_0=lambda_0, model_old=model_old, importance_list=importance_list)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 167, in _train
+    if loss_reg != 0:
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/queues.py", line 242, in _feed
+    send_bytes(obj)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+KeyboardInterrupt
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+BrokenPipeError: [Errno 32] Broken pipe
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+BrokenPipeError: [Errno 32] Broken pipe
+BrokenPipeError: [Errno 32] Broken pipe

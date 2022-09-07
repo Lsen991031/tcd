@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "main.py", line 102, in <module>
+    main()
+  File "main.py", line 72, in main
+    train_i_cl.train_task(args, i, current_task, current_head, class_indexer, model_flow=model_flow, prefix=prefix)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 481, in train_task
+    model_old = torch.nn.DataParallel(model_old, device_ids=args.gpus).cuda()
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/modules/module.py", line 688, in cuda
+    return self._apply(lambda t: t.cuda(device))
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/modules/module.py", line 578, in _apply
+    module._apply(fn)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/modules/module.py", line 578, in _apply
+    module._apply(fn)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/modules/module.py", line 578, in _apply
+    module._apply(fn)
+  [Previous line repeated 2 more times]
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/modules/module.py", line 601, in _apply
+    param_applied = fn(param)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/modules/module.py", line 688, in <lambda>
+    return self._apply(lambda t: t.cuda(device))
+RuntimeError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 11.91 GiB total capacity; 233.43 MiB already allocated; 12.12 MiB free; 234.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+ucf101: 101 classes
+Method : OURS
+----AGE 1----
+current_task  [98, 96, 18, 90, 75, 31, 95, 49, 43, 78]
+current_head  61
+Phase 2 : Train RGB Model in an Incremental Manner
+=> base model: resnet50
+Load the Previous Model
+Copy the old Model
+lambda_0  : [1.0, 0.022583179581272428]
+Increment the Model
+SplitCosineLinear(
+  input_features=2048, output_features=183, sigma=tensor([3.8396]), eta=tensor([3.1335])
+  (fc1): CosineLinear(input_features=2048, output_features=153, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=2048, output_features=30, sigma=1.0, eta=1.0)
+)
+video number : 897
+video number + exemplar : 1152
+DataLoader Constructed : Train 576

@@ -1,0 +1,430 @@
+ucf101: 101 classes
+Method : OURS
+----AGE 0----
+current_task  [37, 97, 56, 55, 33, 84, 3, 4, 72, 59, 66, 48, 65, 91, 99, 39, 34, 22, 67, 74, 19, 35, 9, 86, 88, 63, 85, 38, 54, 25, 57, 62, 83, 76, 6, 13, 2, 53, 8, 24, 44, 12, 100, 29, 5, 17, 15, 73, 47, 27, 46]
+current_head  51
+Phase 2 : Train RGB Model in an Incremental Manner
+=> base model: resnet34
+CosineLinear(input_features=512, output_features=153, sigma=tensor([1.]), eta=tensor([1.]))
+video number : 4793
+video number + exemplar : 4793
+DataLoader Constructed : Train 149
+Optimizer Constructed
+2022-03-15 16:52:35.424712
+Epoch: [0][0/149], lr: 0.00100	Time 8.068 (8.068)	Data 1.877 (1.877)	Loss 3.9937 (3.9937)	Loss CE 3.9317 (3.9317)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6197 (0.6197)	Loss REG 0.0000 (0.0000)	Prec@1 3.125 (3.125)
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/_functions.py:61: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+2022-03-15 16:53:34.078100
+Epoch: [0][100/149], lr: 0.00100	Time 0.586 (0.661)	Data 0.000 (0.019)	Loss 3.9762 (3.9905)	Loss CE 3.9161 (3.9284)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6010 (0.6215)	Loss REG 0.0000 (0.0000)	Prec@1 3.125 (3.094)
+Sigma : Parameter containing:
+tensor([1.0662], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([1.0312], device='cuda:0', requires_grad=True)
+2022-03-15 16:54:06.033641
+Epoch: [1][0/149], lr: 0.00100	Time 2.638 (2.638)	Data 1.949 (1.949)	Loss 3.9782 (3.9782)	Loss CE 3.9159 (3.9159)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6225 (0.6225)	Loss REG 0.0000 (0.0000)	Prec@1 6.250 (6.250)
+2022-03-15 16:55:05.200098
+Epoch: [1][100/149], lr: 0.00100	Time 0.619 (0.612)	Data 0.000 (0.020)	Loss 3.9726 (3.9692)	Loss CE 3.9145 (3.9088)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.5807 (0.6041)	Loss REG 0.0000 (0.0000)	Prec@1 9.375 (7.302)
+Sigma : Parameter containing:
+tensor([1.4152], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([1.2188], device='cuda:0', requires_grad=True)
+2022-03-15 16:55:37.591205
+Epoch: [2][0/149], lr: 0.00100	Time 3.016 (3.016)	Data 2.315 (2.315)	Loss 3.9150 (3.9150)	Loss CE 3.8549 (3.8549)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6007 (0.6007)	Loss REG 0.0000 (0.0000)	Prec@1 21.875 (21.875)
+2022-03-15 16:56:36.665949
+Epoch: [2][100/149], lr: 0.00100	Time 0.576 (0.615)	Data 0.000 (0.023)	Loss 3.4061 (3.7632)	Loss CE 3.3428 (3.7010)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6325 (0.6220)	Loss REG 0.0000 (0.0000)	Prec@1 12.500 (21.999)
+Sigma : Parameter containing:
+tensor([3.3401], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.4495], device='cuda:0', requires_grad=True)
+2022-03-15 16:57:08.812648
+Epoch: [3][0/149], lr: 0.00100	Time 2.703 (2.703)	Data 1.830 (1.830)	Loss 2.1599 (2.1599)	Loss CE 2.0952 (2.0952)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6465 (0.6465)	Loss REG 0.0000 (0.0000)	Prec@1 50.000 (50.000)
+2022-03-15 16:58:07.821054
+Epoch: [3][100/149], lr: 0.00100	Time 0.577 (0.611)	Data 0.000 (0.018)	Loss 1.6487 (1.7744)	Loss CE 1.5809 (1.7087)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6773 (0.6574)	Loss REG 0.0000 (0.0000)	Prec@1 56.250 (55.724)
+Sigma : Parameter containing:
+tensor([3.6668], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.7653], device='cuda:0', requires_grad=True)
+2022-03-15 16:58:40.052535
+Epoch: [4][0/149], lr: 0.00100	Time 2.669 (2.669)	Data 1.784 (1.784)	Loss 1.3821 (1.3821)	Loss CE 1.3138 (1.3138)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6828 (0.6828)	Loss REG 0.0000 (0.0000)	Prec@1 68.750 (68.750)
+2022-03-15 16:59:39.473385
+Epoch: [4][100/149], lr: 0.00100	Time 0.583 (0.615)	Data 0.000 (0.018)	Loss 1.2174 (1.1049)	Loss CE 1.1489 (1.0390)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6850 (0.6589)	Loss REG 0.0000 (0.0000)	Prec@1 65.625 (70.978)
+Sigma : Parameter containing:
+tensor([3.6448], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.8074], device='cuda:0', requires_grad=True)
+2022-03-15 17:00:11.915730
+Epoch: [5][0/149], lr: 0.00100	Time 2.942 (2.942)	Data 2.279 (2.279)	Loss 1.0122 (1.0122)	Loss CE 0.9482 (0.9482)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6398 (0.6398)	Loss REG 0.0000 (0.0000)	Prec@1 75.000 (75.000)
+2022-03-15 17:01:11.607043
+Epoch: [5][100/149], lr: 0.00100	Time 0.594 (0.620)	Data 0.000 (0.023)	Loss 0.6565 (0.8629)	Loss CE 0.5910 (0.7971)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6549 (0.6582)	Loss REG 0.0000 (0.0000)	Prec@1 81.250 (77.785)
+Sigma : Parameter containing:
+tensor([3.5939], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.8199], device='cuda:0', requires_grad=True)
+2022-03-15 17:01:44.337040
+Epoch: [6][0/149], lr: 0.00100	Time 3.050 (3.050)	Data 2.276 (2.276)	Loss 0.4893 (0.4893)	Loss CE 0.4215 (0.4215)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6776 (0.6776)	Loss REG 0.0000 (0.0000)	Prec@1 87.500 (87.500)
+2022-03-15 17:02:43.973461
+Epoch: [6][100/149], lr: 0.00100	Time 0.625 (0.621)	Data 0.000 (0.023)	Loss 0.6942 (0.6537)	Loss CE 0.6271 (0.5882)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6715 (0.6547)	Loss REG 0.0000 (0.0000)	Prec@1 87.500 (83.818)
+Sigma : Parameter containing:
+tensor([3.6476], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.8927], device='cuda:0', requires_grad=True)
+2022-03-15 17:03:16.173549
+Epoch: [7][0/149], lr: 0.00100	Time 2.749 (2.749)	Data 1.924 (1.924)	Loss 0.3922 (0.3922)	Loss CE 0.3308 (0.3308)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6138 (0.6138)	Loss REG 0.0000 (0.0000)	Prec@1 90.625 (90.625)
+2022-03-15 17:04:15.914982
+Epoch: [7][100/149], lr: 0.00100	Time 0.578 (0.619)	Data 0.000 (0.019)	Loss 0.2942 (0.5272)	Loss CE 0.2294 (0.4616)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6480 (0.6557)	Loss REG 0.0000 (0.0000)	Prec@1 93.750 (86.510)
+Sigma : Parameter containing:
+tensor([3.6628], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.9273], device='cuda:0', requires_grad=True)
+2022-03-15 17:04:48.305288
+Epoch: [8][0/149], lr: 0.00100	Time 2.895 (2.895)	Data 2.256 (2.256)	Loss 0.6552 (0.6552)	Loss CE 0.5904 (0.5904)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6481 (0.6481)	Loss REG 0.0000 (0.0000)	Prec@1 84.375 (84.375)
+2022-03-15 17:05:47.780209
+Epoch: [8][100/149], lr: 0.00100	Time 0.630 (0.618)	Data 0.000 (0.023)	Loss 0.6345 (0.4872)	Loss CE 0.5701 (0.4217)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6440 (0.6551)	Loss REG 0.0000 (0.0000)	Prec@1 90.625 (88.366)
+Sigma : Parameter containing:
+tensor([3.6852], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([2.9684], device='cuda:0', requires_grad=True)
+2022-03-15 17:06:19.925582
+Epoch: [9][0/149], lr: 0.00100	Time 2.617 (2.617)	Data 1.747 (1.747)	Loss 0.2791 (0.2791)	Loss CE 0.2174 (0.2174)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6168 (0.6168)	Loss REG 0.0000 (0.0000)	Prec@1 90.625 (90.625)
+2022-03-15 17:07:19.703193
+Epoch: [9][100/149], lr: 0.00100	Time 0.582 (0.618)	Data 0.000 (0.017)	Loss 0.2908 (0.3697)	Loss CE 0.2298 (0.3046)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6094 (0.6518)	Loss REG 0.0000 (0.0000)	Prec@1 90.625 (91.213)
+Sigma : Parameter containing:
+tensor([3.7358], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.0132], device='cuda:0', requires_grad=True)
+2022-03-15 17:07:51.549067
+Epoch: [10][0/149], lr: 0.00100	Time 2.359 (2.359)	Data 1.598 (1.598)	Loss 0.4691 (0.4691)	Loss CE 0.4022 (0.4022)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6686 (0.6686)	Loss REG 0.0000 (0.0000)	Prec@1 84.375 (84.375)
+2022-03-15 17:08:51.143744
+Epoch: [10][100/149], lr: 0.00100	Time 0.575 (0.613)	Data 0.000 (0.016)	Loss 0.3007 (0.3255)	Loss CE 0.2358 (0.2604)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6494 (0.6503)	Loss REG 0.0000 (0.0000)	Prec@1 90.625 (92.760)
+Sigma : Parameter containing:
+tensor([3.7658], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.0448], device='cuda:0', requires_grad=True)
+2022-03-15 17:09:23.372306
+Epoch: [11][0/149], lr: 0.00100	Time 2.792 (2.792)	Data 1.986 (1.986)	Loss 0.3530 (0.3530)	Loss CE 0.2894 (0.2894)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6360 (0.6360)	Loss REG 0.0000 (0.0000)	Prec@1 93.750 (93.750)
+2022-03-15 17:10:22.773325
+Epoch: [11][100/149], lr: 0.00100	Time 0.576 (0.616)	Data 0.000 (0.020)	Loss 0.4082 (0.3226)	Loss CE 0.3426 (0.2583)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6552 (0.6435)	Loss REG 0.0000 (0.0000)	Prec@1 90.625 (92.760)
+Sigma : Parameter containing:
+tensor([3.7607], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.0505], device='cuda:0', requires_grad=True)
+2022-03-15 17:10:55.225129
+Epoch: [12][0/149], lr: 0.00100	Time 2.868 (2.868)	Data 2.231 (2.231)	Loss 0.2671 (0.2671)	Loss CE 0.2054 (0.2054)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6174 (0.6174)	Loss REG 0.0000 (0.0000)	Prec@1 93.750 (93.750)
+2022-03-15 17:11:54.769257
+Epoch: [12][100/149], lr: 0.00100	Time 0.575 (0.618)	Data 0.000 (0.022)	Loss 0.4338 (0.2930)	Loss CE 0.3729 (0.2286)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6083 (0.6447)	Loss REG 0.0000 (0.0000)	Prec@1 90.625 (93.286)
+Sigma : Parameter containing:
+tensor([3.7541], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.0583], device='cuda:0', requires_grad=True)
+2022-03-15 17:12:26.944107
+Epoch: [13][0/149], lr: 0.00100	Time 2.602 (2.602)	Data 1.555 (1.555)	Loss 0.1012 (0.1012)	Loss CE 0.0375 (0.0375)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6377 (0.6377)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:13:26.340272
+Epoch: [13][100/149], lr: 0.00100	Time 0.586 (0.614)	Data 0.000 (0.016)	Loss 0.2791 (0.2480)	Loss CE 0.2154 (0.1835)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6367 (0.6452)	Loss REG 0.0000 (0.0000)	Prec@1 93.750 (94.833)
+Sigma : Parameter containing:
+tensor([3.7867], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.0850], device='cuda:0', requires_grad=True)
+2022-03-15 17:13:58.666165
+Epoch: [14][0/149], lr: 0.00100	Time 2.911 (2.911)	Data 2.283 (2.283)	Loss 0.0887 (0.0887)	Loss CE 0.0221 (0.0221)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6660 (0.6660)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:14:58.283745
+Epoch: [14][100/149], lr: 0.00100	Time 0.590 (0.619)	Data 0.000 (0.023)	Loss 0.3543 (0.2661)	Loss CE 0.2900 (0.2018)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6429 (0.6428)	Loss REG 0.0000 (0.0000)	Prec@1 90.625 (94.431)
+Sigma : Parameter containing:
+tensor([3.7780], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.0904], device='cuda:0', requires_grad=True)
+2022-03-15 17:15:30.488675
+Epoch: [15][0/149], lr: 0.00100	Time 2.752 (2.752)	Data 1.955 (1.955)	Loss 0.3526 (0.3526)	Loss CE 0.2878 (0.2878)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6476 (0.6476)	Loss REG 0.0000 (0.0000)	Prec@1 84.375 (84.375)
+2022-03-15 17:16:29.975599
+Epoch: [15][100/149], lr: 0.00100	Time 0.581 (0.616)	Data 0.000 (0.020)	Loss 0.1468 (0.2092)	Loss CE 0.0806 (0.1447)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6623 (0.6445)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.163)
+Sigma : Parameter containing:
+tensor([3.7833], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1047], device='cuda:0', requires_grad=True)
+2022-03-15 17:17:02.069162
+Epoch: [16][0/149], lr: 0.00100	Time 2.748 (2.748)	Data 1.830 (1.830)	Loss 0.1438 (0.1438)	Loss CE 0.0814 (0.0814)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6235 (0.6235)	Loss REG 0.0000 (0.0000)	Prec@1 93.750 (93.750)
+2022-03-15 17:18:01.383783
+Epoch: [16][100/149], lr: 0.00100	Time 0.617 (0.614)	Data 0.000 (0.018)	Loss 0.1934 (0.2181)	Loss CE 0.1298 (0.1538)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6361 (0.6426)	Loss REG 0.0000 (0.0000)	Prec@1 93.750 (95.668)
+Sigma : Parameter containing:
+tensor([3.7681], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1027], device='cuda:0', requires_grad=True)
+2022-03-15 17:18:34.234768
+Epoch: [17][0/149], lr: 0.00100	Time 2.994 (2.994)	Data 2.339 (2.339)	Loss 0.1773 (0.1773)	Loss CE 0.1133 (0.1133)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6394 (0.6394)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+2022-03-15 17:19:33.688921
+Epoch: [17][100/149], lr: 0.00100	Time 0.580 (0.618)	Data 0.000 (0.023)	Loss 0.2939 (0.2297)	Loss CE 0.2314 (0.1660)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6253 (0.6370)	Loss REG 0.0000 (0.0000)	Prec@1 90.625 (95.204)
+Sigma : Parameter containing:
+tensor([3.7612], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1002], device='cuda:0', requires_grad=True)
+2022-03-15 17:20:05.777727
+Epoch: [18][0/149], lr: 0.00100	Time 2.649 (2.649)	Data 1.677 (1.677)	Loss 0.3291 (0.3291)	Loss CE 0.2677 (0.2677)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6139 (0.6139)	Loss REG 0.0000 (0.0000)	Prec@1 93.750 (93.750)
+2022-03-15 17:21:05.552782
+Epoch: [18][100/149], lr: 0.00100	Time 0.624 (0.618)	Data 0.000 (0.017)	Loss 0.0755 (0.1790)	Loss CE 0.0113 (0.1151)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6419 (0.6395)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (96.751)
+Sigma : Parameter containing:
+tensor([3.8203], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1350], device='cuda:0', requires_grad=True)
+2022-03-15 17:21:38.008252
+Epoch: [19][0/149], lr: 0.00100	Time 2.782 (2.782)	Data 2.067 (2.067)	Loss 0.0905 (0.0905)	Loss CE 0.0249 (0.0249)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6567 (0.6567)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:22:37.553189
+Epoch: [19][100/149], lr: 0.00100	Time 0.616 (0.617)	Data 0.000 (0.021)	Loss 0.1145 (0.1738)	Loss CE 0.0483 (0.1100)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6621 (0.6382)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.813)
+Sigma : Parameter containing:
+tensor([3.8331], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1480], device='cuda:0', requires_grad=True)
+2022-03-15 17:23:09.765006
+Epoch: [20][0/149], lr: 0.00010	Time 2.719 (2.719)	Data 1.923 (1.923)	Loss 0.0663 (0.0663)	Loss CE 0.0027 (0.0027)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6353 (0.6353)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:24:09.787457
+Epoch: [20][100/149], lr: 0.00010	Time 0.628 (0.621)	Data 0.000 (0.019)	Loss 0.1156 (0.1183)	Loss CE 0.0557 (0.0546)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.5990 (0.6369)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (98.484)
+Sigma : Parameter containing:
+tensor([3.8367], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1499], device='cuda:0', requires_grad=True)
+2022-03-15 17:24:41.855737
+Epoch: [21][0/149], lr: 0.00010	Time 2.681 (2.681)	Data 1.594 (1.594)	Loss 0.0715 (0.0715)	Loss CE 0.0022 (0.0022)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6928 (0.6928)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:25:41.551192
+Epoch: [21][100/149], lr: 0.00010	Time 0.618 (0.618)	Data 0.000 (0.016)	Loss 0.0661 (0.0937)	Loss CE 0.0013 (0.0298)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6483 (0.6389)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.165)
+Sigma : Parameter containing:
+tensor([3.8411], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1524], device='cuda:0', requires_grad=True)
+2022-03-15 17:26:13.666922
+Epoch: [22][0/149], lr: 0.00010	Time 2.730 (2.730)	Data 1.914 (1.914)	Loss 0.1590 (0.1590)	Loss CE 0.0969 (0.0969)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6215 (0.6215)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+2022-03-15 17:27:13.173947
+Epoch: [22][100/149], lr: 0.00010	Time 0.586 (0.616)	Data 0.000 (0.019)	Loss 0.0683 (0.1030)	Loss CE 0.0042 (0.0396)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6411 (0.6347)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.072)
+Sigma : Parameter containing:
+tensor([3.8426], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1533], device='cuda:0', requires_grad=True)
+2022-03-15 17:27:45.263359
+Epoch: [23][0/149], lr: 0.00010	Time 2.682 (2.682)	Data 1.733 (1.733)	Loss 0.0763 (0.0763)	Loss CE 0.0123 (0.0123)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6399 (0.6399)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:28:44.933983
+Epoch: [23][100/149], lr: 0.00010	Time 0.630 (0.617)	Data 0.000 (0.017)	Loss 0.0682 (0.0958)	Loss CE 0.0039 (0.0322)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6437 (0.6360)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.010)
+Sigma : Parameter containing:
+tensor([3.8464], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1556], device='cuda:0', requires_grad=True)
+2022-03-15 17:29:17.403029
+Epoch: [24][0/149], lr: 0.00010	Time 2.916 (2.916)	Data 2.113 (2.113)	Loss 0.0730 (0.0730)	Loss CE 0.0094 (0.0094)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6359 (0.6359)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:30:17.090950
+Epoch: [24][100/149], lr: 0.00010	Time 0.590 (0.620)	Data 0.000 (0.021)	Loss 0.0690 (0.0944)	Loss CE 0.0076 (0.0311)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6136 (0.6337)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.196)
+Sigma : Parameter containing:
+tensor([3.8486], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1568], device='cuda:0', requires_grad=True)
+2022-03-15 17:30:49.362996
+Epoch: [25][0/149], lr: 0.00010	Time 2.776 (2.776)	Data 1.761 (1.761)	Loss 0.1308 (0.1308)	Loss CE 0.0675 (0.0675)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6332 (0.6332)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+2022-03-15 17:31:48.792507
+Epoch: [25][100/149], lr: 0.00010	Time 0.579 (0.616)	Data 0.000 (0.018)	Loss 0.0914 (0.0969)	Loss CE 0.0246 (0.0332)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6685 (0.6366)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.196)
+Sigma : Parameter containing:
+tensor([3.8511], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1585], device='cuda:0', requires_grad=True)
+2022-03-15 17:32:21.404656
+Epoch: [26][0/149], lr: 0.00010	Time 2.998 (2.998)	Data 2.243 (2.243)	Loss 0.2868 (0.2868)	Loss CE 0.2229 (0.2229)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6394 (0.6394)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+2022-03-15 17:33:20.869646
+Epoch: [26][100/149], lr: 0.00010	Time 0.625 (0.618)	Data 0.000 (0.022)	Loss 0.0627 (0.0975)	Loss CE 0.0016 (0.0341)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6106 (0.6333)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.010)
+Sigma : Parameter containing:
+tensor([3.8533], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1596], device='cuda:0', requires_grad=True)
+2022-03-15 17:33:52.894940
+Epoch: [27][0/149], lr: 0.00010	Time 2.625 (2.625)	Data 1.614 (1.614)	Loss 0.0716 (0.0716)	Loss CE 0.0099 (0.0099)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6174 (0.6174)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:34:52.636470
+Epoch: [27][100/149], lr: 0.00010	Time 0.580 (0.617)	Data 0.000 (0.016)	Loss 0.1042 (0.0860)	Loss CE 0.0399 (0.0226)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6428 (0.6338)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.598)
+Sigma : Parameter containing:
+tensor([3.8576], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1620], device='cuda:0', requires_grad=True)
+2022-03-15 17:35:24.729568
+Epoch: [28][0/149], lr: 0.00010	Time 2.637 (2.637)	Data 1.755 (1.755)	Loss 0.0614 (0.0614)	Loss CE 0.0032 (0.0032)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.5814 (0.5814)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:36:24.542686
+Epoch: [28][100/149], lr: 0.00010	Time 0.581 (0.618)	Data 0.000 (0.018)	Loss 0.0708 (0.0888)	Loss CE 0.0072 (0.0251)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6360 (0.6362)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.381)
+Sigma : Parameter containing:
+tensor([3.8595], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1630], device='cuda:0', requires_grad=True)
+2022-03-15 17:36:56.567999
+Epoch: [29][0/149], lr: 0.00010	Time 2.682 (2.682)	Data 1.740 (1.740)	Loss 0.0751 (0.0751)	Loss CE 0.0091 (0.0091)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6601 (0.6601)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:37:55.951123
+Epoch: [29][100/149], lr: 0.00010	Time 0.591 (0.615)	Data 0.000 (0.017)	Loss 0.0656 (0.0837)	Loss CE 0.0013 (0.0205)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6430 (0.6324)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.598)
+Sigma : Parameter containing:
+tensor([3.8646], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1660], device='cuda:0', requires_grad=True)
+2022-03-15 17:38:28.408044
+Epoch: [30][0/149], lr: 0.00001	Time 2.847 (2.847)	Data 2.071 (2.071)	Loss 0.0662 (0.0662)	Loss CE 0.0042 (0.0042)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6200 (0.6200)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:39:27.820899
+Epoch: [30][100/149], lr: 0.00001	Time 0.592 (0.616)	Data 0.000 (0.021)	Loss 0.0865 (0.0910)	Loss CE 0.0246 (0.0273)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6194 (0.6362)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.288)
+Sigma : Parameter containing:
+tensor([3.8649], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1662], device='cuda:0', requires_grad=True)
+2022-03-15 17:40:00.305828
+Epoch: [31][0/149], lr: 0.00001	Time 2.944 (2.944)	Data 2.146 (2.146)	Loss 0.0642 (0.0642)	Loss CE 0.0005 (0.0005)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6373 (0.6373)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:41:00.065929
+Epoch: [31][100/149], lr: 0.00001	Time 0.594 (0.621)	Data 0.000 (0.021)	Loss 0.0640 (0.0849)	Loss CE 0.0007 (0.0216)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6328 (0.6338)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.412)
+Sigma : Parameter containing:
+tensor([3.8653], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1664], device='cuda:0', requires_grad=True)
+2022-03-15 17:41:32.524250
+Epoch: [32][0/149], lr: 0.00001	Time 2.879 (2.879)	Data 1.847 (1.847)	Loss 0.2681 (0.2681)	Loss CE 0.2053 (0.2053)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6283 (0.6283)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+2022-03-15 17:42:32.257293
+Epoch: [32][100/149], lr: 0.00001	Time 0.582 (0.620)	Data 0.000 (0.018)	Loss 0.0626 (0.0839)	Loss CE 0.0009 (0.0206)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6172 (0.6329)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.536)
+Sigma : Parameter containing:
+tensor([3.8657], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1667], device='cuda:0', requires_grad=True)
+2022-03-15 17:43:04.842581
+Epoch: [33][0/149], lr: 0.00001	Time 2.884 (2.884)	Data 1.901 (1.901)	Loss 0.0645 (0.0645)	Loss CE 0.0023 (0.0023)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6229 (0.6229)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:44:04.647013
+Epoch: [33][100/149], lr: 0.00001	Time 0.575 (0.621)	Data 0.000 (0.019)	Loss 0.0719 (0.0829)	Loss CE 0.0064 (0.0198)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6547 (0.6313)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.505)
+Sigma : Parameter containing:
+tensor([3.8662], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1669], device='cuda:0', requires_grad=True)
+2022-03-15 17:44:37.225638
+Epoch: [34][0/149], lr: 0.00001	Time 2.945 (2.945)	Data 2.211 (2.211)	Loss 0.2560 (0.2560)	Loss CE 0.1956 (0.1956)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6035 (0.6035)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+2022-03-15 17:45:37.209707
+Epoch: [34][100/149], lr: 0.00001	Time 0.603 (0.623)	Data 0.000 (0.022)	Loss 0.1214 (0.0838)	Loss CE 0.0571 (0.0206)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6427 (0.6322)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (99.443)
+Sigma : Parameter containing:
+tensor([3.8667], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1672], device='cuda:0', requires_grad=True)
+2022-03-15 17:46:09.542343
+Epoch: [35][0/149], lr: 0.00001	Time 2.929 (2.929)	Data 2.263 (2.263)	Loss 0.0656 (0.0656)	Loss CE 0.0016 (0.0016)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6403 (0.6403)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:47:09.144001
+Epoch: [35][100/149], lr: 0.00001	Time 0.593 (0.619)	Data 0.000 (0.023)	Loss 0.0679 (0.0860)	Loss CE 0.0084 (0.0226)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.5949 (0.6337)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.350)
+Sigma : Parameter containing:
+tensor([3.8670], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1674], device='cuda:0', requires_grad=True)
+2022-03-15 17:47:41.127014
+Epoch: [36][0/149], lr: 0.00001	Time 2.519 (2.519)	Data 1.718 (1.718)	Loss 0.0669 (0.0669)	Loss CE 0.0090 (0.0090)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.5792 (0.5792)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:48:41.119057
+Epoch: [36][100/149], lr: 0.00001	Time 0.599 (0.619)	Data 0.000 (0.017)	Loss 0.1037 (0.0837)	Loss CE 0.0415 (0.0206)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6215 (0.6305)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (99.536)
+Sigma : Parameter containing:
+tensor([3.8673], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1676], device='cuda:0', requires_grad=True)
+2022-03-15 17:49:13.150408
+Epoch: [37][0/149], lr: 0.00001	Time 2.689 (2.689)	Data 1.742 (1.742)	Loss 0.0697 (0.0697)	Loss CE 0.0070 (0.0070)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6274 (0.6274)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:50:12.713287
+Epoch: [37][100/149], lr: 0.00001	Time 0.592 (0.616)	Data 0.000 (0.017)	Loss 0.1242 (0.0874)	Loss CE 0.0622 (0.0243)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6197 (0.6312)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (99.381)
+Sigma : Parameter containing:
+tensor([3.8677], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1678], device='cuda:0', requires_grad=True)
+2022-03-15 17:50:45.108665
+Epoch: [38][0/149], lr: 0.00001	Time 2.862 (2.862)	Data 1.820 (1.820)	Loss 0.0635 (0.0635)	Loss CE 0.0009 (0.0009)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6262 (0.6262)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:51:44.324359
+Epoch: [38][100/149], lr: 0.00001	Time 0.586 (0.615)	Data 0.000 (0.018)	Loss 0.0677 (0.0796)	Loss CE 0.0055 (0.0162)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6220 (0.6340)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.505)
+Sigma : Parameter containing:
+tensor([3.8681], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1680], device='cuda:0', requires_grad=True)
+2022-03-15 17:52:16.548542
+Epoch: [39][0/149], lr: 0.00001	Time 2.700 (2.700)	Data 1.704 (1.704)	Loss 0.0635 (0.0635)	Loss CE 0.0008 (0.0008)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6277 (0.6277)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:53:16.001312
+Epoch: [39][100/149], lr: 0.00001	Time 0.590 (0.615)	Data 0.000 (0.017)	Loss 0.0671 (0.0841)	Loss CE 0.0058 (0.0209)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6138 (0.6326)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.443)
+Sigma : Parameter containing:
+tensor([3.8684], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1682], device='cuda:0', requires_grad=True)
+2022-03-15 17:53:48.498870
+Epoch: [40][0/149], lr: 0.00001	Time 3.065 (3.065)	Data 2.176 (2.176)	Loss 0.0674 (0.0674)	Loss CE 0.0019 (0.0019)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6550 (0.6550)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:54:48.116069
+Epoch: [40][100/149], lr: 0.00001	Time 0.586 (0.621)	Data 0.000 (0.022)	Loss 0.0689 (0.0828)	Loss CE 0.0042 (0.0196)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6472 (0.6316)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.474)
+Sigma : Parameter containing:
+tensor([3.8687], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1684], device='cuda:0', requires_grad=True)
+2022-03-15 17:55:20.544551
+Epoch: [41][0/149], lr: 0.00001	Time 2.965 (2.965)	Data 2.186 (2.186)	Loss 0.0740 (0.0740)	Loss CE 0.0124 (0.0124)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6160 (0.6160)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:56:19.947658
+Epoch: [41][100/149], lr: 0.00001	Time 0.578 (0.618)	Data 0.000 (0.022)	Loss 0.0738 (0.0829)	Loss CE 0.0139 (0.0196)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.5996 (0.6329)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.505)
+Sigma : Parameter containing:
+tensor([3.8690], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1686], device='cuda:0', requires_grad=True)
+2022-03-15 17:56:52.394497
+Epoch: [42][0/149], lr: 0.00001	Time 2.994 (2.994)	Data 2.297 (2.297)	Loss 0.0718 (0.0718)	Loss CE 0.0097 (0.0097)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6208 (0.6208)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:57:51.972303
+Epoch: [42][100/149], lr: 0.00001	Time 0.591 (0.620)	Data 0.000 (0.023)	Loss 0.0666 (0.0816)	Loss CE 0.0052 (0.0184)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6144 (0.6326)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.505)
+Sigma : Parameter containing:
+tensor([3.8695], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1688], device='cuda:0', requires_grad=True)
+2022-03-15 17:58:24.506875
+Epoch: [43][0/149], lr: 0.00001	Time 3.010 (3.010)	Data 2.166 (2.166)	Loss 0.0611 (0.0611)	Loss CE 0.0008 (0.0008)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6028 (0.6028)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 17:59:23.961572
+Epoch: [43][100/149], lr: 0.00001	Time 0.580 (0.618)	Data 0.000 (0.022)	Loss 0.1279 (0.0866)	Loss CE 0.0617 (0.0235)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6623 (0.6311)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (99.381)
+Sigma : Parameter containing:
+tensor([3.8698], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1690], device='cuda:0', requires_grad=True)
+2022-03-15 17:59:56.472867
+Epoch: [44][0/149], lr: 0.00001	Time 2.981 (2.981)	Data 2.345 (2.345)	Loss 0.0691 (0.0691)	Loss CE 0.0061 (0.0061)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6299 (0.6299)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 18:00:55.784783
+Epoch: [44][100/149], lr: 0.00001	Time 0.591 (0.617)	Data 0.000 (0.023)	Loss 0.0764 (0.0858)	Loss CE 0.0135 (0.0224)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6292 (0.6336)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.474)
+Sigma : Parameter containing:
+tensor([3.8701], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1692], device='cuda:0', requires_grad=True)
+2022-03-15 18:01:28.348274
+Epoch: [45][0/149], lr: 0.00001	Time 3.060 (3.060)	Data 2.391 (2.391)	Loss 0.0748 (0.0748)	Loss CE 0.0170 (0.0170)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.5772 (0.5772)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 18:02:27.991755
+Epoch: [45][100/149], lr: 0.00001	Time 0.588 (0.621)	Data 0.000 (0.024)	Loss 0.0691 (0.0803)	Loss CE 0.0039 (0.0171)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6512 (0.6322)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.474)
+Sigma : Parameter containing:
+tensor([3.8706], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1694], device='cuda:0', requires_grad=True)
+2022-03-15 18:03:00.304749
+Epoch: [46][0/149], lr: 0.00001	Time 2.908 (2.908)	Data 1.876 (1.876)	Loss 0.0632 (0.0632)	Loss CE 0.0009 (0.0009)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6224 (0.6224)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 18:04:00.049992
+Epoch: [46][100/149], lr: 0.00001	Time 0.580 (0.620)	Data 0.000 (0.019)	Loss 0.0778 (0.0874)	Loss CE 0.0180 (0.0240)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.5988 (0.6338)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.536)
+Sigma : Parameter containing:
+tensor([3.8708], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1696], device='cuda:0', requires_grad=True)
+2022-03-15 18:04:32.208438
+Epoch: [47][0/149], lr: 0.00001	Time 2.751 (2.751)	Data 1.826 (1.826)	Loss 0.0678 (0.0678)	Loss CE 0.0055 (0.0055)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6226 (0.6226)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 18:05:31.663935
+Epoch: [47][100/149], lr: 0.00001	Time 0.580 (0.616)	Data 0.000 (0.018)	Loss 0.0830 (0.0790)	Loss CE 0.0187 (0.0157)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6434 (0.6336)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.598)
+Sigma : Parameter containing:
+tensor([3.8712], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1698], device='cuda:0', requires_grad=True)
+2022-03-15 18:06:03.622262
+Epoch: [48][0/149], lr: 0.00001	Time 2.516 (2.516)	Data 1.620 (1.620)	Loss 0.0754 (0.0754)	Loss CE 0.0161 (0.0161)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.5934 (0.5934)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (100.000)
+2022-03-15 18:07:03.365923
+Epoch: [48][100/149], lr: 0.00001	Time 0.619 (0.616)	Data 0.000 (0.016)	Loss 0.0845 (0.0853)	Loss CE 0.0221 (0.0220)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6241 (0.6329)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.443)
+Sigma : Parameter containing:
+tensor([3.8716], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1700], device='cuda:0', requires_grad=True)
+2022-03-15 18:07:35.712040
+Epoch: [49][0/149], lr: 0.00001	Time 2.809 (2.809)	Data 1.971 (1.971)	Loss 0.1273 (0.1273)	Loss CE 0.0592 (0.0592)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6816 (0.6816)	Loss REG 0.0000 (0.0000)	Prec@1 96.875 (96.875)
+2022-03-15 18:08:35.238553
+Epoch: [49][100/149], lr: 0.00001	Time 0.625 (0.617)	Data 0.000 (0.020)	Loss 0.0636 (0.0813)	Loss CE 0.0007 (0.0182)	Loss KD (Logit) 0.0000 (0.0000)	Loss KD (GCAM) 0.0000 (0.0000)	Loss MR 0.0000 (0.0000)	Loss DIV 0.6287 (0.6309)	Loss REG 0.0000 (0.0000)	Prec@1 100.000 (99.536)
+Sigma : Parameter containing:
+tensor([3.8718], device='cuda:0', requires_grad=True), Eta : Parameter containing:
+tensor([3.1702], device='cuda:0', requires_grad=True)
+Update Importance Mask...
+Phase 3 : Manage Exemplar Sets
+=> base model: resnet34
+Construct Exemplar Set
+Load the Model
+CosineLinear(input_features=512, output_features=153, sigma=tensor([3.8718]), eta=tensor([3.1702]))
+Exemplar per class : 5
+video number : 4793
+video number + exemplar : 4793
+Phase 4 : Class-balanced Fine-Tuning : SKIP
+Phase 5 : Eval RGB Model for the Tasks Trained so far
+=> base model: resnet34
+Load the Trained Model from checkpoint/ucf101/51/2/000/task_000.pth.tar
+exemplar : 255
+Computing the class mean vectors...
+Eval Task 0 for Age 0
+Current Task : [37, 97, 56, 55, 33, 84, 3, 4, 72, 59, 66, 48, 65, 91, 99, 39, 34, 22, 67, 74, 19, 35, 9, 86, 88, 63, 85, 38, 54, 25, 57, 62, 83, 76, 6, 13, 2, 53, 8, 24, 44, 12, 100, 29, 5, 17, 15, 73, 47, 27, 46]
+video number : 1909
+video number + exemplar : 1909
+DataLoader Constructed
+Test: [0/120]	Time 8.155 (8.155)	Prec@1 87.500 (87.500)
+Test: [100/120]	Time 0.668 (0.571)	Prec@1 87.500 (84.158)
+Testing Results: Prec@1 84.337
+Classify using the NME Classifier...
+Test (NME): [0/120]	Time 0.000 (0.000)	Prec@1 81.250 (81.250)
+Test (NME): [100/120]	Time 0.000 (0.000)	Prec@1 93.750 (81.188)
+Testing Results (NME): Prec@1 81.875
+Method : OURS
+----AGE 1----
+current_task  [98, 96]
+current_head  53
+Phase 2 : Train RGB Model in an Incremental Manner
+=> base model: resnet34
+Load the Previous Model
+Copy the old Model
+lambda_0  : [1.0, 0.05049752469181039]
+Increment the Model
+SplitCosineLinear(
+  input_features=512, output_features=159, sigma=tensor([3.8718]), eta=tensor([3.1702])
+  (fc1): CosineLinear(input_features=512, output_features=153, sigma=1.0, eta=1.0)
+  (fc2): CosineLinear(input_features=512, output_features=6, sigma=1.0, eta=1.0)
+)
+video number : 176
+video number + exemplar : 431
+DataLoader Constructed : Train 13
+Optimizer Constructed
+video number : 176
+video number + exemplar : 176
+Initialize Cosine Classifier
+Computing the class mean vectors...
+/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/nn/parallel/_functions.py:61: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+Traceback (most recent call last):
+  File "main.py", line 101, in <module>
+    main()
+  File "main.py", line 71, in main
+    train_i_cl.train_task(args, i, current_task, current_head, class_indexer, model_flow=model_flow, prefix=prefix)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 461, in train_task
+    _train(args, train_loader, model, criterion, optimizer, epoch, age, regularizer=regularizer, lambda_0=lambda_0, model_old=model_old, importance_list=importance_list)
+  File "/home/ustc/ls/tcd_code/train/train_i_cl.py", line 159, in _train
+    loss.backward()
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/tensor.py", line 107, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/home/ustc/anaconda3/envs/lhc/lib/python3.7/site-packages/torch/autograd/__init__.py", line 93, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+RuntimeError: CUDA out of memory. Tried to allocate 196.00 MiB (GPU 0; 11.91 GiB total capacity; 7.23 GiB already allocated; 71.00 MiB free; 265.38 MiB cached)
